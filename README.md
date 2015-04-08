@@ -7,7 +7,7 @@ Lebis Alarcón & José Luis Gutierrez.
 Multimedia Engineering,
 Universidad de San Buenaventura de Cali.
 
-TODOS LOS DERECHOS RESERVADOS. ©
+ALL RIGHTS RESERVED. ©
 
 # Details
 
