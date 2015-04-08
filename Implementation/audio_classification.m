@@ -8,10 +8,6 @@ h = waitbar(0,'Initializing reduction...');
 mkdir(exportPath,'temp_files');
 %mkdir(strcat(exportPath,'temp_files')); %Create temp files folder
 mkdir(strcat(exportPath,'\temp_files'), 'audio_files'); %Create temp files folder
-%addpath('implementation/temp_files') % add the folder to matlab path
-% movefile('audio_files','temp_files','f');
-% movefile('temp_files','implementation','f');
-%addpath('implementation/MIRtoolbox1.5')
 eachSegmentLentgh = segmentsLength; %Duration in seconds of each segment
 [y, Fs, nbits] = wavread(audioPath); %load the wav
 totalAudioLength = length(y)/Fs %should give you the length in seconds
@@ -27,44 +23,39 @@ for i=1:numSegments % Fill the audiosegment data
         tempAudioName = strcat('temp_audio',num2str(i)); % Create the name for the temporal audio
         finalAudioPath = strcat(exportPath,'\temp_files','\audio_files\',tempAudioName);
         wavwrite(audioSegments(:,i),Fs,16,finalAudioPath); %Write the temporal audio
-        %movefile(strcat(tempAudioName,'.wav'),'implementation/temp_files/audio_files','f'); %Move the audio to temp files folder
     end
     if i == numSegments
         tempAudioName = strcat('temp_audio',num2str(numSegments)); % Create the name for the temporal audio
         finalAudioPath = strcat(exportPath,'\temp_files','\audio_files\',tempAudioName);
         lastSegment = y(init:end,1); %this is the last segment
         wavwrite(lastSegment,Fs,16, finalAudioPath); %Write the last audio segment
-        %movefile(strcat(tempAudioName,'.wav'),'implementation/temp_files/audio_files','f'); %Move the last audio segment to temp files folder
     end
 end
  segmentationElapsedTime = toc
-%sound(audioSegments,Fs);
 %% Feature extraction
 tic;
 waitbar(0.6,h,'Extracting features...')
 mirwaitbar(0);
 mirverbose(0);
 currentFolder = pwd;
-%cd (strcat(currentFolder,'\implementation\temp_files'));
-%cd ('C:\Users\spcDesktop\Documents\MATLAB\Implementation\temp_files');
 cd (strcat(exportPath,'\temp_files'));
 databaseFolder = pwd
 folders = dir;
 
-% PARAMETROS DEL AN?LISIS ESPECTRAL
+% PARAMETROS DEL ANÁLISIS ESPECTRAL
 
 frameSize = 2048;
 hopSize = 1024;
 
-% N?mero de atributos:
+% Número de atributos:
 
-numAttributes = 138; %% Atenci?n, esto depende de lo que pase en mirextract. %Mean and variance.
+numAttributes = 138;
 
 attributeMatrix = zeros(numSegments, numAttributes);
 
 fileCounter = 0;
 
-for i = 3: length( folders ) % Los dos primero son . y ..
+for i = 3: length( folders ) 
     
     genreFolder = folders(i).name;
     
@@ -75,7 +66,7 @@ for i = 3: length( folders ) % Los dos primero son . y ..
         for j = 3: length(filenames)         
             audioFile =  fullfile( databaseFolder, genreFolder, filenames(j).name )   
             [a, b, ext] = fileparts(audioFile)  
-            if strcmp(ext, '.wav') % Revisamos si tiene la extensi?n correcta:
+            if strcmp(ext, '.wav') % Revisamos si tiene la extension correcta:
                 fileCounter = fileCounter + 1;
                 values = mirextract( audioFile, frameSize, hopSize);
                 
@@ -123,8 +114,7 @@ for i = 3: length( folders ) % Los dos primero son . y ..
                 
                 array_atributos = cell( num_ejemplos +1, num_atributos  + 1 );% + la clase
                 
-                %Nombre de los atributos. OJO! esto est? hecho a mano, Data deber?a
-                %contenerlos.
+                %Nombre de los atributos. 
                 
                 for i = 1: 15
                     array_atributos(1, i) = cellstr( num2str(i) );
@@ -172,7 +162,6 @@ end
     clear energy;
     clear envelope;
     clear kurtMFCCs;
-    %zerosArray = zeros(1,length(y));
     if strcmp(classifier,'svm')
             tic;
             waitbar(0.8,h,'Classifyng...')
@@ -182,7 +171,6 @@ end
             fade_samples = round(FADE_LEN.*Fs); % figure out how many samples fade is over
             fade_scale = linspace(0,1,fade_samples)'; % create fade
             completeGroup = svmclassify(Trained_Struct,newAttributeMatrix);
-            %normalizedData = normalizeTestData(newAttributeMatrix, Trained_Struct.ScaleData.shift , Trained_Struct.ScaleData.scaleFactor);
             init = 1;
             altInit = 1;
             cont = 1;
@@ -215,7 +203,6 @@ end
             waitbar(0.95,h,'Generating new audio...')
             finalExportPath = strcat(exportPath,'\Reduced_audio')
             wavwrite(reducedAudio,Fs,16,finalExportPath);
-            %movefile('Reduced_Audio.wav',exportPath,'f');
             cd ..
             rmdir('temp_files','s');
             close(h);
@@ -239,7 +226,6 @@ end
         
         datosEntrada = newAttributeMatrix.';
         completeGroup = net(datosEntrada);
-        %treshold = 0.5137;
         %Mapeo
         for i=1:length(completeGroup)
             if(completeGroup(i) <  treshold)
@@ -248,17 +234,13 @@ end
                 completeGroup(i) = 1;
             end
         end
-        
         sum(completeGroup)
         numSegments
-        %completeGroup = vec2in(testInd);
             altInit = 1
             init = 1;
             cont = 1;
             for i=1:numSegments
                 if i < numSegments
-                    %Group = svmclassify(Trained_Struct,newAttributeMatrix(i,:));
-                    
                     Group = net(datosEntrada(:,i));
                      %Mapeo
                          if(Group <  treshold)
@@ -298,7 +280,7 @@ end
             waitbar(0.95,h,'Generating new audio...')
             finalExportPath = strcat(exportPath,'\Reduced_audio')
             wavwrite(reducedAudio,Fs,16,finalExportPath);
-            %movefile('Reduced_Audio.wav',exportPath,'f');
+          
             cd ..
             rmdir('temp_files','s');
             close(h);
