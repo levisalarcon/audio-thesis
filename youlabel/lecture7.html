@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Labelling Tool</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="templatemo_container">
+    
+ <div id="templatemo_header">
+      <div id="templatemo_site_title">You<label>Label</label></div>
+  <div id="templatemo_site_slogan">Labeling Tool &nbsp;<BR> For A/V Reduction Thesis</div>
+
+</div>
+    
+    <div>
+        <!--LECTURES SELECTION MENU -->  
+        <ul class="solidblockmenu">
+          <li><a href="index.html">Lecture1</a></li>
+          <li><a href="lecture2.html">Lecture2</a></li>
+          <li><a href="lecture3.html">Lecture3</a></li>
+          <li><a href="lecture4.html">Lecture4</a></li>
+          <li><a href="lecture5.html">Lecture5</a></li>
+          <li><a href="lecture6.html">Lecture6</a></li>
+          <li><a href="lecture7.html" class="current">Lecture7</a></li>
+          <li><a href="lecture8.html">Lecture8</a></li>
+          <li><a href="lecture9.html">Lecture9</a></li>
+        </ul>
+   </div>
+	
+<div id="templatemo_content">
+    <p>&nbsp;</p>  
+<div class="title">Lecture 7 - Views and Gestures </div>
+ 
+<!--HERE I LOAD THE VIDEO PLAYER -->      
+<div id="lecture" class="center"></div>
+
+<div id="templatemo_left_column"> 
+    <BR>
+<!--HERE I TAKE THE CURRENT TIME -->   
+ <div class="subtitle">Elapsed Time (since video starts):<div id="position"></div></div>
+    <BR> 
+<!------------------------------------------------------------SUBMIT LABELS TO MYSQL ----------------------------------------------------------->
+<form id="submitLabels" action="lecture7.php" method="post">
+    
+<!--START LABEL INPUT -->
+<input type="hidden" name="start" id="keepstart"/>
+    
+        
+<!--END LABEL INPUT -->    
+<input type="hidden" name="end" id="keepend"/>
+
+<div class="subtitle"> Label Maker:
+<!--START LABEL BUTTON -->    
+<input type="button" class="myButton" value= "[ Start Label" onclick="CopyStart();"/>
+
+
+<!--END LABEL BUTTON -->    
+<input type="button" class="myButton" id="sendlabels" value= "End Label ]" onclick="CopyEnd();"/>
+
+</form>
+   <BR>
+       <BR> 
+           <BR> 
+<!--<iframe id='iframe' src = 'labels.txt'> </iframe> -->      
+<!-------------------------------------------------------------------ABOUT BUTTON ------------------------------------------------------------------------->    
+
+<!--<input type="button" class="myButton" value="About Video Material" onclick="alert('All videos we use have creative commons rights');" />  --> 
+</div>  
+           <div class="subtitle"> Segment Duration:
+<label id="minutes">00</label>:<label id="seconds">00</label></div>
+<label id="totalTime"></label> 
+    </div> 
+    
+<!------------------------------------------------------------------DOWNLOAD LABELS TXT FILE BUTTON ------------------------------------------------------------------------->   
+
+            
+    <div id="templatemo_right_column">
+        <BR>
+        Please Click the link below if you want to see your labels!
+        <BR>
+            <BR>
+        <a href="7.html" onClick="return popup(this, 'notes')">Labels Table</a>
+        
+    </div>
+    
+
+     
+
+<!---------------------------------------------------------------SUCCESFULL SENT LABELS PRINT MESSAGE -------------------------------------------------------------------->
+<span id="success"></span>
+    
+   
+
+<!------------------------------------------------------------------------FOOTER ----------------------------------------------------------------------------->    
+<div id="templatemo_footer" align="center">
+    Copyright © 2014 Audio Reduction Thesis - Alarcon - Gutierrez - Bromberg - Lasso - Gomez, USB cali.
+</div>
+</div>
+
+    
+<!-------------------------------------------------------------------JAVASCRIPT--------------------------------------------------------- -->  
+<script type="text/javascript">
+    var player,
+    tag = document.createElement('script'),
+    firstScriptTag = document.getElementsByTagName('script')[0];
+
+tag.src = "https://www.youtube.com/iframe_api";
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+//ONCE API IS READY
+function onReady(event) {
+    function logDuration() {
+        $("#position").html(player.getCurrentTime());// HERE I SEND THE CURRENT TIME TO POSITION DIV
+        $("#duration").text(player.getDuration());
+        window.setTimeout(logDuration, 1000);
+        }
+    logDuration();
+    //player.playVideo();
+}
+
+
+//LOAD YOUTUBE API
+window.onYouTubeIframeAPIReady = function onYouTubeIframeAPIReady() {
+    player = new YT.Player("lecture", {
+        height: 480,
+        width: 720,
+        videoId: "85IUfbgp0v8",// VIDEO ID
+        playerVars: {
+            controls: 2, //CONTROLS ENABLED
+            fs:0, //disabled fullscreen
+            cc_load_policy:1,//show closed caption
+            modestbranding:1,//hide youtube logo
+            iv_load_policy: 3,// Disables annotations.
+            rel:0,// doesnt show relations
+            showinfo:0, //doenst show name of video
+            theme:"light" //nice controls!!!
+        },
+        events: {
+            "onReady": onReady
+        }
+    });
+    
+ };
+   
+</script>
+    
+<script type="text/javascript">
+        
+//HERE I COPY ELAPSED TIME TO LABELS
+function CopyStart()   {
+var output = document.getElementById("position").innerHTML; 
+document.getElementById("keepstart").value = output;
+//alert("Start Label Copied!");
+startTimer();    
+} 
+    
+function CopyEnd()   {
+var output = document.getElementById("position").innerHTML; 
+document.getElementById("keepend").value = output;
+stopTimer();
+}     
+     
+
+         
+</script>
+
+
+<!--------------------------------------------------JAVASCRIPT TIMER--------- -----------------------------------------------------------------------------> 
+<script type="text/javascript">
+        var hoursLabel = document.getElementById("hours");
+        var minutesLabel = document.getElementById("minutes");
+        var secondsLabel = document.getElementById("seconds");
+        var totalTime = document.getElementById("totalTime");
+        var totalSeconds = 0;
+        var totalMinutes = 0;
+        var totalHours = 0;
+        var counter;
+        var timerOn;
+        var htmlResets;
+        var totalMills = 0;
+ 
+        function startTimer() {
+            if (timerOn == 1) {
+                return;
+            }
+            else {
+                counter = setInterval(setTime, 10);
+                timerOn = 1;
+                htmlResets = 0;
+            }
+        }
+ 
+        function pauseTimer() {
+            if (timerOn == 1) {
+                clearInterval(counter);
+                timerOn = 0;
+            }
+ 
+            if (htmlResets == 1) {
+                hoursLabel.innerHTML = "00";
+                minutesLabel.innerHTML = "00";
+                secondsLabel.innerHTML = "00";
+                totalMills = 0;
+                totalSeconds = 0;
+                totalMinutes = 0;
+                totalHours = 0;
+            }
+            else {
+                htmlResets = 1;
+            }
+        }
+ 
+        function stopTimer() {
+            totalTime.innerHTML = "Last Segment Duration: " + minutesLabel.innerHTML + ":" + secondsLabel.innerHTML;
+            //hoursLabel.innerHTML = "00";
+            minutesLabel.innerHTML = "00";
+            secondsLabel.innerHTML = "00";
+            totalMills = 0;
+            totalSeconds = 0;
+            totalMinutes = 0;
+            totalHours = 0;
+            clearInterval(counter);
+            timerOn = 0;
+        }
+ 
+        function setTime() {
+            ++totalMills;
+            if (totalHours == 99 & totalMinutes == 59 & totalSeconds == 60) {
+                totalHours = 0;
+                totalMinutes = 0;
+                totalSeconds = 0;
+                hoursLabel.innerHTML = "00";
+                minutesLabel.innerHTML = "00";
+                secondsLabel.innerHTML = "00";
+                clearInterval(counter);
+            }
+            if (totalMills == 100) {
+                totalSeconds++;
+                secondsLabel.innerHTML = pad(totalSeconds % 60);
+                totalMills = 0;
+            }
+            if (totalSeconds == 60) {
+                totalMinutes++;
+                minutesLabel.innerHTML = pad(totalMinutes % 60);
+                totalSeconds = 0;
+            }
+            if (totalMinutes == 60) {
+                totalHours++;
+                hoursLabel.innerHTML = pad(totalHours);
+                totalMinutes = 0;
+            }
+        }
+ 
+        function pad(val) {
+            var valString = val + "";
+            if (valString.length < 2) {
+                return "0" + valString;
+            }
+            else {
+                return valString;
+            }
+        }
+    </script>   
+            
+            
+            <!------------------------------------------pop up sql table---------------------------------------> 
+<script type="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=400,height=400,scrollbars=yes');
+return false;
+}
+
+</script>
+
+<!-------------------------------------------------------------------------------------------------> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="norefresh.js"></script> 
+
+    </body>
+    
+    
+
+</html>

@@ -1,0 +1,173 @@
+/* Credit: http://www.templatemo.com */
+
+/* 
+001 Template 
+http://www.templatemo.com/preview/templatemo_001_one
+*/
+
+body {
+margin:0;
+padding:0;
+line-height: 1.5em;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+background: #666666;
+}
+
+label {
+    color: #FF0000;
+   
+}
+
+#templatemo_container {
+width: 800px;
+margin: auto;
+background: #FFFFFF;
+}
+#templatemo_header {
+height: 140px;
+/*background: url(images/two.png) no-repeat;*/
+}
+#templatemo_content {
+width: 800px;
+}
+#templatemo_left_column {
+float: left;
+width: 550px;
+min-height: 200px;
+}
+#templatemo_right_column {
+background: #E5E5E5;
+float: left;
+width: 250px;
+min-height: 200px;
+}
+#templatemo_footer {
+clear: left;
+background: #000000;
+padding: 5px;
+color: #FFFFFF;
+}
+#templatemo_footer a {
+color: #FFFFFF;
+}
+
+#templatemo_site_title {
+padding-top: 50px;
+padding-left: 60px;
+font-size: 26px;
+font-weight: bold;
+}
+#templatemo_site_slogan {
+padding-top: 10px;
+padding-left: 60px;
+font-size: 12px;
+font-weight: bold;
+}
+
+.section_box {
+margin: 10px;
+padding: 10px;
+background: #660000;
+color: #FFFFFF;
+}
+.section_box2 {
+margin-top: 10px;
+padding: 10px;
+background: #666666;
+color: #FFFFFF;
+}
+.section_box a, .section_box2 a {
+color: #FFFF99;
+}
+.text_area {
+margin: 10px;
+}
+.title {
+padding-bottom: 10px;
+font-size: 14px;
+font-weight: bold;
+}
+.subtitle {
+padding-bottom: 10px;
+font-size: 12px;
+font-weight: bold;
+}
+
+/* Menu Credits: Dynamic Drive CSS Library */
+/* URL: http://www.dynamicdrive.com/style/ */
+.solidblockmenu{
+margin: 0;
+padding: 0;
+float: left;
+font: bold 13px Arial;
+width: 100%;
+border: 1px solid #FFFFFF;
+border-width: 1px 0;
+background: black url(images/blockdefault.gif) center center repeat-x;
+}
+.solidblockmenu li{
+display: inline;
+}
+.solidblockmenu li a{
+float: left;
+color: white;
+padding: 9px 11px;
+text-decoration: none;
+border-right: 1px solid white;
+}
+.solidblockmenu li a:visited{
+color: white;
+}
+.solidblockmenu li a:hover, .solidblockmenu li .current{
+color: white;
+background: transparent url(images/blockactive.gif) center center repeat-x;
+}
+p.iepara{
+padding-top: 1em;
+}
+.center{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+	background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#000;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+	background-color:#dfdfdf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

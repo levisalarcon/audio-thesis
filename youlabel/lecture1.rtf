@@ -1,0 +1,4126 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red83\green83\blue83;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs26 \cf2 \expnd0\expndtw0\kerning0
+0:00\cf0 \expnd0\expndtw0\kerning0
+[ Music ]\
+\cf2 \expnd0\expndtw0\kerning0
+0:05\cf0 \expnd0\expndtw0\kerning0
+>> Stanford University.\
+\cf2 \expnd0\expndtw0\kerning0
+0:09\cf0 \expnd0\expndtw0\kerning0
+>> Alright, so welcome to Stanford CS193p,\
+\cf2 \expnd0\expndtw0\kerning0
+0:11\cf0 \expnd0\expndtw0\kerning0
+fall of 2013-14 academic year.\
+\cf2 \expnd0\expndtw0\kerning0
+0:14\cf0 \expnd0\expndtw0\kerning0
+This is our very first lecture and we are going\
+\cf2 \expnd0\expndtw0\kerning0
+0:17\cf0 \expnd0\expndtw0\kerning0
+to be covering developing applications\
+\cf2 \expnd0\expndtw0\kerning0
+0:18\cf0 \expnd0\expndtw0\kerning0
+for iOS, so specifically iOS7.\
+\cf2 \expnd0\expndtw0\kerning0
+0:22\cf0 \expnd0\expndtw0\kerning0
+Today's lecture kind of has a first part and a second part.\
+\cf2 \expnd0\expndtw0\kerning0
+0:26\cf0 \expnd0\expndtw0\kerning0
+The first part is a little bit of logistics.\
+\cf2 \expnd0\expndtw0\kerning0
+0:28\cf0 \expnd0\expndtw0\kerning0
+The second part is I'm going to dive right\
+\cf2 \expnd0\expndtw0\kerning0
+0:30\cf0 \expnd0\expndtw0\kerning0
+into the course material because there's a lot to cover and so,\
+\cf2 \expnd0\expndtw0\kerning0
+0:33\cf0 \expnd0\expndtw0\kerning0
+we need to start covering it.\
+\cf2 \expnd0\expndtw0\kerning0
+0:36\cf0 \expnd0\expndtw0\kerning0
+[Pause] So, what will I learn in this course?\
+\cf2 \expnd0\expndtw0\kerning0
+0:38\cf0 \expnd0\expndtw0\kerning0
+I think you know what you're going to learn in this course.\
+\cf2 \expnd0\expndtw0\kerning0
+0:39\cf0 \expnd0\expndtw0\kerning0
+You're going to learn how to build cool apps, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+0:42\cf0 \expnd0\expndtw0\kerning0
+iOS is a really cool platform for building apps,\
+\cf2 \expnd0\expndtw0\kerning0
+0:45\cf0 \expnd0\expndtw0\kerning0
+you probably already know that.\
+\cf2 \expnd0\expndtw0\kerning0
+0:47\cf0 \expnd0\expndtw0\kerning0
+The apps look cool, they've got animation.\
+\cf2 \expnd0\expndtw0\kerning0
+0:50\cf0 \expnd0\expndtw0\kerning0
+What's really cool is they're in your pockets\
+\cf2 \expnd0\expndtw0\kerning0
+0:53\cf0 \expnd0\expndtw0\kerning0
+so you can whip them out and show them to your friends.\
+\cf2 \expnd0\expndtw0\kerning0
+0:55\cf0 \expnd0\expndtw0\kerning0
+You don't have to send them to a website or go get a computer.\
+\cf2 \expnd0\expndtw0\kerning0
+0:57\cf0 \expnd0\expndtw0\kerning0
+It's also really easy to develop really powerful apps\
+\cf2 \expnd0\expndtw0\kerning0
+1:01\cf0 \expnd0\expndtw0\kerning0
+in a really short amount of time, as you're going to find.\
+\cf2 \expnd0\expndtw0\kerning0
+1:03\cf0 \expnd0\expndtw0\kerning0
+This course is only 10 weeks long,\
+\cf2 \expnd0\expndtw0\kerning0
+1:05\cf0 \expnd0\expndtw0\kerning0
+and while this is Stanford, I know, you're all really,\
+\cf2 \expnd0\expndtw0\kerning0
+1:08\cf0 \expnd0\expndtw0\kerning0
+really good programmers and all that, it still,\
+\cf2 \expnd0\expndtw0\kerning0
+1:10\cf0 \expnd0\expndtw0\kerning0
+10 weeks is not a lot of time, so when we get to the end,\
+\cf2 \expnd0\expndtw0\kerning0
+1:13\cf0 \expnd0\expndtw0\kerning0
+you're going to see that it's a very leveraged platform\
+\cf2 \expnd0\expndtw0\kerning0
+1:16\cf0 \expnd0\expndtw0\kerning0
+for building things.\
+\cf2 \expnd0\expndtw0\kerning0
+1:17\cf0 \expnd0\expndtw0\kerning0
+And, you know, the community is quite vibrant,\
+\cf2 \expnd0\expndtw0\kerning0
+1:20\cf0 \expnd0\expndtw0\kerning0
+being able to distribute your apps via the app store\
+\cf2 \expnd0\expndtw0\kerning0
+1:23\cf0 \expnd0\expndtw0\kerning0
+and not have to put them in a box and put them on a shelf\
+\cf2 \expnd0\expndtw0\kerning0
+1:25\cf0 \expnd0\expndtw0\kerning0
+in a store, is really a big, big difference when it comes\
+\cf2 \expnd0\expndtw0\kerning0
+1:28\cf0 \expnd0\expndtw0\kerning0
+to marketing a product.\
+\cf2 \expnd0\expndtw0\kerning0
+1:29\cf0 \expnd0\expndtw0\kerning0
+Okay? And you'll, you'll see that.\
+\cf2 \expnd0\expndtw0\kerning0
+1:32\cf0 \expnd0\expndtw0\kerning0
+The second thing you're going to learn\
+\cf2 \expnd0\expndtw0\kerning0
+1:33\cf0 \expnd0\expndtw0\kerning0
+in this course though is real-world application,\
+\cf2 \expnd0\expndtw0\kerning0
+1:36\cf0 \expnd0\expndtw0\kerning0
+a lot of the computer science things you're learning\
+\cf2 \expnd0\expndtw0\kerning0
+1:38\cf0 \expnd0\expndtw0\kerning0
+in other classes.\
+\cf2 \expnd0\expndtw0\kerning0
+1:39\cf0 \expnd0\expndtw0\kerning0
+Okay? So, we're going to be doing networking,\
+\cf2 \expnd0\expndtw0\kerning0
+1:42\cf0 \expnd0\expndtw0\kerning0
+we're going to do multithreaded,\
+\cf2 \expnd0\expndtw0\kerning0
+1:44\cf0 \expnd0\expndtw0\kerning0
+we're going to be doing all kinds of graphics,\
+\cf2 \expnd0\expndtw0\kerning0
+1:46\cf0 \expnd0\expndtw0\kerning0
+we're going to be doing animation,\
+\cf2 \expnd0\expndtw0\kerning0
+1:47\cf0 \expnd0\expndtw0\kerning0
+we're going to do object-oriented databases,\
+\cf2 \expnd0\expndtw0\kerning0
+1:49\cf0 \expnd0\expndtw0\kerning0
+we're going to do all that stuff for real, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+1:51\cf0 \expnd0\expndtw0\kerning0
+You're going to see what it looks\
+\cf2 \expnd0\expndtw0\kerning0
+1:52\cf0 \expnd0\expndtw0\kerning0
+like to apply all those computer science concepts, especially how\
+\cf2 \expnd0\expndtw0\kerning0
+1:55\cf0 \expnd0\expndtw0\kerning0
+to combine them into a real-world platform,\
+\cf2 \expnd0\expndtw0\kerning0
+1:58\cf0 \expnd0\expndtw0\kerning0
+where you're making real apps, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+2:00\cf0 \expnd0\expndtw0\kerning0
+And quite a few, many dozens\
+\cf2 \expnd0\expndtw0\kerning0
+2:02\cf0 \expnd0\expndtw0\kerning0
+of my former students have shipped their apps\
+\cf2 \expnd0\expndtw0\kerning0
+2:05\cf0 \expnd0\expndtw0\kerning0
+on the app store and you may well too.\
+\cf2 \expnd0\expndtw0\kerning0
+2:07\cf0 \expnd0\expndtw0\kerning0
+Okay? So this is really, this is a good course to kind of combine\
+\cf2 \expnd0\expndtw0\kerning0
+2:12\cf0 \expnd0\expndtw0\kerning0
+or synthesize all of the things you've learned in a lot\
+\cf2 \expnd0\expndtw0\kerning0
+2:15\cf0 \expnd0\expndtw0\kerning0
+of your other computer science classes and touch it\
+\cf2 \expnd0\expndtw0\kerning0
+2:17\cf0 \expnd0\expndtw0\kerning0
+up against the real world.\
+\cf2 \expnd0\expndtw0\kerning0
+2:19\cf0 \expnd0\expndtw0\kerning0
+Okay? The prerequisites for this class are super duper important,\
+\cf2 \expnd0\expndtw0\kerning0
+2:24\cf0 \expnd0\expndtw0\kerning0
+okay?\
+\cf2 \expnd0\expndtw0\kerning0
+2:24\cf0 \expnd0\expndtw0\kerning0
+This, it's just key to make sure you have these prerequisites\
+\cf2 \expnd0\expndtw0\kerning0
+2:27\cf0 \expnd0\expndtw0\kerning0
+and really think long and hard, if you don't, whether you want\
+\cf2 \expnd0\expndtw0\kerning0
+2:29\cf0 \expnd0\expndtw0\kerning0
+to give this class ago.\
+\cf2 \expnd0\expndtw0\kerning0
+2:31\cf0 \expnd0\expndtw0\kerning0
+CS 106 A&B or, or CS16x are absolutely required, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+2:37\cf0 \expnd0\expndtw0\kerning0
+If you don't have that or equivalent, definitely,\
+\cf2 \expnd0\expndtw0\kerning0
+2:39\cf0 \expnd0\expndtw0\kerning0
+don't even think about it.\
+\cf2 \expnd0\expndtw0\kerning0
+2:40\cf0 \expnd0\expndtw0\kerning0
+The second requirement I've added this quarter,\
+\cf2 \expnd0\expndtw0\kerning0
+2:42\cf0 \expnd0\expndtw0\kerning0
+based on experience, is CS107 or CS108, which is great,\
+\cf2 \expnd0\expndtw0\kerning0
+2:47\cf0 \expnd0\expndtw0\kerning0
+by the way, if you're taking CS108,\
+\cf2 \expnd0\expndtw0\kerning0
+2:48\cf0 \expnd0\expndtw0\kerning0
+you'll really be ready for this class.\
+\cf2 \expnd0\expndtw0\kerning0
+2:50\cf0 \expnd0\expndtw0\kerning0
+Or even CS110, and part\
+\cf2 \expnd0\expndtw0\kerning0
+2:53\cf0 \expnd0\expndtw0\kerning0
+of the reason I'm requiring these extra classes is just\
+\cf2 \expnd0\expndtw0\kerning0
+2:56\cf0 \expnd0\expndtw0\kerning0
+so you're farther along the programming experience curve\
+\cf2 \expnd0\expndtw0\kerning0
+2:59\cf0 \expnd0\expndtw0\kerning0
+because this class is a lot of programming, and so for those\
+\cf2 \expnd0\expndtw0\kerning0
+3:03\cf0 \expnd0\expndtw0\kerning0
+of you who are used to a lot of programming,\
+\cf2 \expnd0\expndtw0\kerning0
+3:05\cf0 \expnd0\expndtw0\kerning0
+you, you're used to it.\
+\cf2 \expnd0\expndtw0\kerning0
+3:06\cf0 \expnd0\expndtw0\kerning0
+But for those of you who aren't it's kind of like, whoa,\
+\cf2 \expnd0\expndtw0\kerning0
+3:09\cf0 \expnd0\expndtw0\kerning0
+do a lot of programming here.\
+\cf2 \expnd0\expndtw0\kerning0
+3:10\cf0 \expnd0\expndtw0\kerning0
+It's going to be a little unbalancing.\
+\cf2 \expnd0\expndtw0\kerning0
+3:12\cf0 \expnd0\expndtw0\kerning0
+So, that's why I've required all those.\
+\cf2 \expnd0\expndtw0\kerning0
+3:14\cf0 \expnd0\expndtw0\kerning0
+Now if you've done a summer internship\
+\cf2 \expnd0\expndtw0\kerning0
+3:16\cf0 \expnd0\expndtw0\kerning0
+of you've done some programming or something like that,\
+\cf2 \expnd0\expndtw0\kerning0
+3:18\cf0 \expnd0\expndtw0\kerning0
+that's definitely a substitute for CS107, 108, or 110, right?\
+\cf2 \expnd0\expndtw0\kerning0
+3:23\cf0 \expnd0\expndtw0\kerning0
+Or if you've done some other CS class that's even more advanced\
+\cf2 \expnd0\expndtw0\kerning0
+3:25\cf0 \expnd0\expndtw0\kerning0
+than these, that's fine too.\
+\cf2 \expnd0\expndtw0\kerning0
+3:26\cf0 \expnd0\expndtw0\kerning0
+You've just got to understand that this class is, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+3:30\cf0 \expnd0\expndtw0\kerning0
+a programming class, there's a lot of programming.\
+\cf2 \expnd0\expndtw0\kerning0
+3:32\cf0 \expnd0\expndtw0\kerning0
+And most importantly, you got to really be comfortable\
+\cf2 \expnd0\expndtw0\kerning0
+3:34\cf0 \expnd0\expndtw0\kerning0
+with object-oriented programming.\
+\cf2 \expnd0\expndtw0\kerning0
+3:35\cf0 \expnd0\expndtw0\kerning0
+So I put a bunch of terms up here, like message\
+\cf2 \expnd0\expndtw0\kerning0
+3:38\cf0 \expnd0\expndtw0\kerning0
+and instance variable and superclass and subclass,\
+\cf2 \expnd0\expndtw0\kerning0
+3:42\cf0 \expnd0\expndtw0\kerning0
+if you don't know these terms like the back of your hand,\
+\cf2 \expnd0\expndtw0\kerning0
+3:44\cf0 \expnd0\expndtw0\kerning0
+it's going to be hard for you to get this class,\
+\cf2 \expnd0\expndtw0\kerning0
+3:46\cf0 \expnd0\expndtw0\kerning0
+because I'm going to be throwing those terms\
+\cf2 \expnd0\expndtw0\kerning0
+3:47\cf0 \expnd0\expndtw0\kerning0
+out left, right, and center.\
+\cf2 \expnd0\expndtw0\kerning0
+3:48\cf0 \expnd0\expndtw0\kerning0
+iOS7 is completely object-oriented.\
+\cf2 \expnd0\expndtw0\kerning0
+3:51\cf0 \expnd0\expndtw0\kerning0
+Okay, the whole structure,\
+\cf2 \expnd0\expndtw0\kerning0
+3:52\cf0 \expnd0\expndtw0\kerning0
+the design of the thing, is object-oriented.\
+\cf2 \expnd0\expndtw0\kerning0
+3:54\cf0 \expnd0\expndtw0\kerning0
+So, you just got to know that, and if you don't know that,\
+\cf2 \expnd0\expndtw0\kerning0
+3:57\cf0 \expnd0\expndtw0\kerning0
+you definitely want to go get that first.\
+\cf2 \expnd0\expndtw0\kerning0
+3:59\cf0 \expnd0\expndtw0\kerning0
+Okay? Take CS106a&b equivalent first,\
+\cf2 \expnd0\expndtw0\kerning0
+4:02\cf0 \expnd0\expndtw0\kerning0
+and then get a little more programming experience\
+\cf2 \expnd0\expndtw0\kerning0
+4:04\cf0 \expnd0\expndtw0\kerning0
+and then you're good to go.\
+\cf2 \expnd0\expndtw0\kerning0
+4:05\cf0 \expnd0\expndtw0\kerning0
+Okay? We're going, you're going to be writing apps in this class\
+\cf2 \expnd0\expndtw0\kerning0
+4:10\cf0 \expnd0\expndtw0\kerning0
+with dozens of classes that you're going to write\
+\cf2 \expnd0\expndtw0\kerning0
+4:13\cf0 \expnd0\expndtw0\kerning0
+by the fifth, sixth week so, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+4:15\cf0 \expnd0\expndtw0\kerning0
+if the biggest app you've ever written is got 3, or 4,\
+\cf2 \expnd0\expndtw0\kerning0
+4:18\cf0 \expnd0\expndtw0\kerning0
+or 5 classes in it, oh, this is going to be a step up.\
+\cf2 \expnd0\expndtw0\kerning0
+4:22\cf0 \expnd0\expndtw0\kerning0
+Okay? The assignments, we've got this weekly assignments\
+\cf2 \expnd0\expndtw0\kerning0
+4:27\cf0 \expnd0\expndtw0\kerning0
+for the first six or seven weeks,\
+\cf2 \expnd0\expndtw0\kerning0
+4:28\cf0 \expnd0\expndtw0\kerning0
+and then you've got a final project at the end.\
+\cf2 \expnd0\expndtw0\kerning0
+4:30\cf0 \expnd0\expndtw0\kerning0
+All of the homework assignments have detailed write-up\
+\cf2 \expnd0\expndtw0\kerning0
+4:32\cf0 \expnd0\expndtw0\kerning0
+of the required task and what we're evaluating you on.\
+\cf2 \expnd0\expndtw0\kerning0
+4:35\cf0 \expnd0\expndtw0\kerning0
+And they also have hints in there, because I'm not trying\
+\cf2 \expnd0\expndtw0\kerning0
+4:38\cf0 \expnd0\expndtw0\kerning0
+to make the homework assignments be really, really hard,\
+\cf2 \expnd0\expndtw0\kerning0
+4:40\cf0 \expnd0\expndtw0\kerning0
+and all the homework assignments also directly are re [pause],\
+\cf2 \expnd0\expndtw0\kerning0
+4:45\cf0 \expnd0\expndtw0\kerning0
+they're basically reinforcing what has been taught in lecture\
+\cf2 \expnd0\expndtw0\kerning0
+4:49\cf0 \expnd0\expndtw0\kerning0
+in that week, they're not a bunch\
+\cf2 \expnd0\expndtw0\kerning0
+4:50\cf0 \expnd0\expndtw0\kerning0
+of random new stuff to learn.\
+\cf2 \expnd0\expndtw0\kerning0
+4:51\cf0 \expnd0\expndtw0\kerning0
+I'm a big believer in a teaching methodology, which is I'm going\
+\cf2 \expnd0\expndtw0\kerning0
+4:56\cf0 \expnd0\expndtw0\kerning0
+to tell you about a concept, via slides, and then I'm going\
+\cf2 \expnd0\expndtw0\kerning0
+5:00\cf0 \expnd0\expndtw0\kerning0
+to show you it by demoing it to you,\
+\cf2 \expnd0\expndtw0\kerning0
+5:02\cf0 \expnd0\expndtw0\kerning0
+actually writing an application that does, then I'm going\
+\cf2 \expnd0\expndtw0\kerning0
+5:04\cf0 \expnd0\expndtw0\kerning0
+to ask you to do it on the homework.\
+\cf2 \expnd0\expndtw0\kerning0
+5:06\cf0 \expnd0\expndtw0\kerning0
+So that's three times you're going\
+\cf2 \expnd0\expndtw0\kerning0
+5:08\cf0 \expnd0\expndtw0\kerning0
+to see every single thing pretty much in this class.\
+\cf2 \expnd0\expndtw0\kerning0
+5:10\cf0 \expnd0\expndtw0\kerning0
+By the end of that, you're going to know how to do it.\
+\cf2 \expnd0\expndtw0\kerning0
+5:12\cf0 \expnd0\expndtw0\kerning0
+Okay? And you're going to feel confident\
+\cf2 \expnd0\expndtw0\kerning0
+5:14\cf0 \expnd0\expndtw0\kerning0
+and experienced to do it.\
+\cf2 \expnd0\expndtw0\kerning0
+5:15\cf0 \expnd0\expndtw0\kerning0
+So the homework is all about that.\
+\cf2 \expnd0\expndtw0\kerning0
+5:17\cf0 \expnd0\expndtw0\kerning0
+It's about just doing what you saw me do in class and talk\
+\cf2 \expnd0\expndtw0\kerning0
+5:20\cf0 \expnd0\expndtw0\kerning0
+about in class and apply it.\
+\cf2 \expnd0\expndtw0\kerning0
+5:22\cf0 \expnd0\expndtw0\kerning0
+Alright. Now I'm going to really briefly go over what's in iOS,\
+\cf2 \expnd0\expndtw0\kerning0
+5:27\cf0 \expnd0\expndtw0\kerning0
+I think most of you know what's in iOS,\
+\cf2 \expnd0\expndtw0\kerning0
+5:28\cf0 \expnd0\expndtw0\kerning0
+hopefully you've all seen an iOS device or you have one\
+\cf2 \expnd0\expndtw0\kerning0
+5:32\cf0 \expnd0\expndtw0\kerning0
+in your pocket, I bet 90 percent of you do in this room,\
+\cf2 \expnd0\expndtw0\kerning0
+5:35\cf0 \expnd0\expndtw0\kerning0
+but I'm going to try and summarize it,\
+\cf2 \expnd0\expndtw0\kerning0
+5:38\cf0 \expnd0\expndtw0\kerning0
+this is really hard to do because I'm going to try\
+\cf2 \expnd0\expndtw0\kerning0
+5:40\cf0 \expnd0\expndtw0\kerning0
+and do it in four minutes or less, or five minutes,\
+\cf2 \expnd0\expndtw0\kerning0
+5:43\cf0 \expnd0\expndtw0\kerning0
+and it's so big that, I mean, I could have two lectures\
+\cf2 \expnd0\expndtw0\kerning0
+5:46\cf0 \expnd0\expndtw0\kerning0
+where I just talk about all the different things\
+\cf2 \expnd0\expndtw0\kerning0
+5:47\cf0 \expnd0\expndtw0\kerning0
+and just summarize them.\
+\cf2 \expnd0\expndtw0\kerning0
+5:48\cf0 \expnd0\expndtw0\kerning0
+So, this is going to try and group them into some sort\
+\cf2 \expnd0\expndtw0\kerning0
+5:53\cf0 \expnd0\expndtw0\kerning0
+of sensible groups so you have an idea of what's there\
+\cf2 \expnd0\expndtw0\kerning0
+5:56\cf0 \expnd0\expndtw0\kerning0
+from a development standpoint, then when we go off\
+\cf2 \expnd0\expndtw0\kerning0
+5:59\cf0 \expnd0\expndtw0\kerning0
+and start doing it all then you'll start realizing whoa,\
+\cf2 \expnd0\expndtw0\kerning0
+6:01\cf0 \expnd0\expndtw0\kerning0
+and once you learn how to look in the documentation you'll see,\
+\cf2 \expnd0\expndtw0\kerning0
+6:04\cf0 \expnd0\expndtw0\kerning0
+oh, look at all that stuff in there, and you'll figure it out.\
+\cf2 \expnd0\expndtw0\kerning0
+6:06\cf0 \expnd0\expndtw0\kerning0
+So this is just a high-level overview.\
+\cf2 \expnd0\expndtw0\kerning0
+6:07\cf0 \expnd0\expndtw0\kerning0
+So, I, I've used this division into these four, kind of groups.\
+\cf2 \expnd0\expndtw0\kerning0
+6:13\cf0 \expnd0\expndtw0\kerning0
+Core OS, which is the stuff that's close to the hardware.\
+\cf2 \expnd0\expndtw0\kerning0
+6:17\cf0 \expnd0\expndtw0\kerning0
+Core services, which is an object-oriented on top of that,\
+\cf2 \expnd0\expndtw0\kerning0
+6:20\cf0 \expnd0\expndtw0\kerning0
+that kind of makes it\
+\cf2 \expnd0\expndtw0\kerning0
+6:21\cf0 \expnd0\expndtw0\kerning0
+so you always are programming an object-oriented layer.\
+\cf2 \expnd0\expndtw0\kerning0
+6:24\cf0 \expnd0\expndtw0\kerning0
+Media, because these devices are basically iPods with a phone\
+\cf2 \expnd0\expndtw0\kerning0
+6:28\cf0 \expnd0\expndtw0\kerning0
+in them or with a big screen on them,\
+\cf2 \expnd0\expndtw0\kerning0
+6:29\cf0 \expnd0\expndtw0\kerning0
+but media is really important to these devices,\
+\cf2 \expnd0\expndtw0\kerning0
+6:32\cf0 \expnd0\expndtw0\kerning0
+and then finally Cocoa Touch, which is the UI layer.\
+\cf2 \expnd0\expndtw0\kerning0
+6:34\cf0 \expnd0\expndtw0\kerning0
+Okay? Of buttons and all the switches, things like that.\
+\cf2 \expnd0\expndtw0\kerning0
+6:37\cf0 \expnd0\expndtw0\kerning0
+So let's talk about what's in each of those layers, kind of,\
+\cf2 \expnd0\expndtw0\kerning0
+6:40\cf0 \expnd0\expndtw0\kerning0
+little skimming the surface of what's in those layers.\
+\cf2 \expnd0\expndtw0\kerning0
+6:43\cf0 \expnd0\expndtw0\kerning0
+At the Core OS layer, near the hardware, is a Unix kernel.\
+\cf2 \expnd0\expndtw0\kerning0
+6:48\cf0 \expnd0\expndtw0\kerning0
+Okay? This is a Unix operating system on this device.\
+\cf2 \expnd0\expndtw0\kerning0
+6:52\cf0 \expnd0\expndtw0\kerning0
+And BFD-based mock, and so you get everything you get\
+\cf2 \expnd0\expndtw0\kerning0
+6:57\cf0 \expnd0\expndtw0\kerning0
+with Unix.\
+\cf2 \expnd0\expndtw0\kerning0
+6:58\cf0 \expnd0\expndtw0\kerning0
+You're getting sockets and you're getting file system,\
+\cf2 \expnd0\expndtw0\kerning0
+7:01\cf0 \expnd0\expndtw0\kerning0
+permissions, all that stuff, plus you're getting a bunch\
+\cf2 \expnd0\expndtw0\kerning0
+7:04\cf0 \expnd0\expndtw0\kerning0
+of other stuff that's kind of specific to a mobile device\
+\cf2 \expnd0\expndtw0\kerning0
+7:07\cf0 \expnd0\expndtw0\kerning0
+like this, like power management, and key chain access\
+\cf2 \expnd0\expndtw0\kerning0
+7:10\cf0 \expnd0\expndtw0\kerning0
+to kind of manage the security of things.\
+\cf2 \expnd0\expndtw0\kerning0
+7:14\cf0 \expnd0\expndtw0\kerning0
+Bonjour, which is this kind of network,\
+\cf2 \expnd0\expndtw0\kerning0
+7:16\cf0 \expnd0\expndtw0\kerning0
+finding other things on the network.\
+\cf2 \expnd0\expndtw0\kerning0
+7:18\cf0 \expnd0\expndtw0\kerning0
+So it's got all that stuff,\
+\cf2 \expnd0\expndtw0\kerning0
+7:19\cf0 \expnd0\expndtw0\kerning0
+it's a very powerful underlying operating system.\
+\cf2 \expnd0\expndtw0\kerning0
+7:23\cf0 \expnd0\expndtw0\kerning0
+But all of that API or most of it is in C,\
+\cf2 \expnd0\expndtw0\kerning0
+7:26\cf0 \expnd0\expndtw0\kerning0
+and we want to be programming kind\
+\cf2 \expnd0\expndtw0\kerning0
+7:27\cf0 \expnd0\expndtw0\kerning0
+of purely object-oriented layer.\
+\cf2 \expnd0\expndtw0\kerning0
+7:29\cf0 \expnd0\expndtw0\kerning0
+So we're going to be mostly operating when we're talking,\
+\cf2 \expnd0\expndtw0\kerning0
+7:32\cf0 \expnd0\expndtw0\kerning0
+touching those things at the Core surfaces layer.\
+\cf2 \expnd0\expndtw0\kerning0
+7:35\cf0 \expnd0\expndtw0\kerning0
+So this layer has things like language, things that,\
+\cf2 \expnd0\expndtw0\kerning0
+7:39\cf0 \expnd0\expndtw0\kerning0
+that kind of make the language more powerful, like arrays\
+\cf2 \expnd0\expndtw0\kerning0
+7:42\cf0 \expnd0\expndtw0\kerning0
+and dictionaries, and strings and things like that,\
+\cf2 \expnd0\expndtw0\kerning0
+7:45\cf0 \expnd0\expndtw0\kerning0
+plus it has object-oriented ways to access the file system,\
+\cf2 \expnd0\expndtw0\kerning0
+7:48\cf0 \expnd0\expndtw0\kerning0
+it has object-oriented ways to find out the GPS location\
+\cf2 \expnd0\expndtw0\kerning0
+7:51\cf0 \expnd0\expndtw0\kerning0
+of your device, for example.\
+\cf2 \expnd0\expndtw0\kerning0
+7:53\cf0 \expnd0\expndtw0\kerning0
+It has ways to do multithreading.\
+\cf2 \expnd0\expndtw0\kerning0
+7:57\cf0 \expnd0\expndtw0\kerning0
+All this stuff what you want to be able to do, but you want\
+\cf2 \expnd0\expndtw0\kerning0
+8:01\cf0 \expnd0\expndtw0\kerning0
+to stay in an object-oriented kind of mindset\
+\cf2 \expnd0\expndtw0\kerning0
+8:03\cf0 \expnd0\expndtw0\kerning0
+as you're doing them all.\
+\cf2 \expnd0\expndtw0\kerning0
+8:04\cf0 \expnd0\expndtw0\kerning0
+There's a huge layer, foundational layer there\
+\cf2 \expnd0\expndtw0\kerning0
+8:08\cf0 \expnd0\expndtw0\kerning0
+at Core services for doing that.\
+\cf2 \expnd0\expndtw0\kerning0
+8:10\cf0 \expnd0\expndtw0\kerning0
+At the media layer, don't sleep on this layer,\
+\cf2 \expnd0\expndtw0\kerning0
+8:12\cf0 \expnd0\expndtw0\kerning0
+really important layer, you've got video here,\
+\cf2 \expnd0\expndtw0\kerning0
+8:14\cf0 \expnd0\expndtw0\kerning0
+you've got video editing, you got images, of course,\
+\cf2 \expnd0\expndtw0\kerning0
+8:17\cf0 \expnd0\expndtw0\kerning0
+that it can display, it's incredibly powerful audio\
+\cf2 \expnd0\expndtw0\kerning0
+8:19\cf0 \expnd0\expndtw0\kerning0
+for doing 3D audio, if you have games,\
+\cf2 \expnd0\expndtw0\kerning0
+8:21\cf0 \expnd0\expndtw0\kerning0
+you can make the Thai fighters feel\
+\cf2 \expnd0\expndtw0\kerning0
+8:23\cf0 \expnd0\expndtw0\kerning0
+like they're ripping by you and stuff.\
+\cf2 \expnd0\expndtw0\kerning0
+8:25\cf0 \expnd0\expndtw0\kerning0
+All that stuff is in here.\
+\cf2 \expnd0\expndtw0\kerning0
+8:27\cf0 \expnd0\expndtw0\kerning0
+This is part of, the part of iOS\
+\cf2 \expnd0\expndtw0\kerning0
+8:29\cf0 \expnd0\expndtw0\kerning0
+that really I can't cover in a lot of depth.\
+\cf2 \expnd0\expndtw0\kerning0
+8:31\cf0 \expnd0\expndtw0\kerning0
+I'm just going to try and let you know that it's there\
+\cf2 \expnd0\expndtw0\kerning0
+8:33\cf0 \expnd0\expndtw0\kerning0
+and you're going to dive down depending on what kind\
+\cf2 \expnd0\expndtw0\kerning0
+8:35\cf0 \expnd0\expndtw0\kerning0
+of applications, later in your life, you want to build.\
+\cf2 \expnd0\expndtw0\kerning0
+8:39\cf0 \expnd0\expndtw0\kerning0
+But there's an enormous amount there.\
+\cf2 \expnd0\expndtw0\kerning0
+8:40\cf0 \expnd0\expndtw0\kerning0
+This is a fundamentally, a multimedia device, obviously,\
+\cf2 \expnd0\expndtw0\kerning0
+8:44\cf0 \expnd0\expndtw0\kerning0
+and then, Cocoa Touch is where we're going\
+\cf2 \expnd0\expndtw0\kerning0
+8:46\cf0 \expnd0\expndtw0\kerning0
+to spend most of our time.\
+\cf2 \expnd0\expndtw0\kerning0
+8:48\cf0 \expnd0\expndtw0\kerning0
+This is where you are going to be building buttons and sliders\
+\cf2 \expnd0\expndtw0\kerning0
+8:53\cf0 \expnd0\expndtw0\kerning0
+and text fields, talking to each other, and animation happening,\
+\cf2 \expnd0\expndtw0\kerning0
+8:55\cf0 \expnd0\expndtw0\kerning0
+things sliding in and out, and, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+8:58\cf0 \expnd0\expndtw0\kerning0
+fading out and fading in.\
+\cf2 \expnd0\expndtw0\kerning0
+9:00\cf0 \expnd0\expndtw0\kerning0
+If you want to get the, a picture from the camera\
+\cf2 \expnd0\expndtw0\kerning0
+9:03\cf0 \expnd0\expndtw0\kerning0
+from the user, you can do that.\
+\cf2 \expnd0\expndtw0\kerning0
+9:04\cf0 \expnd0\expndtw0\kerning0
+Things like localization so that you're app can run\
+\cf2 \expnd0\expndtw0\kerning0
+9:07\cf0 \expnd0\expndtw0\kerning0
+in many countries in the world and up your sales by doing that.\
+\cf2 \expnd0\expndtw0\kerning0
+9:10\cf0 \expnd0\expndtw0\kerning0
+A whole map kit for doing all the 3D maps\
+\cf2 \expnd0\expndtw0\kerning0
+9:13\cf0 \expnd0\expndtw0\kerning0
+that you've probably seen in iOS7 and all\
+\cf2 \expnd0\expndtw0\kerning0
+9:15\cf0 \expnd0\expndtw0\kerning0
+that stuff is all in there.\
+\cf2 \expnd0\expndtw0\kerning0
+9:17\cf0 \expnd0\expndtw0\kerning0
+And, there's even a view\
+\cf2 \expnd0\expndtw0\kerning0
+9:21\cf0 \expnd0\expndtw0\kerning0
+in there that's an entire web browser in a little rectangle\
+\cf2 \expnd0\expndtw0\kerning0
+9:23\cf0 \expnd0\expndtw0\kerning0
+that you can just plop right into your app.\
+\cf2 \expnd0\expndtw0\kerning0
+9:25\cf0 \expnd0\expndtw0\kerning0
+So these are really high-level objects, and we're going\
+\cf2 \expnd0\expndtw0\kerning0
+9:29\cf0 \expnd0\expndtw0\kerning0
+to really be diving into this layer, alright?\
+\cf2 \expnd0\expndtw0\kerning0
+9:32\cf0 \expnd0\expndtw0\kerning0
+So this is really the primary.\
+\cf2 \expnd0\expndtw0\kerning0
+9:33\cf0 \expnd0\expndtw0\kerning0
+And it's called Cocoa Touch because the API\
+\cf2 \expnd0\expndtw0\kerning0
+9:37\cf0 \expnd0\expndtw0\kerning0
+in here was originally developed for Mac OS X,\
+\cf2 \expnd0\expndtw0\kerning0
+9:40\cf0 \expnd0\expndtw0\kerning0
+and it was called Cocoa, and of course then when they went\
+\cf2 \expnd0\expndtw0\kerning0
+9:43\cf0 \expnd0\expndtw0\kerning0
+to iOS, they adapted, and a lot of API is shared\
+\cf2 \expnd0\expndtw0\kerning0
+9:47\cf0 \expnd0\expndtw0\kerning0
+between the two platforms, and, in fact,\
+\cf2 \expnd0\expndtw0\kerning0
+9:48\cf0 \expnd0\expndtw0\kerning0
+if you develop an iOS app and then you say someday, oh,\
+\cf2 \expnd0\expndtw0\kerning0
+9:51\cf0 \expnd0\expndtw0\kerning0
+I want to develop an app for the Mac using Cocoa,\
+\cf2 \expnd0\expndtw0\kerning0
+9:53\cf0 \expnd0\expndtw0\kerning0
+it's going to be very similar.\
+\cf2 \expnd0\expndtw0\kerning0
+9:54\cf0 \expnd0\expndtw0\kerning0
+Okay? You're going to be really, it's going to look familiar.\
+\cf2 \expnd0\expndtw0\kerning0
+9:58\cf0 \expnd0\expndtw0\kerning0
+So Cocoa Touch, obviously,\
+\cf2 \expnd0\expndtw0\kerning0
+10:00\cf0 \expnd0\expndtw0\kerning0
+is the touchscreen version of that, of Cocoa.\
+\cf2 \expnd0\expndtw0\kerning0
+10:03\cf0 \expnd0\expndtw0\kerning0
+Okay?\
+\cf2 \expnd0\expndtw0\kerning0
+10:04\cf0 \expnd0\expndtw0\kerning0
+This technology, Cocoa, has been around a long time, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+10:08\cf0 \expnd0\expndtw0\kerning0
+Probably almost 30 years, believe it or not.\
+\cf2 \expnd0\expndtw0\kerning0
+10:11\cf0 \expnd0\expndtw0\kerning0
+From even before Apple acquired it to make Mac OS,\
+\cf2 \expnd0\expndtw0\kerning0
+10:15\cf0 \expnd0\expndtw0\kerning0
+what is now Mac OS X, and so it's a very mature API, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+10:19\cf0 \expnd0\expndtw0\kerning0
+And it's very well thought out, so, especially if you go\
+\cf2 \expnd0\expndtw0\kerning0
+10:23\cf0 \expnd0\expndtw0\kerning0
+with the flow of it, it's very easy\
+\cf2 \expnd0\expndtw0\kerning0
+10:26\cf0 \expnd0\expndtw0\kerning0
+to build really powerful things.\
+\cf2 \expnd0\expndtw0\kerning0
+10:28\cf0 \expnd0\expndtw0\kerning0
+So, that's what's in there.\
+\cf2 \expnd0\expndtw0\kerning0
+10:30\cf0 \expnd0\expndtw0\kerning0
+So let's talk about the tools we use as programmers,\
+\cf2 \expnd0\expndtw0\kerning0
+10:33\cf0 \expnd0\expndtw0\kerning0
+as developers, to build these apps, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+10:36\cf0 \expnd0\expndtw0\kerning0
+And I've divided those into kind of four sections here.\
+\cf2 \expnd0\expndtw0\kerning0
+10:38\cf0 \expnd0\expndtw0\kerning0
+One is the tools, the actual programming tools,\
+\cf2 \expnd0\expndtw0\kerning0
+10:42\cf0 \expnd0\expndtw0\kerning0
+and what's great, on this platform,\
+\cf2 \expnd0\expndtw0\kerning0
+10:44\cf0 \expnd0\expndtw0\kerning0
+is it\'c3\'95s pretty much a one-tool fits all.\
+\cf2 \expnd0\expndtw0\kerning0
+10:47\cf0 \expnd0\expndtw0\kerning0
+Okay? There's this one tool, XCode 5,\
+\cf2 \expnd0\expndtw0\kerning0
+10:49\cf0 \expnd0\expndtw0\kerning0
+and everything's in there.\
+\cf2 \expnd0\expndtw0\kerning0
+10:51\cf0 \expnd0\expndtw0\kerning0
+You're debugger's in there, all your source code editing,\
+\cf2 \expnd0\expndtw0\kerning0
+10:53\cf0 \expnd0\expndtw0\kerning0
+your source code control, the UI building,\
+\cf2 \expnd0\expndtw0\kerning0
+10:55\cf0 \expnd0\expndtw0\kerning0
+everything is in this one app.\
+\cf2 \expnd0\expndtw0\kerning0
+10:57\cf0 \expnd0\expndtw0\kerning0
+There's a little adjunct there, instruments, which is for things\
+\cf2 \expnd0\expndtw0\kerning0
+11:00\cf0 \expnd0\expndtw0\kerning0
+like profiling your app and things like that.\
+\cf2 \expnd0\expndtw0\kerning0
+11:03\cf0 \expnd0\expndtw0\kerning0
+Memory usage, those kind of things, but you're really,\
+\cf2 \expnd0\expndtw0\kerning0
+11:05\cf0 \expnd0\expndtw0\kerning0
+all was inside XCode 5, which is really nice because, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+11:10\cf0 \expnd0\expndtw0\kerning0
+when you're debugging, you're usually editing your code\
+\cf2 \expnd0\expndtw0\kerning0
+11:12\cf0 \expnd0\expndtw0\kerning0
+at the same time, back and forth, back and forth,\
+\cf2 \expnd0\expndtw0\kerning0
+11:14\cf0 \expnd0\expndtw0\kerning0
+you're going to different apps and all that would be a pain\
+\cf2 \expnd0\expndtw0\kerning0
+11:16\cf0 \expnd0\expndtw0\kerning0
+in the neck, and they've really done a good job\
+\cf2 \expnd0\expndtw0\kerning0
+11:18\cf0 \expnd0\expndtw0\kerning0
+of arranging the screen space so that it's sharing\
+\cf2 \expnd0\expndtw0\kerning0
+11:21\cf0 \expnd0\expndtw0\kerning0
+between all these different tasks that you need to do.\
+\cf2 \expnd0\expndtw0\kerning0
+11:23\cf0 \expnd0\expndtw0\kerning0
+So that's the primary tool, XCode 5, you should all,\
+\cf2 \expnd0\expndtw0\kerning0
+11:26\cf0 \expnd0\expndtw0\kerning0
+right after this class if you want, go to the Mac App store,\
+\cf2 \expnd0\expndtw0\kerning0
+11:30\cf0 \expnd0\expndtw0\kerning0
+not the store on you iOS device, the Mac App Store\
+\cf2 \expnd0\expndtw0\kerning0
+11:32\cf0 \expnd0\expndtw0\kerning0
+on your Mac, and download this.\
+\cf2 \expnd0\expndtw0\kerning0
+11:34\cf0 \expnd0\expndtw0\kerning0
+It's free, available, came out last Friday,\
+\cf2 \expnd0\expndtw0\kerning0
+11:38\cf0 \expnd0\expndtw0\kerning0
+and you can download it, install it, and, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+11:40\cf0 \expnd0\expndtw0\kerning0
+start playing around with it.\
+\cf2 \expnd0\expndtw0\kerning0
+11:41\cf0 \expnd0\expndtw0\kerning0
+Some of you might have already used XCode, like in CS106,\
+\cf2 \expnd0\expndtw0\kerning0
+11:44\cf0 \expnd0\expndtw0\kerning0
+raise your hand if you've used XCode before for anything.\
+\cf2 \expnd0\expndtw0\kerning0
+11:47\cf0 \expnd0\expndtw0\kerning0
+Okay, so two-thirds or more, three-quarters of you.\
+\cf2 \expnd0\expndtw0\kerning0
+11:50\cf0 \expnd0\expndtw0\kerning0
+So, you're going to be used it.\
+\cf2 \expnd0\expndtw0\kerning0
+11:51\cf0 \expnd0\expndtw0\kerning0
+You're just going to start using XCode now\
+\cf2 \expnd0\expndtw0\kerning0
+11:53\cf0 \expnd0\expndtw0\kerning0
+to develop for iOS, alright?\
+\cf2 \expnd0\expndtw0\kerning0
+11:55\cf0 \expnd0\expndtw0\kerning0
+There's a new language for you to learn, objective C,\
+\cf2 \expnd0\expndtw0\kerning0
+11:58\cf0 \expnd0\expndtw0\kerning0
+it's kind of a funny-looking language, okay,\
+\cf2 \expnd0\expndtw0\kerning0
+12:00\cf0 \expnd0\expndtw0\kerning0
+its square brackets and colons, no parentheses on message calls,\
+\cf2 \expnd0\expndtw0\kerning0
+12:04\cf0 \expnd0\expndtw0\kerning0
+which is kind of weird for people who are coming\
+\cf2 \expnd0\expndtw0\kerning0
+12:07\cf0 \expnd0\expndtw0\kerning0
+from Java or C++ or whatever.\
+\cf2 \expnd0\expndtw0\kerning0
+12:08\cf0 \expnd0\expndtw0\kerning0
+The arguments are not put in parentheses or whatever,\
+\cf2 \expnd0\expndtw0\kerning0
+12:11\cf0 \expnd0\expndtw0\kerning0
+and I'm going to show you all about objective C,\
+\cf2 \expnd0\expndtw0\kerning0
+12:13\cf0 \expnd0\expndtw0\kerning0
+I don't expect you to know anything about it coming in,\
+\cf2 \expnd0\expndtw0\kerning0
+12:15\cf0 \expnd0\expndtw0\kerning0
+and if you know Java and C++, which you should\
+\cf2 \expnd0\expndtw0\kerning0
+12:18\cf0 \expnd0\expndtw0\kerning0
+if you've taken CS106A&B, then objective C is not going\
+\cf2 \expnd0\expndtw0\kerning0
+12:21\cf0 \expnd0\expndtw0\kerning0
+to be a big leap for you.\
+\cf2 \expnd0\expndtw0\kerning0
+12:23\cf0 \expnd0\expndtw0\kerning0
+It's a little bit different language,\
+\cf2 \expnd0\expndtw0\kerning0
+12:24\cf0 \expnd0\expndtw0\kerning0
+it's a little more fast and loose than Java, for example,\
+\cf2 \expnd0\expndtw0\kerning0
+12:27\cf0 \expnd0\expndtw0\kerning0
+and it's a little more, kind of simple and elegant, than C++,\
+\cf2 \expnd0\expndtw0\kerning0
+12:30\cf0 \expnd0\expndtw0\kerning0
+when it comes to the object-oriented stuff.\
+\cf2 \expnd0\expndtw0\kerning0
+12:32\cf0 \expnd0\expndtw0\kerning0
+So, I think you'll like it.\
+\cf2 \expnd0\expndtw0\kerning0
+12:34\cf0 \expnd0\expndtw0\kerning0
+It won't. Some of you who are very, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+12:37\cf0 \expnd0\expndtw0\kerning0
+correct programming kind of thing, you love Java,\
+\cf2 \expnd0\expndtw0\kerning0
+12:39\cf0 \expnd0\expndtw0\kerning0
+might find objective C a little wild west for you,\
+\cf2 \expnd0\expndtw0\kerning0
+12:42\cf0 \expnd0\expndtw0\kerning0
+but you'll get over it.\
+\cf2 \expnd0\expndtw0\kerning0
+12:44\cf0 \expnd0\expndtw0\kerning0
+Frameworks, obviously, any big system like this groups all\
+\cf2 \expnd0\expndtw0\kerning0
+12:47\cf0 \expnd0\expndtw0\kerning0
+of its objects into libraries, essentially.\
+\cf2 \expnd0\expndtw0\kerning0
+12:50\cf0 \expnd0\expndtw0\kerning0
+We call them Frameworks in iOS,\
+\cf2 \expnd0\expndtw0\kerning0
+12:52\cf0 \expnd0\expndtw0\kerning0
+so there are dozens of frameworks in iOS.\
+\cf2 \expnd0\expndtw0\kerning0
+12:56\cf0 \expnd0\expndtw0\kerning0
+The two main ones we're going to look at, at the beginning\
+\cf2 \expnd0\expndtw0\kerning0
+12:58\cf0 \expnd0\expndtw0\kerning0
+of the course, are foundation, that's where all\
+\cf2 \expnd0\expndtw0\kerning0
+13:01\cf0 \expnd0\expndtw0\kerning0
+that core services stuff is, like arrays\
+\cf2 \expnd0\expndtw0\kerning0
+13:03\cf0 \expnd0\expndtw0\kerning0
+and dictionaries and all that.\
+\cf2 \expnd0\expndtw0\kerning0
+13:04\cf0 \expnd0\expndtw0\kerning0
+And then UI kit, okay, that's where buttons and sliders\
+\cf2 \expnd0\expndtw0\kerning0
+13:07\cf0 \expnd0\expndtw0\kerning0
+and all those things area, so those are the two main ones,\
+\cf2 \expnd0\expndtw0\kerning0
+13:08\cf0 \expnd0\expndtw0\kerning0
+but, there's a whole bunch of other ones, like,\
+\cf2 \expnd0\expndtw0\kerning0
+13:10\cf0 \expnd0\expndtw0\kerning0
+you see the Core Data written up there,\
+\cf2 \expnd0\expndtw0\kerning0
+13:12\cf0 \expnd0\expndtw0\kerning0
+that's the object-oriented database.\
+\cf2 \expnd0\expndtw0\kerning0
+13:14\cf0 \expnd0\expndtw0\kerning0
+Okay? So we're going to be doing that.\
+\cf2 \expnd0\expndtw0\kerning0
+13:16\cf0 \expnd0\expndtw0\kerning0
+Core Motion, that's the gyro and accelerometer.\
+\cf2 \expnd0\expndtw0\kerning0
+13:19\cf0 \expnd0\expndtw0\kerning0
+Map Kit, obviously the maps.\
+\cf2 \expnd0\expndtw0\kerning0
+13:21\cf0 \expnd0\expndtw0\kerning0
+And there's dozens more, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+13:23\cf0 \expnd0\expndtw0\kerning0
+And we'll cover as many of them as we can,\
+\cf2 \expnd0\expndtw0\kerning0
+13:25\cf0 \expnd0\expndtw0\kerning0
+obviously we can't do it all in 10 weeks,\
+\cf2 \expnd0\expndtw0\kerning0
+13:26\cf0 \expnd0\expndtw0\kerning0
+but we'll do as much as we can.\
+\cf2 \expnd0\expndtw0\kerning0
+13:28\cf0 \expnd0\expndtw0\kerning0
+And then the last part of developing application\
+\cf2 \expnd0\expndtw0\kerning0
+13:31\cf0 \expnd0\expndtw0\kerning0
+in this platform is a design strategy called MVC.\
+\cf2 \expnd0\expndtw0\kerning0
+13:34\cf0 \expnd0\expndtw0\kerning0
+Now, this is not unique to iOS, other platforms use MVC,\
+\cf2 \expnd0\expndtw0\kerning0
+13:38\cf0 \expnd0\expndtw0\kerning0
+Model View Controller, as their fundamental design strategy.\
+\cf2 \expnd0\expndtw0\kerning0
+13:42\cf0 \expnd0\expndtw0\kerning0
+So how many people in this room have used MVC on any platform?\
+\cf2 \expnd0\expndtw0\kerning0
+13:46\cf0 \expnd0\expndtw0\kerning0
+Okay, so about half, so you'll know what this is.\
+\cf2 \expnd0\expndtw0\kerning0
+13:48\cf0 \expnd0\expndtw0\kerning0
+So, I'm actually going to go over MVC for those of you\
+\cf2 \expnd0\expndtw0\kerning0
+13:51\cf0 \expnd0\expndtw0\kerning0
+who haven't and I'll go through it pretty quickly,\
+\cf2 \expnd0\expndtw0\kerning0
+13:53\cf0 \expnd0\expndtw0\kerning0
+because it looks like most of you, half of you have done it,\
+\cf2 \expnd0\expndtw0\kerning0
+13:57\cf0 \expnd0\expndtw0\kerning0
+and [pause] the main thing to see in MVC here,\
+\cf2 \expnd0\expndtw0\kerning0
+13:59\cf0 \expnd0\expndtw0\kerning0
+for those of you who already know what it is,\
+\cf2 \expnd0\expndtw0\kerning0
+14:01\cf0 \expnd0\expndtw0\kerning0
+is to see how I talk about it so that when we get into iOS\
+\cf2 \expnd0\expndtw0\kerning0
+14:06\cf0 \expnd0\expndtw0\kerning0
+and I start saying things like your model is UI independent,\
+\cf2 \expnd0\expndtw0\kerning0
+14:10\cf0 \expnd0\expndtw0\kerning0
+you'll know what I'm talking about\
+\cf2 \expnd0\expndtw0\kerning0
+14:11\cf0 \expnd0\expndtw0\kerning0
+and we'll all be on the same page.\
+\cf2 \expnd0\expndtw0\kerning0
+14:13\cf0 \expnd0\expndtw0\kerning0
+So this is mostly kind of getting us all\
+\cf2 \expnd0\expndtw0\kerning0
+14:15\cf0 \expnd0\expndtw0\kerning0
+on the same page terminology-wise.\
+\cf2 \expnd0\expndtw0\kerning0
+14:18\cf0 \expnd0\expndtw0\kerning0
+So MVC, Model View Controller, is essentially a strategy\
+\cf2 \expnd0\expndtw0\kerning0
+14:23\cf0 \expnd0\expndtw0\kerning0
+for how to organize all the classes in your application.\
+\cf2 \expnd0\expndtw0\kerning0
+14:28\cf0 \expnd0\expndtw0\kerning0
+And what we do fundamentally is we divide all the classes\
+\cf2 \expnd0\expndtw0\kerning0
+14:32\cf0 \expnd0\expndtw0\kerning0
+into one of three camps.\
+\cf2 \expnd0\expndtw0\kerning0
+14:34\cf0 \expnd0\expndtw0\kerning0
+The model camp, the controller camp, or the view camp,\
+\cf2 \expnd0\expndtw0\kerning0
+14:38\cf0 \expnd0\expndtw0\kerning0
+and what, how you decide what goes in each of these camps,\
+\cf2 \expnd0\expndtw0\kerning0
+14:41\cf0 \expnd0\expndtw0\kerning0
+well, the model is essentially the what of your program.\
+\cf2 \expnd0\expndtw0\kerning0
+14:45\cf0 \expnd0\expndtw0\kerning0
+What is your program?\
+\cf2 \expnd0\expndtw0\kerning0
+14:46\cf0 \expnd0\expndtw0\kerning0
+So, as we're doing this MVC talk, I'm going to talk\
+\cf2 \expnd0\expndtw0\kerning0
+14:49\cf0 \expnd0\expndtw0\kerning0
+about our first application we're going to build\
+\cf2 \expnd0\expndtw0\kerning0
+14:50\cf0 \expnd0\expndtw0\kerning0
+which is a card matching game.\
+\cf2 \expnd0\expndtw0\kerning0
+14:52\cf0 \expnd0\expndtw0\kerning0
+Okay? So we're going to build this game, it's gotta bunch\
+\cf2 \expnd0\expndtw0\kerning0
+14:54\cf0 \expnd0\expndtw0\kerning0
+of cards on the screen, like playing cards, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+14:56\cf0 \expnd0\expndtw0\kerning0
+Ace of Clubs and all that, and you're going to be able\
+\cf2 \expnd0\expndtw0\kerning0
+15:00\cf0 \expnd0\expndtw0\kerning0
+to go choose the cards\
+\cf2 \expnd0\expndtw0\kerning0
+15:01\cf0 \expnd0\expndtw0\kerning0
+and you'll get certain points if the match.\
+\cf2 \expnd0\expndtw0\kerning0
+15:03\cf0 \expnd0\expndtw0\kerning0
+Like the suit matches or the rank matches, or whatever,\
+\cf2 \expnd0\expndtw0\kerning0
+15:05\cf0 \expnd0\expndtw0\kerning0
+you get more points, less points whatever, but you're doing that.\
+\cf2 \expnd0\expndtw0\kerning0
+15:08\cf0 \expnd0\expndtw0\kerning0
+In that kind of application, a little card matching game,\
+\cf2 \expnd0\expndtw0\kerning0
+15:11\cf0 \expnd0\expndtw0\kerning0
+the cards and the deck, and even the logic\
+\cf2 \expnd0\expndtw0\kerning0
+15:14\cf0 \expnd0\expndtw0\kerning0
+for how the game is played are all UI independent\
+\cf2 \expnd0\expndtw0\kerning0
+15:18\cf0 \expnd0\expndtw0\kerning0
+and in the model.\
+\cf2 \expnd0\expndtw0\kerning0
+15:20\cf0 \expnd0\expndtw0\kerning0
+Okay?\
+\cf2 \expnd0\expndtw0\kerning0
+15:21\cf0 \expnd0\expndtw0\kerning0
+So how the cards get drawn\
+\cf2 \expnd0\expndtw0\kerning0
+15:23\cf0 \expnd0\expndtw0\kerning0
+on screen is the job of the controller.\
+\cf2 \expnd0\expndtw0\kerning0
+15:25\cf0 \expnd0\expndtw0\kerning0
+So the controller is, it's job to figure out how am I going,\
+\cf2 \expnd0\expndtw0\kerning0
+15:28\cf0 \expnd0\expndtw0\kerning0
+you know, take this set of cards and display them on screen,\
+\cf2 \expnd0\expndtw0\kerning0
+15:31\cf0 \expnd0\expndtw0\kerning0
+and then animate their movement and things like that.\
+\cf2 \expnd0\expndtw0\kerning0
+15:35\cf0 \expnd0\expndtw0\kerning0
+Okay? That's up to the controller.\
+\cf2 \expnd0\expndtw0\kerning0
+15:36\cf0 \expnd0\expndtw0\kerning0
+So the controller controls how the model is presented\
+\cf2 \expnd0\expndtw0\kerning0
+15:40\cf0 \expnd0\expndtw0\kerning0
+on screen, and the view, the minions,\
+\cf2 \expnd0\expndtw0\kerning0
+15:44\cf0 \expnd0\expndtw0\kerning0
+the classes that the controller is going to use,\
+\cf2 \expnd0\expndtw0\kerning0
+15:46\cf0 \expnd0\expndtw0\kerning0
+kind of like the building blocks, the Lincoln Logs,\
+\cf2 \expnd0\expndtw0\kerning0
+15:48\cf0 \expnd0\expndtw0\kerning0
+I don't know maybe that's before all your time, but, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+15:51\cf0 \expnd0\expndtw0\kerning0
+the things we're going to do build our UI we're going to use\
+\cf2 \expnd0\expndtw0\kerning0
+15:55\cf0 \expnd0\expndtw0\kerning0
+in the view, so, the stuff that's\
+\cf2 \expnd0\expndtw0\kerning0
+15:56\cf0 \expnd0\expndtw0\kerning0
+in the view is pretty generic.\
+\cf2 \expnd0\expndtw0\kerning0
+15:59\cf0 \expnd0\expndtw0\kerning0
+Generic UI elements, the stuff\
+\cf2 \expnd0\expndtw0\kerning0
+16:01\cf0 \expnd0\expndtw0\kerning0
+in the controller is very specific to how your UI works,\
+\cf2 \expnd0\expndtw0\kerning0
+16:04\cf0 \expnd0\expndtw0\kerning0
+and the stuff in the model is completely independent\
+\cf2 \expnd0\expndtw0\kerning0
+16:06\cf0 \expnd0\expndtw0\kerning0
+of how you're UI works.\
+\cf2 \expnd0\expndtw0\kerning0
+16:08\cf0 \expnd0\expndtw0\kerning0
+Okay? So, doing MVC is about knowing where things go,\
+\cf2 \expnd0\expndtw0\kerning0
+16:15\cf0 \expnd0\expndtw0\kerning0
+but also about how to communicate\
+\cf2 \expnd0\expndtw0\kerning0
+16:17\cf0 \expnd0\expndtw0\kerning0
+between these three camps and so I'm going to try\
+\cf2 \expnd0\expndtw0\kerning0
+16:19\cf0 \expnd0\expndtw0\kerning0
+and summarize how the communication works\
+\cf2 \expnd0\expndtw0\kerning0
+16:21\cf0 \expnd0\expndtw0\kerning0
+between these camps and I've used road markings,\
+\cf2 \expnd0\expndtw0\kerning0
+16:24\cf0 \expnd0\expndtw0\kerning0
+you see the double yellow line and then the dashed white line,\
+\cf2 \expnd0\expndtw0\kerning0
+16:26\cf0 \expnd0\expndtw0\kerning0
+so that's like you're driving in your car, try to use them\
+\cf2 \expnd0\expndtw0\kerning0
+16:30\cf0 \expnd0\expndtw0\kerning0
+as that I have an image for how this communication happens,\
+\cf2 \expnd0\expndtw0\kerning0
+16:34\cf0 \expnd0\expndtw0\kerning0
+where it's allowed, where it's not allowed.\
+\cf2 \expnd0\expndtw0\kerning0
+16:35\cf0 \expnd0\expndtw0\kerning0
+Okay? So let's talk about the controller talking to the model.\
+\cf2 \expnd0\expndtw0\kerning0
+16:39\cf0 \expnd0\expndtw0\kerning0
+Okay? Going from that side of the road\
+\cf2 \expnd0\expndtw0\kerning0
+16:42\cf0 \expnd0\expndtw0\kerning0
+over to the model side is a dashed white line,\
+\cf2 \expnd0\expndtw0\kerning0
+16:44\cf0 \expnd0\expndtw0\kerning0
+in other words, you can head right across there,\
+\cf2 \expnd0\expndtw0\kerning0
+16:46\cf0 \expnd0\expndtw0\kerning0
+you probably want to look before you go,\
+\cf2 \expnd0\expndtw0\kerning0
+16:47\cf0 \expnd0\expndtw0\kerning0
+but you can go right across, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+16:49\cf0 \expnd0\expndtw0\kerning0
+The controller has to know everything about the model\
+\cf2 \expnd0\expndtw0\kerning0
+16:52\cf0 \expnd0\expndtw0\kerning0
+and it has to have complete ability to talk to the model,\
+\cf2 \expnd0\expndtw0\kerning0
+16:56\cf0 \expnd0\expndtw0\kerning0
+use its public API as much as it wants,\
+\cf2 \expnd0\expndtw0\kerning0
+16:58\cf0 \expnd0\expndtw0\kerning0
+because the controller's job is to present the model\
+\cf2 \expnd0\expndtw0\kerning0
+17:01\cf0 \expnd0\expndtw0\kerning0
+to the user using its view as its minions,\
+\cf2 \expnd0\expndtw0\kerning0
+17:05\cf0 \expnd0\expndtw0\kerning0
+so it has to have this access.\
+\cf2 \expnd0\expndtw0\kerning0
+17:06\cf0 \expnd0\expndtw0\kerning0
+So that's full, unrestricted access the controller has\
+\cf2 \expnd0\expndtw0\kerning0
+17:09\cf0 \expnd0\expndtw0\kerning0
+talking to the model.\
+\cf2 \expnd0\expndtw0\kerning0
+17:10\cf0 \expnd0\expndtw0\kerning0
+This is a one-way era, or one-way arrow,\
+\cf2 \expnd0\expndtw0\kerning0
+17:13\cf0 \expnd0\expndtw0\kerning0
+from the controller to the model.\
+\cf2 \expnd0\expndtw0\kerning0
+17:15\cf0 \expnd0\expndtw0\kerning0
+And similarly from the controller to the view,\
+\cf2 \expnd0\expndtw0\kerning0
+17:18\cf0 \expnd0\expndtw0\kerning0
+is also unlimited communication\
+\cf2 \expnd0\expndtw0\kerning0
+17:20\cf0 \expnd0\expndtw0\kerning0
+because the controller is responsible for talking, using,\
+\cf2 \expnd0\expndtw0\kerning0
+17:23\cf0 \expnd0\expndtw0\kerning0
+it's own minions, the view is the controllers' minions to lay\
+\cf2 \expnd0\expndtw0\kerning0
+17:26\cf0 \expnd0\expndtw0\kerning0
+out the user interface and all that stuff,\
+\cf2 \expnd0\expndtw0\kerning0
+17:28\cf0 \expnd0\expndtw0\kerning0
+so the controller can do anything it wants,\
+\cf2 \expnd0\expndtw0\kerning0
+17:31\cf0 \expnd0\expndtw0\kerning0
+I've put that little green word outlet up there\
+\cf2 \expnd0\expndtw0\kerning0
+17:33\cf0 \expnd0\expndtw0\kerning0
+because when we have a property of a controller that points\
+\cf2 \expnd0\expndtw0\kerning0
+17:36\cf0 \expnd0\expndtw0\kerning0
+into the view, we call it an outlet.\
+\cf2 \expnd0\expndtw0\kerning0
+17:39\cf0 \expnd0\expndtw0\kerning0
+Okay? And you're going to see that in the demo on Wednesday,\
+\cf2 \expnd0\expndtw0\kerning0
+17:41\cf0 \expnd0\expndtw0\kerning0
+I'm going to say oh, let's create an outlet\
+\cf2 \expnd0\expndtw0\kerning0
+17:43\cf0 \expnd0\expndtw0\kerning0
+from our controller to our view\
+\cf2 \expnd0\expndtw0\kerning0
+17:45\cf0 \expnd0\expndtw0\kerning0
+so our controller can talk to its view.\
+\cf2 \expnd0\expndtw0\kerning0
+17:47\cf0 \expnd0\expndtw0\kerning0
+Alright? What about this communication?\
+\cf2 \expnd0\expndtw0\kerning0
+17:49\cf0 \expnd0\expndtw0\kerning0
+Model to view, never, and why is that?\
+\cf2 \expnd0\expndtw0\kerning0
+17:52\cf0 \expnd0\expndtw0\kerning0
+100 percent obvious.\
+\cf2 \expnd0\expndtw0\kerning0
+17:54\cf0 \expnd0\expndtw0\kerning0
+The model is completely UI independent.\
+\cf2 \expnd0\expndtw0\kerning0
+17:56\cf0 \expnd0\expndtw0\kerning0
+So there's absolutely no way it could talk to a view or object\
+\cf2 \expnd0\expndtw0\kerning0
+17:59\cf0 \expnd0\expndtw0\kerning0
+or anyone in that camp.\
+\cf2 \expnd0\expndtw0\kerning0
+18:01\cf0 \expnd0\expndtw0\kerning0
+Because the view objects are fundamentally UI objects,\
+\cf2 \expnd0\expndtw0\kerning0
+18:03\cf0 \expnd0\expndtw0\kerning0
+they're kind of generic,\
+\cf2 \expnd0\expndtw0\kerning0
+18:04\cf0 \expnd0\expndtw0\kerning0
+but they're still fundamentally UI objects.\
+\cf2 \expnd0\expndtw0\kerning0
+18:06\cf0 \expnd0\expndtw0\kerning0
+Similarly, since the view objects are kind of generic,\
+\cf2 \expnd0\expndtw0\kerning0
+18:09\cf0 \expnd0\expndtw0\kerning0
+they can't be talking to any specific model.\
+\cf2 \expnd0\expndtw0\kerning0
+18:11\cf0 \expnd0\expndtw0\kerning0
+They need a controller to interpret a model for them.\
+\cf2 \expnd0\expndtw0\kerning0
+18:15\cf0 \expnd0\expndtw0\kerning0
+Okay? So there's never any communication this way,\
+\cf2 \expnd0\expndtw0\kerning0
+18:17\cf0 \expnd0\expndtw0\kerning0
+that's why it's a double yellow line,\
+\cf2 \expnd0\expndtw0\kerning0
+18:19\cf0 \expnd0\expndtw0\kerning0
+that's why these lines are red, that's why there's fire, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+18:23\cf0 \expnd0\expndtw0\kerning0
+Never go across that line, ever.\
+\cf2 \expnd0\expndtw0\kerning0
+18:25\cf0 \expnd0\expndtw0\kerning0
+[Pause] What about the view talking back to the controller?\
+\cf2 \expnd0\expndtw0\kerning0
+18:29\cf0 \expnd0\expndtw0\kerning0
+You got these generic view objects, like buttons,\
+\cf2 \expnd0\expndtw0\kerning0
+18:32\cf0 \expnd0\expndtw0\kerning0
+can they talk to the controller?\
+\cf2 \expnd0\expndtw0\kerning0
+18:33\cf0 \expnd0\expndtw0\kerning0
+Well...yes, they can, but they have to be careful\
+\cf2 \expnd0\expndtw0\kerning0
+18:38\cf0 \expnd0\expndtw0\kerning0
+because the view objects are generic,\
+\cf2 \expnd0\expndtw0\kerning0
+18:41\cf0 \expnd0\expndtw0\kerning0
+so they can't really know much about the control, so,\
+\cf2 \expnd0\expndtw0\kerning0
+18:44\cf0 \expnd0\expndtw0\kerning0
+they can only communicate back to the controller\
+\cf2 \expnd0\expndtw0\kerning0
+18:46\cf0 \expnd0\expndtw0\kerning0
+in a blind way, where they don't know the class\
+\cf2 \expnd0\expndtw0\kerning0
+18:48\cf0 \expnd0\expndtw0\kerning0
+of the thing they're talking to, and, in a structured way,\
+\cf2 \expnd0\expndtw0\kerning0
+18:52\cf0 \expnd0\expndtw0\kerning0
+a way where we all agree, we're going to communicate this way,\
+\cf2 \expnd0\expndtw0\kerning0
+18:56\cf0 \expnd0\expndtw0\kerning0
+between the view and the controller,\
+\cf2 \expnd0\expndtw0\kerning0
+18:57\cf0 \expnd0\expndtw0\kerning0
+so what's an example of a structured way?\
+\cf2 \expnd0\expndtw0\kerning0
+18:58\cf0 \expnd0\expndtw0\kerning0
+Well one is called target action.\
+\cf2 \expnd0\expndtw0\kerning0
+19:00\cf0 \expnd0\expndtw0\kerning0
+So the controller basically drops a target on itself\
+\cf2 \expnd0\expndtw0\kerning0
+19:04\cf0 \expnd0\expndtw0\kerning0
+and then it hands out an action, which is like an arrow,\
+\cf2 \expnd0\expndtw0\kerning0
+19:08\cf0 \expnd0\expndtw0\kerning0
+to the view and says to the view, okay,\
+\cf2 \expnd0\expndtw0\kerning0
+19:11\cf0 \expnd0\expndtw0\kerning0
+when you do what you do, like you're a button\
+\cf2 \expnd0\expndtw0\kerning0
+19:13\cf0 \expnd0\expndtw0\kerning0
+and someone touches you or you're a slider\
+\cf2 \expnd0\expndtw0\kerning0
+19:15\cf0 \expnd0\expndtw0\kerning0
+and someone moves you, send me that action.\
+\cf2 \expnd0\expndtw0\kerning0
+19:18\cf0 \expnd0\expndtw0\kerning0
+Okay? So in this way, the generic button, or slider,\
+\cf2 \expnd0\expndtw0\kerning0
+19:22\cf0 \expnd0\expndtw0\kerning0
+is communicating back to the controller, it has no idea\
+\cf2 \expnd0\expndtw0\kerning0
+19:24\cf0 \expnd0\expndtw0\kerning0
+that it's a card game controller or a space game controller,\
+\cf2 \expnd0\expndtw0\kerning0
+19:27\cf0 \expnd0\expndtw0\kerning0
+it doesn't know what kind of controller it is,\
+\cf2 \expnd0\expndtw0\kerning0
+19:29\cf0 \expnd0\expndtw0\kerning0
+all it knows is that when something happens in itself,\
+\cf2 \expnd0\expndtw0\kerning0
+19:31\cf0 \expnd0\expndtw0\kerning0
+boom, it sends messages to targets.\
+\cf2 \expnd0\expndtw0\kerning0
+19:33\cf0 \expnd0\expndtw0\kerning0
+So that's a blind, simple, structured way for the view\
+\cf2 \expnd0\expndtw0\kerning0
+19:37\cf0 \expnd0\expndtw0\kerning0
+to communicate with the controller, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+19:40\cf0 \expnd0\expndtw0\kerning0
+But what about more complicated ways?\
+\cf2 \expnd0\expndtw0\kerning0
+19:42\cf0 \expnd0\expndtw0\kerning0
+Sometimes the view, things are happening in the view\
+\cf2 \expnd0\expndtw0\kerning0
+19:45\cf0 \expnd0\expndtw0\kerning0
+that are somewhat complicated and the controller needs\
+\cf2 \expnd0\expndtw0\kerning0
+19:48\cf0 \expnd0\expndtw0\kerning0
+to be informed of what's going on,\
+\cf2 \expnd0\expndtw0\kerning0
+19:49\cf0 \expnd0\expndtw0\kerning0
+synchronizing what's happening.\
+\cf2 \expnd0\expndtw0\kerning0
+19:52\cf0 \expnd0\expndtw0\kerning0
+And one way to think about this is these words I put here, will,\
+\cf2 \expnd0\expndtw0\kerning0
+19:56\cf0 \expnd0\expndtw0\kerning0
+should, and did, when the view is kind of like [pause],\
+\cf2 \expnd0\expndtw0\kerning0
+19:59\cf0 \expnd0\expndtw0\kerning0
+let's say on the scroll view and I'm scrolling around,\
+\cf2 \expnd0\expndtw0\kerning0
+20:02\cf0 \expnd0\expndtw0\kerning0
+and I want to let the, the controller, somebody,\
+\cf2 \expnd0\expndtw0\kerning0
+20:05\cf0 \expnd0\expndtw0\kerning0
+know that the user just did scroll.\
+\cf2 \expnd0\expndtw0\kerning0
+20:08\cf0 \expnd0\expndtw0\kerning0
+Okay?\
+\cf2 \expnd0\expndtw0\kerning0
+20:09\cf0 \expnd0\expndtw0\kerning0
+Or the user puts down the touch and is about to scroll,\
+\cf2 \expnd0\expndtw0\kerning0
+20:12\cf0 \expnd0\expndtw0\kerning0
+I want to let the controller know the user will be scrolling.\
+\cf2 \expnd0\expndtw0\kerning0
+20:16\cf0 \expnd0\expndtw0\kerning0
+Okay? Or the user puts a touch down and the scroll view wants\
+\cf2 \expnd0\expndtw0\kerning0
+20:19\cf0 \expnd0\expndtw0\kerning0
+to know, should I allow the user to scroll here, is that allowed?\
+\cf2 \expnd0\expndtw0\kerning0
+20:23\cf0 \expnd0\expndtw0\kerning0
+All those things, the scroll view itself might not have\
+\cf2 \expnd0\expndtw0\kerning0
+20:26\cf0 \expnd0\expndtw0\kerning0
+enough logic to know the answer to those questions,\
+\cf2 \expnd0\expndtw0\kerning0
+20:29\cf0 \expnd0\expndtw0\kerning0
+so what it does is it delegates the authority\
+\cf2 \expnd0\expndtw0\kerning0
+20:33\cf0 \expnd0\expndtw0\kerning0
+to answer those questions to some other object.\
+\cf2 \expnd0\expndtw0\kerning0
+20:36\cf0 \expnd0\expndtw0\kerning0
+Now it doesn't know the class of that object, all it knows is\
+\cf2 \expnd0\expndtw0\kerning0
+20:38\cf0 \expnd0\expndtw0\kerning0
+that other object can answer these questions, will, should,\
+\cf2 \expnd0\expndtw0\kerning0
+20:41\cf0 \expnd0\expndtw0\kerning0
+did, this, that or the other thing, like,\
+\cf2 \expnd0\expndtw0\kerning0
+20:43\cf0 \expnd0\expndtw0\kerning0
+should allow scrolling,\
+\cf2 \expnd0\expndtw0\kerning0
+20:44\cf0 \expnd0\expndtw0\kerning0
+did scroll to point, things like that.\
+\cf2 \expnd0\expndtw0\kerning0
+20:48\cf0 \expnd0\expndtw0\kerning0
+So those are the kind of methods you're going to see\
+\cf2 \expnd0\expndtw0\kerning0
+20:50\cf0 \expnd0\expndtw0\kerning0
+in these delegate protocols.\
+\cf2 \expnd0\expndtw0\kerning0
+20:52\cf0 \expnd0\expndtw0\kerning0
+Now I know that CS106A&B do not teach protocols, the word proto,\
+\cf2 \expnd0\expndtw0\kerning0
+20:56\cf0 \expnd0\expndtw0\kerning0
+how many people know what the word protocol means\
+\cf2 \expnd0\expndtw0\kerning0
+20:57\cf0 \expnd0\expndtw0\kerning0
+in object-oriented programming?\
+\cf2 \expnd0\expndtw0\kerning0
+20:59\cf0 \expnd0\expndtw0\kerning0
+See, very few of you, so I will be teaching that.\
+\cf2 \expnd0\expndtw0\kerning0
+21:02\cf0 \expnd0\expndtw0\kerning0
+A protocol is just a blind way to talk to another object.\
+\cf2 \expnd0\expndtw0\kerning0
+21:05\cf0 \expnd0\expndtw0\kerning0
+You're, you're going, when I teach you, you're going\
+\cf2 \expnd0\expndtw0\kerning0
+21:06\cf0 \expnd0\expndtw0\kerning0
+to be like, oh yeah, I know what that is,\
+\cf2 \expnd0\expndtw0\kerning0
+21:08\cf0 \expnd0\expndtw0\kerning0
+we didn't really call it protocol, or whatever.\
+\cf2 \expnd0\expndtw0\kerning0
+21:10\cf0 \expnd0\expndtw0\kerning0
+But, that's how we do delegation, okay,\
+\cf2 \expnd0\expndtw0\kerning0
+21:12\cf0 \expnd0\expndtw0\kerning0
+this blind communication.\
+\cf2 \expnd0\expndtw0\kerning0
+21:15\cf0 \expnd0\expndtw0\kerning0
+Also, another important thing is\
+\cf2 \expnd0\expndtw0\kerning0
+21:18\cf0 \expnd0\expndtw0\kerning0
+that views should not own the data that they're displaying.\
+\cf2 \expnd0\expndtw0\kerning0
+21:21\cf0 \expnd0\expndtw0\kerning0
+They should not own it.\
+\cf2 \expnd0\expndtw0\kerning0
+21:22\cf0 \expnd0\expndtw0\kerning0
+In other words, it shouldn't be a property inside of them\
+\cf2 \expnd0\expndtw0\kerning0
+21:25\cf0 \expnd0\expndtw0\kerning0
+where that's the truth of that data.\
+\cf2 \expnd0\expndtw0\kerning0
+21:28\cf0 \expnd0\expndtw0\kerning0
+And the easiest example for this is all the songs in your iPhone,\
+\cf2 \expnd0\expndtw0\kerning0
+21:32\cf0 \expnd0\expndtw0\kerning0
+on your phone or your iPad, right?\
+\cf2 \expnd0\expndtw0\kerning0
+21:34\cf0 \expnd0\expndtw0\kerning0
+You might have 10,000 songs in there.\
+\cf2 \expnd0\expndtw0\kerning0
+21:36\cf0 \expnd0\expndtw0\kerning0
+So if you have some kind of generic list view in your view,\
+\cf2 \expnd0\expndtw0\kerning0
+21:40\cf0 \expnd0\expndtw0\kerning0
+you can't transfer all 10,000 songs to its instance variables\
+\cf2 \expnd0\expndtw0\kerning0
+21:44\cf0 \expnd0\expndtw0\kerning0
+and expect it to hold 10,000 songs so it can list through it.\
+\cf2 \expnd0\expndtw0\kerning0
+21:48\cf0 \expnd0\expndtw0\kerning0
+A, that would be inefficient, and B, that information,\
+\cf2 \expnd0\expndtw0\kerning0
+21:51\cf0 \expnd0\expndtw0\kerning0
+those 10,000 songs belongs where?\
+\cf2 \expnd0\expndtw0\kerning0
+21:53\cf0 \expnd0\expndtw0\kerning0
+In the model, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+21:55\cf0 \expnd0\expndtw0\kerning0
+Because you're song database is a model.\
+\cf2 \expnd0\expndtw0\kerning0
+21:58\cf0 \expnd0\expndtw0\kerning0
+It has nothing to do with UI's, just a list of songs and artists\
+\cf2 \expnd0\expndtw0\kerning0
+22:00\cf0 \expnd0\expndtw0\kerning0
+and albums and all that, it's in the model.\
+\cf2 \expnd0\expndtw0\kerning0
+22:03\cf0 \expnd0\expndtw0\kerning0
+Some controller has to look at that database\
+\cf2 \expnd0\expndtw0\kerning0
+22:05\cf0 \expnd0\expndtw0\kerning0
+and tell a view how to display all those songs, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+22:10\cf0 \expnd0\expndtw0\kerning0
+So, we need that communication to happen here\
+\cf2 \expnd0\expndtw0\kerning0
+22:12\cf0 \expnd0\expndtw0\kerning0
+and the view is displaying some sort of list,\
+\cf2 \expnd0\expndtw0\kerning0
+22:15\cf0 \expnd0\expndtw0\kerning0
+and you're touching down and you're flicking on the list\
+\cf2 \expnd0\expndtw0\kerning0
+22:18\cf0 \expnd0\expndtw0\kerning0
+and trying to see more songs,\
+\cf2 \expnd0\expndtw0\kerning0
+22:20\cf0 \expnd0\expndtw0\kerning0
+how does that communication happen, and the answer is,\
+\cf2 \expnd0\expndtw0\kerning0
+22:22\cf0 \expnd0\expndtw0\kerning0
+we have another special kind of delegate,\
+\cf2 \expnd0\expndtw0\kerning0
+22:25\cf0 \expnd0\expndtw0\kerning0
+which we call a data source.\
+\cf2 \expnd0\expndtw0\kerning0
+22:27\cf0 \expnd0\expndtw0\kerning0
+Now the data source doesn't do the will, did, should,\
+\cf2 \expnd0\expndtw0\kerning0
+22:30\cf0 \expnd0\expndtw0\kerning0
+it's going to be asking questions like count,\
+\cf2 \expnd0\expndtw0\kerning0
+22:32\cf0 \expnd0\expndtw0\kerning0
+like how many songs are there?\
+\cf2 \expnd0\expndtw0\kerning0
+22:34\cf0 \expnd0\expndtw0\kerning0
+And the controller looks in the model, 10,000.\
+\cf2 \expnd0\expndtw0\kerning0
+22:37\cf0 \expnd0\expndtw0\kerning0
+Response to the view, there's 10,000.\
+\cf2 \expnd0\expndtw0\kerning0
+22:39\cf0 \expnd0\expndtw0\kerning0
+The view makes space, internally, for 10,000 things,\
+\cf2 \expnd0\expndtw0\kerning0
+22:42\cf0 \expnd0\expndtw0\kerning0
+it doesn't know what they are,\
+\cf2 \expnd0\expndtw0\kerning0
+22:43\cf0 \expnd0\expndtw0\kerning0
+moves the scroll bar indicator a little bit, so that you know\
+\cf2 \expnd0\expndtw0\kerning0
+22:46\cf0 \expnd0\expndtw0\kerning0
+where it is, and then you start scrolling, flipping through it,\
+\cf2 \expnd0\expndtw0\kerning0
+22:50\cf0 \expnd0\expndtw0\kerning0
+and its start sending the message to the controller,\
+\cf2 \expnd0\expndtw0\kerning0
+22:51\cf0 \expnd0\expndtw0\kerning0
+give me the data at [pause] line 150, next 10 items.\
+\cf2 \expnd0\expndtw0\kerning0
+22:57\cf0 \expnd0\expndtw0\kerning0
+See what I mean?\
+\cf2 \expnd0\expndtw0\kerning0
+22:57\cf0 \expnd0\expndtw0\kerning0
+And then you flick down some more, now it's saying 250,\
+\cf2 \expnd0\expndtw0\kerning0
+23:00\cf0 \expnd0\expndtw0\kerning0
+10 more items, and so the controller is going back\
+\cf2 \expnd0\expndtw0\kerning0
+23:03\cf0 \expnd0\expndtw0\kerning0
+to the model and saying give me more, give me more data,\
+\cf2 \expnd0\expndtw0\kerning0
+23:05\cf0 \expnd0\expndtw0\kerning0
+and it's providing it to the view in this blind way.\
+\cf2 \expnd0\expndtw0\kerning0
+23:07\cf0 \expnd0\expndtw0\kerning0
+So see how the view is getting data from the model\
+\cf2 \expnd0\expndtw0\kerning0
+23:10\cf0 \expnd0\expndtw0\kerning0
+through the controller, in this kind of blind structured way.\
+\cf2 \expnd0\expndtw0\kerning0
+23:13\cf0 \expnd0\expndtw0\kerning0
+Okay? That makes sense to everybody?\
+\cf2 \expnd0\expndtw0\kerning0
+23:16\cf0 \expnd0\expndtw0\kerning0
+So data source is just a kind of delegate, it's a specific kind\
+\cf2 \expnd0\expndtw0\kerning0
+23:19\cf0 \expnd0\expndtw0\kerning0
+of delegate for getting data.\
+\cf2 \expnd0\expndtw0\kerning0
+23:20\cf0 \expnd0\expndtw0\kerning0
+So you're going to see that there are classes in iOS\
+\cf2 \expnd0\expndtw0\kerning0
+23:23\cf0 \expnd0\expndtw0\kerning0
+that have a data source,\
+\cf2 \expnd0\expndtw0\kerning0
+23:24\cf0 \expnd0\expndtw0\kerning0
+and they usually also have a delegate.\
+\cf2 \expnd0\expndtw0\kerning0
+23:26\cf0 \expnd0\expndtw0\kerning0
+Most sophisticated classes in iOS have a delegate, the will,\
+\cf2 \expnd0\expndtw0\kerning0
+23:30\cf0 \expnd0\expndtw0\kerning0
+did, should kind of things.\
+\cf2 \expnd0\expndtw0\kerning0
+23:31\cf0 \expnd0\expndtw0\kerning0
+Some of them have a data source,\
+\cf2 \expnd0\expndtw0\kerning0
+23:33\cf0 \expnd0\expndtw0\kerning0
+it depends on whether they're showing a lot of data or not.\
+\cf2 \expnd0\expndtw0\kerning0
+23:36\cf0 \expnd0\expndtw0\kerning0
+Now simple data, like if I had a view, if I invented a view\
+\cf2 \expnd0\expndtw0\kerning0
+23:39\cf0 \expnd0\expndtw0\kerning0
+for my card game called playing card view,\
+\cf2 \expnd0\expndtw0\kerning0
+23:42\cf0 \expnd0\expndtw0\kerning0
+and it just has a suit and a rank, okay, we're not going\
+\cf2 \expnd0\expndtw0\kerning0
+23:45\cf0 \expnd0\expndtw0\kerning0
+to do count data at for just suit and rank, we are going\
+\cf2 \expnd0\expndtw0\kerning0
+23:48\cf0 \expnd0\expndtw0\kerning0
+to set those properties.\
+\cf2 \expnd0\expndtw0\kerning0
+23:49\cf0 \expnd0\expndtw0\kerning0
+And so the view then would have those, that data set in it,\
+\cf2 \expnd0\expndtw0\kerning0
+23:52\cf0 \expnd0\expndtw0\kerning0
+but it wouldn't be owning it, right?\
+\cf2 \expnd0\expndtw0\kerning0
+23:54\cf0 \expnd0\expndtw0\kerning0
+The model would still be owning the suit and rank,\
+\cf2 \expnd0\expndtw0\kerning0
+23:57\cf0 \expnd0\expndtw0\kerning0
+the view is just getting that data to present it.\
+\cf2 \expnd0\expndtw0\kerning0
+24:00\cf0 \expnd0\expndtw0\kerning0
+Okay? So simple data we might transfer to the view,\
+\cf2 \expnd0\expndtw0\kerning0
+24:02\cf0 \expnd0\expndtw0\kerning0
+but it's merely for it to display it.\
+\cf2 \expnd0\expndtw0\kerning0
+24:06\cf0 \expnd0\expndtw0\kerning0
+Okay. This all adds up to the controller's job being\
+\cf2 \expnd0\expndtw0\kerning0
+24:10\cf0 \expnd0\expndtw0\kerning0
+to interpret and format the model data for the view.\
+\cf2 \expnd0\expndtw0\kerning0
+24:16\cf0 \expnd0\expndtw0\kerning0
+That's the controller's job.\
+\cf2 \expnd0\expndtw0\kerning0
+24:17\cf0 \expnd0\expndtw0\kerning0
+And when we do our demo, I'm going to be marking like, oh,\
+\cf2 \expnd0\expndtw0\kerning0
+24:20\cf0 \expnd0\expndtw0\kerning0
+see, I'm writing this code,\
+\cf2 \expnd0\expndtw0\kerning0
+24:22\cf0 \expnd0\expndtw0\kerning0
+this makes the controller perform its job,\
+\cf2 \expnd0\expndtw0\kerning0
+24:25\cf0 \expnd0\expndtw0\kerning0
+which is to take the model data and put it in, and using it\
+\cf2 \expnd0\expndtw0\kerning0
+24:28\cf0 \expnd0\expndtw0\kerning0
+to view minions, put it on screen, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+24:30\cf0 \expnd0\expndtw0\kerning0
+That's what the controller does.\
+\cf2 \expnd0\expndtw0\kerning0
+24:32\cf0 \expnd0\expndtw0\kerning0
+What about this communication?\
+\cf2 \expnd0\expndtw0\kerning0
+24:33\cf0 \expnd0\expndtw0\kerning0
+Can the model talk to the controller?\
+\cf2 \expnd0\expndtw0\kerning0
+24:36\cf0 \expnd0\expndtw0\kerning0
+Again, obviously that's verboten because model knows nothing\
+\cf2 \expnd0\expndtw0\kerning0
+24:40\cf0 \expnd0\expndtw0\kerning0
+about UI, so it couldn't possibly talk\
+\cf2 \expnd0\expndtw0\kerning0
+24:42\cf0 \expnd0\expndtw0\kerning0
+to a UI object like the controller.\
+\cf2 \expnd0\expndtw0\kerning0
+24:44\cf0 \expnd0\expndtw0\kerning0
+But sometimes things change in the model\
+\cf2 \expnd0\expndtw0\kerning0
+24:46\cf0 \expnd0\expndtw0\kerning0
+and the controller needs to know about it.\
+\cf2 \expnd0\expndtw0\kerning0
+24:47\cf0 \expnd0\expndtw0\kerning0
+Okay, data changes, a database changes\
+\cf2 \expnd0\expndtw0\kerning0
+24:49\cf0 \expnd0\expndtw0\kerning0
+or the model is some network database\
+\cf2 \expnd0\expndtw0\kerning0
+24:52\cf0 \expnd0\expndtw0\kerning0
+and somebody changes something on the network and it changes,\
+\cf2 \expnd0\expndtw0\kerning0
+24:54\cf0 \expnd0\expndtw0\kerning0
+and the controller needs to find out.\
+\cf2 \expnd0\expndtw0\kerning0
+24:56\cf0 \expnd0\expndtw0\kerning0
+So, how do we do that communication?\
+\cf2 \expnd0\expndtw0\kerning0
+24:59\cf0 \expnd0\expndtw0\kerning0
+We do that using kind of a radio station model.\
+\cf2 \expnd0\expndtw0\kerning0
+25:03\cf0 \expnd0\expndtw0\kerning0
+Okay? So the model, a radio station concept,\
+\cf2 \expnd0\expndtw0\kerning0
+25:06\cf0 \expnd0\expndtw0\kerning0
+the model will use this concept\
+\cf2 \expnd0\expndtw0\kerning0
+25:08\cf0 \expnd0\expndtw0\kerning0
+to essentially broadcast information\
+\cf2 \expnd0\expndtw0\kerning0
+25:12\cf0 \expnd0\expndtw0\kerning0
+to anyone who's interested, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+25:14\cf0 \expnd0\expndtw0\kerning0
+And the mechanisms for doing this\
+\cf2 \expnd0\expndtw0\kerning0
+25:16\cf0 \expnd0\expndtw0\kerning0
+in iOS are called notification and key value observing,\
+\cf2 \expnd0\expndtw0\kerning0
+25:20\cf0 \expnd0\expndtw0\kerning0
+KVO we call it, and so the model can just say, oh,\
+\cf2 \expnd0\expndtw0\kerning0
+25:24\cf0 \expnd0\expndtw0\kerning0
+anytime something changes in my model, I'm just going\
+\cf2 \expnd0\expndtw0\kerning0
+25:26\cf0 \expnd0\expndtw0\kerning0
+to broadcast on my radio station\
+\cf2 \expnd0\expndtw0\kerning0
+25:28\cf0 \expnd0\expndtw0\kerning0
+and then the controller simply tunes into that radio station.\
+\cf2 \expnd0\expndtw0\kerning0
+25:32\cf0 \expnd0\expndtw0\kerning0
+And it can find out things are changing.\
+\cf2 \expnd0\expndtw0\kerning0
+25:33\cf0 \expnd0\expndtw0\kerning0
+And when it finds out something changes,\
+\cf2 \expnd0\expndtw0\kerning0
+25:35\cf0 \expnd0\expndtw0\kerning0
+it's going to communicate via its green arrow to the model,\
+\cf2 \expnd0\expndtw0\kerning0
+25:39\cf0 \expnd0\expndtw0\kerning0
+and say, okay, give me that data that changed.\
+\cf2 \expnd0\expndtw0\kerning0
+25:42\cf0 \expnd0\expndtw0\kerning0
+Alright? Does that make sense?\
+\cf2 \expnd0\expndtw0\kerning0
+25:44\cf0 \expnd0\expndtw0\kerning0
+So towards the end of the quarter,\
+\cf2 \expnd0\expndtw0\kerning0
+25:45\cf0 \expnd0\expndtw0\kerning0
+we'll start seeing a little how to do notification to find out,\
+\cf2 \expnd0\expndtw0\kerning0
+25:47\cf0 \expnd0\expndtw0\kerning0
+for example, if the data in the database changes.\
+\cf2 \expnd0\expndtw0\kerning0
+25:50\cf0 \expnd0\expndtw0\kerning0
+We'll get a notification, the UI can then, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+25:53\cf0 \expnd0\expndtw0\kerning0
+the controller can then go talk to the model to get the info.\
+\cf2 \expnd0\expndtw0\kerning0
+25:58\cf0 \expnd0\expndtw0\kerning0
+Okay? [Pause] Some people have asked, can a view tune\
+\cf2 \expnd0\expndtw0\kerning0
+26:00\cf0 \expnd0\expndtw0\kerning0
+into the radio station?\
+\cf2 \expnd0\expndtw0\kerning0
+26:01\cf0 \expnd0\expndtw0\kerning0
+They probably could, but you probably wouldn't want\
+\cf2 \expnd0\expndtw0\kerning0
+26:04\cf0 \expnd0\expndtw0\kerning0
+to do that.\
+\cf2 \expnd0\expndtw0\kerning0
+26:04\cf0 \expnd0\expndtw0\kerning0
+That would probably be a violation of MVC.\
+\cf2 \expnd0\expndtw0\kerning0
+26:07\cf0 \expnd0\expndtw0\kerning0
+Alright, so, we do this, we have all this nice communication\
+\cf2 \expnd0\expndtw0\kerning0
+26:12\cf0 \expnd0\expndtw0\kerning0
+and all these rules, and we can imagine building something\
+\cf2 \expnd0\expndtw0\kerning0
+26:16\cf0 \expnd0\expndtw0\kerning0
+simple using this, but what if we want\
+\cf2 \expnd0\expndtw0\kerning0
+26:18\cf0 \expnd0\expndtw0\kerning0
+to build a big, complicated app?\
+\cf2 \expnd0\expndtw0\kerning0
+26:19\cf0 \expnd0\expndtw0\kerning0
+An app that has multiple screens on our iPhone\
+\cf2 \expnd0\expndtw0\kerning0
+26:22\cf0 \expnd0\expndtw0\kerning0
+or on an iPad it's got, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+26:24\cf0 \expnd0\expndtw0\kerning0
+three or four different areas on screen\
+\cf2 \expnd0\expndtw0\kerning0
+26:26\cf0 \expnd0\expndtw0\kerning0
+where things are happening, how do we do that?\
+\cf2 \expnd0\expndtw0\kerning0
+26:28\cf0 \expnd0\expndtw0\kerning0
+Well, we're essentially going to combine multiple MVC's, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+26:33\cf0 \expnd0\expndtw0\kerning0
+Because you, an MVC can use, as part of its view, another MVC.\
+\cf2 \expnd0\expndtw0\kerning0
+26:40\cf0 \expnd0\expndtw0\kerning0
+Okay? So, an MVC, an entire MVC,\
+\cf2 \expnd0\expndtw0\kerning0
+26:44\cf0 \expnd0\expndtw0\kerning0
+can be one of the minions of some bigger MVC.\
+\cf2 \expnd0\expndtw0\kerning0
+26:48\cf0 \expnd0\expndtw0\kerning0
+Okay? And by doing that and cascading it down,\
+\cf2 \expnd0\expndtw0\kerning0
+26:53\cf0 \expnd0\expndtw0\kerning0
+we can build more and more complicated applications.\
+\cf2 \expnd0\expndtw0\kerning0
+26:55\cf0 \expnd0\expndtw0\kerning0
+So, an example of this is you might have your calendar app,\
+\cf2 \expnd0\expndtw0\kerning0
+27:01\cf0 \expnd0\expndtw0\kerning0
+and it's showing you the entire year, and you click on a month,\
+\cf2 \expnd0\expndtw0\kerning0
+27:04\cf0 \expnd0\expndtw0\kerning0
+and now it shows you a month view.\
+\cf2 \expnd0\expndtw0\kerning0
+27:06\cf0 \expnd0\expndtw0\kerning0
+Well a month view looks a lot different than a year view.\
+\cf2 \expnd0\expndtw0\kerning0
+27:08\cf0 \expnd0\expndtw0\kerning0
+Month view just has all the days and maybe some circle\
+\cf2 \expnd0\expndtw0\kerning0
+27:11\cf0 \expnd0\expndtw0\kerning0
+that tells you where you have an appointment on a day,\
+\cf2 \expnd0\expndtw0\kerning0
+27:12\cf0 \expnd0\expndtw0\kerning0
+and then when you click on a day, and now you get a day view.\
+\cf2 \expnd0\expndtw0\kerning0
+27:16\cf0 \expnd0\expndtw0\kerning0
+Okay? And the day is showing you the hours\
+\cf2 \expnd0\expndtw0\kerning0
+27:18\cf0 \expnd0\expndtw0\kerning0
+and what all your appointments are, and you click\
+\cf2 \expnd0\expndtw0\kerning0
+27:20\cf0 \expnd0\expndtw0\kerning0
+on an appointment, and now you get an appointment view\
+\cf2 \expnd0\expndtw0\kerning0
+27:22\cf0 \expnd0\expndtw0\kerning0
+and it's showing the detail of where you're going\
+\cf2 \expnd0\expndtw0\kerning0
+27:24\cf0 \expnd0\expndtw0\kerning0
+and when it is etc. Okay?\
+\cf2 \expnd0\expndtw0\kerning0
+27:25\cf0 \expnd0\expndtw0\kerning0
+Well each of those views, the year view, the month view,\
+\cf2 \expnd0\expndtw0\kerning0
+27:29\cf0 \expnd0\expndtw0\kerning0
+the day view, and the appointment view are their\
+\cf2 \expnd0\expndtw0\kerning0
+27:31\cf0 \expnd0\expndtw0\kerning0
+own MVC's.\
+\cf2 \expnd0\expndtw0\kerning0
+27:33\cf0 \expnd0\expndtw0\kerning0
+Okay? But you can see how the last three, okay, are used as,\
+\cf2 \expnd0\expndtw0\kerning0
+27:38\cf0 \expnd0\expndtw0\kerning0
+essentially, a minion of the top-level view,\
+\cf2 \expnd0\expndtw0\kerning0
+27:41\cf0 \expnd0\expndtw0\kerning0
+the year view, to show more detail.\
+\cf2 \expnd0\expndtw0\kerning0
+27:44\cf0 \expnd0\expndtw0\kerning0
+Okay? So the year view, you click on a month,\
+\cf2 \expnd0\expndtw0\kerning0
+27:46\cf0 \expnd0\expndtw0\kerning0
+it's going to use the month view MVC to show more detail,\
+\cf2 \expnd0\expndtw0\kerning0
+27:50\cf0 \expnd0\expndtw0\kerning0
+so it's part of its view, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+27:53\cf0 \expnd0\expndtw0\kerning0
+So, you see this also in iOS with tab bar controllers, right?\
+\cf2 \expnd0\expndtw0\kerning0
+27:57\cf0 \expnd0\expndtw0\kerning0
+You have the tab bar, along the bottom, I have four\
+\cf2 \expnd0\expndtw0\kerning0
+28:00\cf0 \expnd0\expndtw0\kerning0
+or five things you can choose, well there's some MVC at the top\
+\cf2 \expnd0\expndtw0\kerning0
+28:03\cf0 \expnd0\expndtw0\kerning0
+who has four pointers to four minions,\
+\cf2 \expnd0\expndtw0\kerning0
+28:06\cf0 \expnd0\expndtw0\kerning0
+which are the four MVC's that are each going\
+\cf2 \expnd0\expndtw0\kerning0
+28:08\cf0 \expnd0\expndtw0\kerning0
+to appear in a tab bar, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+28:11\cf0 \expnd0\expndtw0\kerning0
+We'll be doing that, for example,\
+\cf2 \expnd0\expndtw0\kerning0
+28:12\cf0 \expnd0\expndtw0\kerning0
+in assignment number two or three,\
+\cf2 \expnd0\expndtw0\kerning0
+28:13\cf0 \expnd0\expndtw0\kerning0
+where we'll be making a tab bar and you're going\
+\cf2 \expnd0\expndtw0\kerning0
+28:15\cf0 \expnd0\expndtw0\kerning0
+to have to do multiple MVC's.\
+\cf2 \expnd0\expndtw0\kerning0
+28:18\cf0 \expnd0\expndtw0\kerning0
+Okay? So, that basically results in a picture\
+\cf2 \expnd0\expndtw0\kerning0
+28:21\cf0 \expnd0\expndtw0\kerning0
+that looks kind of like this.\
+\cf2 \expnd0\expndtw0\kerning0
+28:23\cf0 \expnd0\expndtw0\kerning0
+Alright? Where you got this MVC\
+\cf2 \expnd0\expndtw0\kerning0
+28:24\cf0 \expnd0\expndtw0\kerning0
+and you see the purple one that's\
+\cf2 \expnd0\expndtw0\kerning0
+28:26\cf0 \expnd0\expndtw0\kerning0
+like underneath the word together there, and it points\
+\cf2 \expnd0\expndtw0\kerning0
+28:29\cf0 \expnd0\expndtw0\kerning0
+to three other MVC's outside of its view thing, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+28:34\cf0 \expnd0\expndtw0\kerning0
+That's how we're going to build this,\
+\cf2 \expnd0\expndtw0\kerning0
+28:36\cf0 \expnd0\expndtw0\kerning0
+that might be a tab bar controller\
+\cf2 \expnd0\expndtw0\kerning0
+28:37\cf0 \expnd0\expndtw0\kerning0
+and those might be the three tabs.\
+\cf2 \expnd0\expndtw0\kerning0
+28:39\cf0 \expnd0\expndtw0\kerning0
+Okay, and each one is its own little MVC,\
+\cf2 \expnd0\expndtw0\kerning0
+28:40\cf0 \expnd0\expndtw0\kerning0
+completely independent, operates on its own,\
+\cf2 \expnd0\expndtw0\kerning0
+28:43\cf0 \expnd0\expndtw0\kerning0
+doesn't even know it's a generic, reusable view\
+\cf2 \expnd0\expndtw0\kerning0
+28:46\cf0 \expnd0\expndtw0\kerning0
+like thing at this point, it doesn't even know\
+\cf2 \expnd0\expndtw0\kerning0
+28:48\cf0 \expnd0\expndtw0\kerning0
+that it's in a tab bar.\
+\cf2 \expnd0\expndtw0\kerning0
+28:50\cf0 \expnd0\expndtw0\kerning0
+Okay? It just knows that it's supposed to do whatever it does.\
+\cf2 \expnd0\expndtw0\kerning0
+28:53\cf0 \expnd0\expndtw0\kerning0
+And so it's modular in that way.\
+\cf2 \expnd0\expndtw0\kerning0
+28:54\cf0 \expnd0\expndtw0\kerning0
+You can also see that there's no communication between any other,\
+\cf2 \expnd0\expndtw0\kerning0
+28:58\cf0 \expnd0\expndtw0\kerning0
+there's no other arrows, except for some of the models.\
+\cf2 \expnd0\expndtw0\kerning0
+29:00\cf0 \expnd0\expndtw0\kerning0
+You see some of the models are communicating with each other,\
+\cf2 \expnd0\expndtw0\kerning0
+29:03\cf0 \expnd0\expndtw0\kerning0
+you know, a big application might have single, shared model.\
+\cf2 \expnd0\expndtw0\kerning0
+29:07\cf0 \expnd0\expndtw0\kerning0
+Or, you know, the models might be split off into pieces\
+\cf2 \expnd0\expndtw0\kerning0
+29:09\cf0 \expnd0\expndtw0\kerning0
+to be used by sub MVC's, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+29:12\cf0 \expnd0\expndtw0\kerning0
+But that's the only kind of communication you're going\
+\cf2 \expnd0\expndtw0\kerning0
+29:15\cf0 \expnd0\expndtw0\kerning0
+to have there, all other communication is either the\
+\cf2 \expnd0\expndtw0\kerning0
+29:17\cf0 \expnd0\expndtw0\kerning0
+structured communication we saw in the MVC or it's using MVC's\
+\cf2 \expnd0\expndtw0\kerning0
+29:21\cf0 \expnd0\expndtw0\kerning0
+as part of the view of another MVC.\
+\cf2 \expnd0\expndtw0\kerning0
+29:24\cf0 \expnd0\expndtw0\kerning0
+Any question about that?\
+\cf2 \expnd0\expndtw0\kerning0
+29:27\cf0 \expnd0\expndtw0\kerning0
+So we definitely don't want to be having designs\
+\cf2 \expnd0\expndtw0\kerning0
+29:30\cf0 \expnd0\expndtw0\kerning0
+that look like this, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+29:32\cf0 \expnd0\expndtw0\kerning0
+Where everybody's talking to everybody,\
+\cf2 \expnd0\expndtw0\kerning0
+29:33\cf0 \expnd0\expndtw0\kerning0
+we can't tell who's talking to what, it's just impossible\
+\cf2 \expnd0\expndtw0\kerning0
+29:35\cf0 \expnd0\expndtw0\kerning0
+to debug a program like this and it doesn't scale.\
+\cf2 \expnd0\expndtw0\kerning0
+29:38\cf0 \expnd0\expndtw0\kerning0
+You can't build really big programs this way,\
+\cf2 \expnd0\expndtw0\kerning0
+29:40\cf0 \expnd0\expndtw0\kerning0
+it just becomes impossible\
+\cf2 \expnd0\expndtw0\kerning0
+29:41\cf0 \expnd0\expndtw0\kerning0
+to know how touching anything would break everything, right?\
+\cf2 \expnd0\expndtw0\kerning0
+29:44\cf0 \expnd0\expndtw0\kerning0
+So we're definitely not going to be doing that.\
+\cf2 \expnd0\expndtw0\kerning0
+29:48\cf0 \expnd0\expndtw0\kerning0
+Okay? Okay, so that's MVC.\
+\cf2 \expnd0\expndtw0\kerning0
+29:51\cf0 \expnd0\expndtw0\kerning0
+No questions about that?\
+\cf2 \expnd0\expndtw0\kerning0
+29:53\cf0 \expnd0\expndtw0\kerning0
+Alright. Onto objective-C.\
+\cf2 \expnd0\expndtw0\kerning0
+29:55\cf0 \expnd0\expndtw0\kerning0
+So, objective C is a strict superset of C,\
+\cf2 \expnd0\expndtw0\kerning0
+29:59\cf0 \expnd0\expndtw0\kerning0
+so everything you can do and see, you can do in objective-C.\
+\cf2 \expnd0\expndtw0\kerning0
+30:02\cf0 \expnd0\expndtw0\kerning0
+Okay? And we'll do a lot of C things in this class.\
+\cf2 \expnd0\expndtw0\kerning0
+30:05\cf0 \expnd0\expndtw0\kerning0
+We'll do a lot of object-oriented stuff too,\
+\cf2 \expnd0\expndtw0\kerning0
+30:06\cf0 \expnd0\expndtw0\kerning0
+but we're going to do a lot of C things, as well.\
+\cf2 \expnd0\expndtw0\kerning0
+30:10\cf0 \expnd0\expndtw0\kerning0
+But, there's obviously a few things that you want\
+\cf2 \expnd0\expndtw0\kerning0
+30:13\cf0 \expnd0\expndtw0\kerning0
+to think differently\
+\cf2 \expnd0\expndtw0\kerning0
+30:14\cf0 \expnd0\expndtw0\kerning0
+about because you have object-oriented stuff added\
+\cf2 \expnd0\expndtw0\kerning0
+30:16\cf0 \expnd0\expndtw0\kerning0
+onto a language, and we're going to talk about one of them today,\
+\cf2 \expnd0\expndtw0\kerning0
+30:19\cf0 \expnd0\expndtw0\kerning0
+in addition to showing you a little bit of the syntax,\
+\cf2 \expnd0\expndtw0\kerning0
+30:24\cf0 \expnd0\expndtw0\kerning0
+we're going to talk about one of these different,\
+\cf2 \expnd0\expndtw0\kerning0
+30:26\cf0 \expnd0\expndtw0\kerning0
+think differently things about objective-C that's different\
+\cf2 \expnd0\expndtw0\kerning0
+30:29\cf0 \expnd0\expndtw0\kerning0
+than C++ or Java, which is properties.\
+\cf2 \expnd0\expndtw0\kerning0
+30:33\cf0 \expnd0\expndtw0\kerning0
+Okay? And I'm not going to read through all of this,\
+\cf2 \expnd0\expndtw0\kerning0
+30:34\cf0 \expnd0\expndtw0\kerning0
+I'm just going to show it to you,\
+\cf2 \expnd0\expndtw0\kerning0
+30:36\cf0 \expnd0\expndtw0\kerning0
+but properties are basically how we access our instance variable,\
+\cf2 \expnd0\expndtw0\kerning0
+30:40\cf0 \expnd0\expndtw0\kerning0
+right?\
+\cf2 \expnd0\expndtw0\kerning0
+30:40\cf0 \expnd0\expndtw0\kerning0
+Everybody knows what I mean by, raise your hand\
+\cf2 \expnd0\expndtw0\kerning0
+30:42\cf0 \expnd0\expndtw0\kerning0
+if you know what I mean by instance variable?\
+\cf2 \expnd0\expndtw0\kerning0
+30:45\cf0 \expnd0\expndtw0\kerning0
+Okay good.\
+\cf2 \expnd0\expndtw0\kerning0
+30:45\cf0 \expnd0\expndtw0\kerning0
+So pretty much everybody.\
+\cf2 \expnd0\expndtw0\kerning0
+30:46\cf0 \expnd0\expndtw0\kerning0
+So, we want to access the instance data of our objects.\
+\cf2 \expnd0\expndtw0\kerning0
+30:52\cf0 \expnd0\expndtw0\kerning0
+And, normally, in Java or in C++, you just, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+30:56\cf0 \expnd0\expndtw0\kerning0
+have some syntax to access them and you just access them.\
+\cf2 \expnd0\expndtw0\kerning0
+31:00\cf0 \expnd0\expndtw0\kerning0
+In objective-C we don't do that.\
+\cf2 \expnd0\expndtw0\kerning0
+31:02\cf0 \expnd0\expndtw0\kerning0
+In objective-C, we have what's called a property,\
+\cf2 \expnd0\expndtw0\kerning0
+31:04\cf0 \expnd0\expndtw0\kerning0
+and a property is basically a setter get method\
+\cf2 \expnd0\expndtw0\kerning0
+31:07\cf0 \expnd0\expndtw0\kerning0
+and a getter method.\
+\cf2 \expnd0\expndtw0\kerning0
+31:09\cf0 \expnd0\expndtw0\kerning0
+And that's how all access to the instance variable goes,\
+\cf2 \expnd0\expndtw0\kerning0
+31:12\cf0 \expnd0\expndtw0\kerning0
+through a setter method to set the value\
+\cf2 \expnd0\expndtw0\kerning0
+31:13\cf0 \expnd0\expndtw0\kerning0
+and a getter method to get it.\
+\cf2 \expnd0\expndtw0\kerning0
+31:15\cf0 \expnd0\expndtw0\kerning0
+And some people who maybe are kind\
+\cf2 \expnd0\expndtw0\kerning0
+31:18\cf0 \expnd0\expndtw0\kerning0
+of [pause] performance junkies might say, oh my gosh,\
+\cf2 \expnd0\expndtw0\kerning0
+31:21\cf0 \expnd0\expndtw0\kerning0
+every instance variable I have\
+\cf2 \expnd0\expndtw0\kerning0
+31:22\cf0 \expnd0\expndtw0\kerning0
+to call a method to set it or get it?\
+\cf2 \expnd0\expndtw0\kerning0
+31:24\cf0 \expnd0\expndtw0\kerning0
+But, remember, you're building\
+\cf2 \expnd0\expndtw0\kerning0
+31:25\cf0 \expnd0\expndtw0\kerning0
+for a user interface system here,\
+\cf2 \expnd0\expndtw0\kerning0
+31:27\cf0 \expnd0\expndtw0\kerning0
+when the user touches down, that's taking million,\
+\cf2 \expnd0\expndtw0\kerning0
+31:32\cf0 \expnd0\expndtw0\kerning0
+a million code, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+31:34\cf0 \expnd0\expndtw0\kerning0
+you're executing a million instructions there\
+\cf2 \expnd0\expndtw0\kerning0
+31:36\cf0 \expnd0\expndtw0\kerning0
+in that amount of time.\
+\cf2 \expnd0\expndtw0\kerning0
+31:38\cf0 \expnd0\expndtw0\kerning0
+So, having a few extra setters\
+\cf2 \expnd0\expndtw0\kerning0
+31:40\cf0 \expnd0\expndtw0\kerning0
+and getters is completely irrelevant, right?\
+\cf2 \expnd0\expndtw0\kerning0
+31:41\cf0 \expnd0\expndtw0\kerning0
+So it's the old [inaudible] thing, right?\
+\cf2 \expnd0\expndtw0\kerning0
+31:44\cf0 \expnd0\expndtw0\kerning0
+You don't want to optimize things that don't need\
+\cf2 \expnd0\expndtw0\kerning0
+31:46\cf0 \expnd0\expndtw0\kerning0
+to be optimized, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+31:47\cf0 \expnd0\expndtw0\kerning0
+You want to optimize the things that are taking a lot of time\
+\cf2 \expnd0\expndtw0\kerning0
+31:49\cf0 \expnd0\expndtw0\kerning0
+and accessing instance variable turns out not to be taking a lot\
+\cf2 \expnd0\expndtw0\kerning0
+31:52\cf0 \expnd0\expndtw0\kerning0
+of your time, so, let's look at what it looks like,\
+\cf2 \expnd0\expndtw0\kerning0
+31:56\cf0 \expnd0\expndtw0\kerning0
+don't get freaked out here by seeing this syntax.\
+\cf2 \expnd0\expndtw0\kerning0
+31:59\cf0 \expnd0\expndtw0\kerning0
+It's all new, so, it's going to take some getting used to.\
+\cf2 \expnd0\expndtw0\kerning0
+32:02\cf0 \expnd0\expndtw0\kerning0
+In objective-C, every class we have and the class I'm going\
+\cf2 \expnd0\expndtw0\kerning0
+32:06\cf0 \expnd0\expndtw0\kerning0
+to show you today is a, is in our, essentially our model\
+\cf2 \expnd0\expndtw0\kerning0
+32:10\cf0 \expnd0\expndtw0\kerning0
+that we're going to build for our card game matching app.\
+\cf2 \expnd0\expndtw0\kerning0
+32:13\cf0 \expnd0\expndtw0\kerning0
+We're going to have a card and a deck, and we're also going\
+\cf2 \expnd0\expndtw0\kerning0
+32:16\cf0 \expnd0\expndtw0\kerning0
+to have a subclass of card called playing card\
+\cf2 \expnd0\expndtw0\kerning0
+32:18\cf0 \expnd0\expndtw0\kerning0
+and a subclass of deck called playing card deck.\
+\cf2 \expnd0\expndtw0\kerning0
+32:20\cf0 \expnd0\expndtw0\kerning0
+Those are the four classes that are going to be\
+\cf2 \expnd0\expndtw0\kerning0
+32:22\cf0 \expnd0\expndtw0\kerning0
+in our model, to start.\
+\cf2 \expnd0\expndtw0\kerning0
+32:23\cf0 \expnd0\expndtw0\kerning0
+And, so, I'm going to show you,\
+\cf2 \expnd0\expndtw0\kerning0
+32:25\cf0 \expnd0\expndtw0\kerning0
+in today's lecture I'm just going to show you card,\
+\cf2 \expnd0\expndtw0\kerning0
+32:27\cf0 \expnd0\expndtw0\kerning0
+only card, and then on Wednesday I'll show you deck\
+\cf2 \expnd0\expndtw0\kerning0
+32:30\cf0 \expnd0\expndtw0\kerning0
+and playing card deck and playing card.\
+\cf2 \expnd0\expndtw0\kerning0
+32:33\cf0 \expnd0\expndtw0\kerning0
+So, every class in objective-C, you have a header file, card.h,\
+\cf2 \expnd0\expndtw0\kerning0
+32:37\cf0 \expnd0\expndtw0\kerning0
+and you have an implementation file, card.m. Okay, this is just\
+\cf2 \expnd0\expndtw0\kerning0
+32:40\cf0 \expnd0\expndtw0\kerning0
+like in C++ you might have that h and dot c, or whatever,\
+\cf2 \expnd0\expndtw0\kerning0
+32:45\cf0 \expnd0\expndtw0\kerning0
+this is dot m, m I guess is for implementation, I don't know.\
+\cf2 \expnd0\expndtw0\kerning0
+32:49\cf0 \expnd0\expndtw0\kerning0
+But it's m [laughter], and so you have these separate things,\
+\cf2 \expnd0\expndtw0\kerning0
+32:53\cf0 \expnd0\expndtw0\kerning0
+the difference here is card.h is the public API.\
+\cf2 \expnd0\expndtw0\kerning0
+32:58\cf0 \expnd0\expndtw0\kerning0
+That's what your dot h is.\
+\cf2 \expnd0\expndtw0\kerning0
+32:59\cf0 \expnd0\expndtw0\kerning0
+It's your public API.\
+\cf2 \expnd0\expndtw0\kerning0
+33:03\cf0 \expnd0\expndtw0\kerning0
+Card.m is your private API and all your implementation, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+33:09\cf0 \expnd0\expndtw0\kerning0
+Don't get confused about dot h\
+\cf2 \expnd0\expndtw0\kerning0
+33:10\cf0 \expnd0\expndtw0\kerning0
+and dot m. All dot h is your public API, that's all it is.\
+\cf2 \expnd0\expndtw0\kerning0
+33:14\cf0 \expnd0\expndtw0\kerning0
+It's what methods in your class you want to make public\
+\cf2 \expnd0\expndtw0\kerning0
+33:17\cf0 \expnd0\expndtw0\kerning0
+so that other people can call them, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+33:21\cf0 \expnd0\expndtw0\kerning0
+So, let's see what the syntax looks like.\
+\cf2 \expnd0\expndtw0\kerning0
+33:24\cf0 \expnd0\expndtw0\kerning0
+In your public API, you must say who your superclass is.\
+\cf2 \expnd0\expndtw0\kerning0
+33:28\cf0 \expnd0\expndtw0\kerning0
+Okay? You are not allowed\
+\cf2 \expnd0\expndtw0\kerning0
+33:30\cf0 \expnd0\expndtw0\kerning0
+to make your superclass be a secret, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+33:33\cf0 \expnd0\expndtw0\kerning0
+It has to be public so we have to put it in the header file,\
+\cf2 \expnd0\expndtw0\kerning0
+33:36\cf0 \expnd0\expndtw0\kerning0
+and you can see the syntax we use is at sign interface,\
+\cf2 \expnd0\expndtw0\kerning0
+33:39\cf0 \expnd0\expndtw0\kerning0
+the name of our class, which should always match the name\
+\cf2 \expnd0\expndtw0\kerning0
+33:42\cf0 \expnd0\expndtw0\kerning0
+of the file, by the way,\
+\cf2 \expnd0\expndtw0\kerning0
+33:43\cf0 \expnd0\expndtw0\kerning0
+card.h should always have the interface for the class card.\
+\cf2 \expnd0\expndtw0\kerning0
+33:47\cf0 \expnd0\expndtw0\kerning0
+And then a colon and then your superclass.\
+\cf2 \expnd0\expndtw0\kerning0
+33:49\cf0 \expnd0\expndtw0\kerning0
+Now the superclass of the card class is NSObject.\
+\cf2 \expnd0\expndtw0\kerning0
+33:52\cf0 \expnd0\expndtw0\kerning0
+NSObject is in the foundation framework\
+\cf2 \expnd0\expndtw0\kerning0
+33:57\cf0 \expnd0\expndtw0\kerning0
+and it's pretty much the root class of every single class\
+\cf2 \expnd0\expndtw0\kerning0
+34:00\cf0 \expnd0\expndtw0\kerning0
+in all of iOS, including all the classes you write.\
+\cf2 \expnd0\expndtw0\kerning0
+34:03\cf0 \expnd0\expndtw0\kerning0
+Okay? It's this kind of basic class, we'll talk about it\
+\cf2 \expnd0\expndtw0\kerning0
+34:05\cf0 \expnd0\expndtw0\kerning0
+when we talk about foundation, but it's going\
+\cf2 \expnd0\expndtw0\kerning0
+34:07\cf0 \expnd0\expndtw0\kerning0
+to be the superclass eventually of every single class.\
+\cf2 \expnd0\expndtw0\kerning0
+34:10\cf0 \expnd0\expndtw0\kerning0
+Right? Everything, eventually, inherits from NSObject.\
+\cf2 \expnd0\expndtw0\kerning0
+34:13\cf0 \expnd0\expndtw0\kerning0
+Now, on the implementation side, it looks very similar,\
+\cf2 \expnd0\expndtw0\kerning0
+34:17\cf0 \expnd0\expndtw0\kerning0
+but instead of saying at sign interface,\
+\cf2 \expnd0\expndtw0\kerning0
+34:19\cf0 \expnd0\expndtw0\kerning0
+you say at sign implementation and the name of the class.\
+\cf2 \expnd0\expndtw0\kerning0
+34:22\cf0 \expnd0\expndtw0\kerning0
+And here you don't specify your superclass, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+34:25\cf0 \expnd0\expndtw0\kerning0
+Because you're only allowed to specify that once,\
+\cf2 \expnd0\expndtw0\kerning0
+34:27\cf0 \expnd0\expndtw0\kerning0
+and its public, so it goes in your header file.\
+\cf2 \expnd0\expndtw0\kerning0
+34:30\cf0 \expnd0\expndtw0\kerning0
+Notice that the bottom of both of these,\
+\cf2 \expnd0\expndtw0\kerning0
+34:32\cf0 \expnd0\expndtw0\kerning0
+little at sign end, do you see that?\
+\cf2 \expnd0\expndtw0\kerning0
+34:34\cf0 \expnd0\expndtw0\kerning0
+Okay, that just means that's the end of the interface\
+\cf2 \expnd0\expndtw0\kerning0
+34:36\cf0 \expnd0\expndtw0\kerning0
+or of the implantation.\
+\cf2 \expnd0\expndtw0\kerning0
+34:38\cf0 \expnd0\expndtw0\kerning0
+Okay? So all of your public API goes inside this\
+\cf2 \expnd0\expndtw0\kerning0
+34:41\cf0 \expnd0\expndtw0\kerning0
+at sign interface block, at sign interface,\
+\cf2 \expnd0\expndtw0\kerning0
+34:43\cf0 \expnd0\expndtw0\kerning0
+and all of your implementation, your private implementation goes\
+\cf2 \expnd0\expndtw0\kerning0
+34:47\cf0 \expnd0\expndtw0\kerning0
+in the at sign implementation part.\
+\cf2 \expnd0\expndtw0\kerning0
+34:49\cf0 \expnd0\expndtw0\kerning0
+Now, if you import, if you have specified your superclass here,\
+\cf2 \expnd0\expndtw0\kerning0
+34:54\cf0 \expnd0\expndtw0\kerning0
+you have to import it.\
+\cf2 \expnd0\expndtw0\kerning0
+34:56\cf0 \expnd0\expndtw0\kerning0
+Okay? Which is like pound sign, include.\
+\cf2 \expnd0\expndtw0\kerning0
+34:57\cf0 \expnd0\expndtw0\kerning0
+It's a little more powerful than pound sign, include, in fact,\
+\cf2 \expnd0\expndtw0\kerning0
+35:00\cf0 \expnd0\expndtw0\kerning0
+it's a lot more powerful, as I'll talk\
+\cf2 \expnd0\expndtw0\kerning0
+35:02\cf0 \expnd0\expndtw0\kerning0
+about in a second here.\
+\cf2 \expnd0\expndtw0\kerning0
+35:03\cf0 \expnd0\expndtw0\kerning0
+>> But you must import it,\
+\cf2 \expnd0\expndtw0\kerning0
+35:04\cf0 \expnd0\expndtw0\kerning0
+otherwise the objective-C compiler won't know what\
+\cf2 \expnd0\expndtw0\kerning0
+35:07\cf0 \expnd0\expndtw0\kerning0
+that superclass is, so you have to, obviously,\
+\cf2 \expnd0\expndtw0\kerning0
+35:08\cf0 \expnd0\expndtw0\kerning0
+import your superclass.\
+\cf2 \expnd0\expndtw0\kerning0
+35:10\cf0 \expnd0\expndtw0\kerning0
+However, we don't usually,\
+\cf2 \expnd0\expndtw0\kerning0
+35:11\cf0 \expnd0\expndtw0\kerning0
+when our superclass is something that's in iOS,\
+\cf2 \expnd0\expndtw0\kerning0
+35:14\cf0 \expnd0\expndtw0\kerning0
+we don't usually import just that classes header file,\
+\cf2 \expnd0\expndtw0\kerning0
+35:17\cf0 \expnd0\expndtw0\kerning0
+which in this case is foundation,\
+\cf2 \expnd0\expndtw0\kerning0
+35:19\cf0 \expnd0\expndtw0\kerning0
+we actually import the entire framework.\
+\cf2 \expnd0\expndtw0\kerning0
+35:23\cf0 \expnd0\expndtw0\kerning0
+Okay? Now you might say, oh, that's inefficient.\
+\cf2 \expnd0\expndtw0\kerning0
+35:26\cf0 \expnd0\expndtw0\kerning0
+[Pause] A huge framework,\
+\cf2 \expnd0\expndtw0\kerning0
+35:28\cf0 \expnd0\expndtw0\kerning0
+but of course this is all precompiled and optimized.\
+\cf2 \expnd0\expndtw0\kerning0
+35:32\cf0 \expnd0\expndtw0\kerning0
+And, in fact, in iOS7, the syntax for this is really to say\
+\cf2 \expnd0\expndtw0\kerning0
+35:36\cf0 \expnd0\expndtw0\kerning0
+at sign import foundation.\
+\cf2 \expnd0\expndtw0\kerning0
+35:39\cf0 \expnd0\expndtw0\kerning0
+That means I'm going to use all the public classes\
+\cf2 \expnd0\expndtw0\kerning0
+35:42\cf0 \expnd0\expndtw0\kerning0
+in the foundation framework.\
+\cf2 \expnd0\expndtw0\kerning0
+35:44\cf0 \expnd0\expndtw0\kerning0
+iOS7 still supports the old important foundation slash\
+\cf2 \expnd0\expndtw0\kerning0
+35:48\cf0 \expnd0\expndtw0\kerning0
+foundation.h so you can use that if you want.\
+\cf2 \expnd0\expndtw0\kerning0
+35:51\cf0 \expnd0\expndtw0\kerning0
+Now on our implementation file,\
+\cf2 \expnd0\expndtw0\kerning0
+35:53\cf0 \expnd0\expndtw0\kerning0
+we have to import our header file, obviously.\
+\cf2 \expnd0\expndtw0\kerning0
+35:57\cf0 \expnd0\expndtw0\kerning0
+Okay? Because our implementation file needs\
+\cf2 \expnd0\expndtw0\kerning0
+35:59\cf0 \expnd0\expndtw0\kerning0
+to know what we're committing to publicly, in terms of our API,\
+\cf2 \expnd0\expndtw0\kerning0
+36:03\cf0 \expnd0\expndtw0\kerning0
+so we have to import that.\
+\cf2 \expnd0\expndtw0\kerning0
+36:05\cf0 \expnd0\expndtw0\kerning0
+Makes perfect sense.\
+\cf2 \expnd0\expndtw0\kerning0
+36:07\cf0 \expnd0\expndtw0\kerning0
+We can also have private declarations, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+36:11\cf0 \expnd0\expndtw0\kerning0
+Declarations of properties and methods that are private inside\
+\cf2 \expnd0\expndtw0\kerning0
+36:16\cf0 \expnd0\expndtw0\kerning0
+of our implementation file by putting this little\
+\cf2 \expnd0\expndtw0\kerning0
+36:18\cf0 \expnd0\expndtw0\kerning0
+at sign interface, name of our class,\
+\cf2 \expnd0\expndtw0\kerning0
+36:21\cf0 \expnd0\expndtw0\kerning0
+open parentheses, closed parentheses.\
+\cf2 \expnd0\expndtw0\kerning0
+36:23\cf0 \expnd0\expndtw0\kerning0
+Okay? And then at sign end.\
+\cf2 \expnd0\expndtw0\kerning0
+36:24\cf0 \expnd0\expndtw0\kerning0
+So we can have a little space here\
+\cf2 \expnd0\expndtw0\kerning0
+36:26\cf0 \expnd0\expndtw0\kerning0
+where we can little private declarations.\
+\cf2 \expnd0\expndtw0\kerning0
+36:27\cf0 \expnd0\expndtw0\kerning0
+Now, objective-C does not require you\
+\cf2 \expnd0\expndtw0\kerning0
+36:30\cf0 \expnd0\expndtw0\kerning0
+to declare something before you use it in a file,\
+\cf2 \expnd0\expndtw0\kerning0
+36:33\cf0 \expnd0\expndtw0\kerning0
+you know what I mean by that?\
+\cf2 \expnd0\expndtw0\kerning0
+36:34\cf0 \expnd0\expndtw0\kerning0
+And there's a lot, a lot of languages,\
+\cf2 \expnd0\expndtw0\kerning0
+36:37\cf0 \expnd0\expndtw0\kerning0
+you have to declare a method before you can call it, right?\
+\cf2 \expnd0\expndtw0\kerning0
+36:40\cf0 \expnd0\expndtw0\kerning0
+But you can do it out of order in objective-C,\
+\cf2 \expnd0\expndtw0\kerning0
+36:42\cf0 \expnd0\expndtw0\kerning0
+you can implement a method here that calls,\
+\cf2 \expnd0\expndtw0\kerning0
+36:44\cf0 \expnd0\expndtw0\kerning0
+you can implement method A, calls method B,\
+\cf2 \expnd0\expndtw0\kerning0
+36:47\cf0 \expnd0\expndtw0\kerning0
+and then method B is implemented down here later in the file.\
+\cf2 \expnd0\expndtw0\kerning0
+36:50\cf0 \expnd0\expndtw0\kerning0
+Okay? So you don't have to declare method B first,\
+\cf2 \expnd0\expndtw0\kerning0
+36:52\cf0 \expnd0\expndtw0\kerning0
+then implement method A, and then implement method B. So,\
+\cf2 \expnd0\expndtw0\kerning0
+36:56\cf0 \expnd0\expndtw0\kerning0
+this little private at sign interface we're mostly going\
+\cf2 \expnd0\expndtw0\kerning0
+36:59\cf0 \expnd0\expndtw0\kerning0
+to use for properties.\
+\cf2 \expnd0\expndtw0\kerning0
+37:01\cf0 \expnd0\expndtw0\kerning0
+Okay? Because when we declare a property, as you'll see,\
+\cf2 \expnd0\expndtw0\kerning0
+37:04\cf0 \expnd0\expndtw0\kerning0
+that setter and getter get written for us.\
+\cf2 \expnd0\expndtw0\kerning0
+37:06\cf0 \expnd0\expndtw0\kerning0
+So let's see what that looks like to declare a property.\
+\cf2 \expnd0\expndtw0\kerning0
+37:10\cf0 \expnd0\expndtw0\kerning0
+So here's a simple property.\
+\cf2 \expnd0\expndtw0\kerning0
+37:12\cf0 \expnd0\expndtw0\kerning0
+It's called contents.\
+\cf2 \expnd0\expndtw0\kerning0
+37:13\cf0 \expnd0\expndtw0\kerning0
+So this is the content of the card.\
+\cf2 \expnd0\expndtw0\kerning0
+37:15\cf0 \expnd0\expndtw0\kerning0
+This is what's on the card.\
+\cf2 \expnd0\expndtw0\kerning0
+37:17\cf0 \expnd0\expndtw0\kerning0
+So this might be ace of clubs.\
+\cf2 \expnd0\expndtw0\kerning0
+37:19\cf0 \expnd0\expndtw0\kerning0
+Okay? And because this is your first day,\
+\cf2 \expnd0\expndtw0\kerning0
+37:23\cf0 \expnd0\expndtw0\kerning0
+we're going to make the contents be very simple, just a string.\
+\cf2 \expnd0\expndtw0\kerning0
+37:26\cf0 \expnd0\expndtw0\kerning0
+Okay? So these cards, they can be like a flashcard, maybe,\
+\cf2 \expnd0\expndtw0\kerning0
+37:29\cf0 \expnd0\expndtw0\kerning0
+for learning a foreign language, maybe this is the,\
+\cf2 \expnd0\expndtw0\kerning0
+37:31\cf0 \expnd0\expndtw0\kerning0
+the contents are the word that you're trying to learn\
+\cf2 \expnd0\expndtw0\kerning0
+37:34\cf0 \expnd0\expndtw0\kerning0
+and maybe it's a flashcard of images\
+\cf2 \expnd0\expndtw0\kerning0
+37:36\cf0 \expnd0\expndtw0\kerning0
+where this content is the name of some image and it's up to UI\
+\cf2 \expnd0\expndtw0\kerning0
+37:40\cf0 \expnd0\expndtw0\kerning0
+to display an image that matches it.\
+\cf2 \expnd0\expndtw0\kerning0
+37:43\cf0 \expnd0\expndtw0\kerning0
+Or in the case of our playing cards,\
+\cf2 \expnd0\expndtw0\kerning0
+37:45\cf0 \expnd0\expndtw0\kerning0
+we're going to have this be like, literally the character A\
+\cf2 \expnd0\expndtw0\kerning0
+37:47\cf0 \expnd0\expndtw0\kerning0
+and then the character clubs,\
+\cf2 \expnd0\expndtw0\kerning0
+37:49\cf0 \expnd0\expndtw0\kerning0
+because there's Unicode character clubs, so the A clubs,\
+\cf2 \expnd0\expndtw0\kerning0
+37:52\cf0 \expnd0\expndtw0\kerning0
+that would be the content.\
+\cf2 \expnd0\expndtw0\kerning0
+37:53\cf0 \expnd0\expndtw0\kerning0
+So this is the content of the card, what's on the card.\
+\cf2 \expnd0\expndtw0\kerning0
+37:56\cf0 \expnd0\expndtw0\kerning0
+And you can see that it's an NSString star.\
+\cf2 \expnd0\expndtw0\kerning0
+38:00\cf0 \expnd0\expndtw0\kerning0
+You see at sign property is how we're going to declare\
+\cf2 \expnd0\expndtw0\kerning0
+38:03\cf0 \expnd0\expndtw0\kerning0
+that we need storage, per instance of card,\
+\cf2 \expnd0\expndtw0\kerning0
+38:06\cf0 \expnd0\expndtw0\kerning0
+in other words every card has its own contents, and it's going\
+\cf2 \expnd0\expndtw0\kerning0
+38:10\cf0 \expnd0\expndtw0\kerning0
+to be a string, and so we say property NSString star, now,\
+\cf2 \expnd0\expndtw0\kerning0
+38:15\cf0 \expnd0\expndtw0\kerning0
+it's important to understand that in objective-C all objects,\
+\cf2 \expnd0\expndtw0\kerning0
+38:19\cf0 \expnd0\expndtw0\kerning0
+all of them, live in the heap and we have pointers to them.\
+\cf2 \expnd0\expndtw0\kerning0
+38:23\cf0 \expnd0\expndtw0\kerning0
+Okay? There's no such thing as making an object on the stack\
+\cf2 \expnd0\expndtw0\kerning0
+38:28\cf0 \expnd0\expndtw0\kerning0
+or anything like that, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+38:29\cf0 \expnd0\expndtw0\kerning0
+They're all in the heap.\
+\cf2 \expnd0\expndtw0\kerning0
+38:30\cf0 \expnd0\expndtw0\kerning0
+Everyone knows what the heap is?\
+\cf2 \expnd0\expndtw0\kerning0
+38:31\cf0 \expnd0\expndtw0\kerning0
+Any questions about that?\
+\cf2 \expnd0\expndtw0\kerning0
+38:32\cf0 \expnd0\expndtw0\kerning0
+That's just where you allocate free memory.\
+\cf2 \expnd0\expndtw0\kerning0
+38:34\cf0 \expnd0\expndtw0\kerning0
+So all objects are there.\
+\cf2 \expnd0\expndtw0\kerning0
+38:36\cf0 \expnd0\expndtw0\kerning0
+What's' really cool about objective-C is,\
+\cf2 \expnd0\expndtw0\kerning0
+38:38\cf0 \expnd0\expndtw0\kerning0
+objective-C will manage all that storage for you.\
+\cf2 \expnd0\expndtw0\kerning0
+38:42\cf0 \expnd0\expndtw0\kerning0
+It will allocate for you and free it for you.\
+\cf2 \expnd0\expndtw0\kerning0
+38:45\cf0 \expnd0\expndtw0\kerning0
+Okay? Now how does it know when to free it?\
+\cf2 \expnd0\expndtw0\kerning0
+38:49\cf0 \expnd0\expndtw0\kerning0
+And the answer is this strong thing,\
+\cf2 \expnd0\expndtw0\kerning0
+38:51\cf0 \expnd0\expndtw0\kerning0
+you see the word strong there?\
+\cf2 \expnd0\expndtw0\kerning0
+38:54\cf0 \expnd0\expndtw0\kerning0
+If, your properties can either be strong, like this one,\
+\cf2 \expnd0\expndtw0\kerning0
+38:57\cf0 \expnd0\expndtw0\kerning0
+or weak, two things, strong or weak.\
+\cf2 \expnd0\expndtw0\kerning0
+39:00\cf0 \expnd0\expndtw0\kerning0
+Okay? And all pointer properties have to be strong or weak\
+\cf2 \expnd0\expndtw0\kerning0
+39:02\cf0 \expnd0\expndtw0\kerning0
+because the objective-C has to know what to do\
+\cf2 \expnd0\expndtw0\kerning0
+39:04\cf0 \expnd0\expndtw0\kerning0
+with the memory and the heap.\
+\cf2 \expnd0\expndtw0\kerning0
+39:05\cf0 \expnd0\expndtw0\kerning0
+Strong means keep the memory for this,\
+\cf2 \expnd0\expndtw0\kerning0
+39:09\cf0 \expnd0\expndtw0\kerning0
+for the thing this points to, in the heap, as long as I\
+\cf2 \expnd0\expndtw0\kerning0
+39:14\cf0 \expnd0\expndtw0\kerning0
+or anyone else has a strong pointer to it.\
+\cf2 \expnd0\expndtw0\kerning0
+39:18\cf0 \expnd0\expndtw0\kerning0
+Okay? So, this is called reference counting,\
+\cf2 \expnd0\expndtw0\kerning0
+39:20\cf0 \expnd0\expndtw0\kerning0
+it's not garbage collection, its reference counting.\
+\cf2 \expnd0\expndtw0\kerning0
+39:22\cf0 \expnd0\expndtw0\kerning0
+So we're going to, the objective-C is going\
+\cf2 \expnd0\expndtw0\kerning0
+39:23\cf0 \expnd0\expndtw0\kerning0
+to keep track of every single strong pointer to an object\
+\cf2 \expnd0\expndtw0\kerning0
+39:27\cf0 \expnd0\expndtw0\kerning0
+in the heap and as long as at least one strong pointer exists,\
+\cf2 \expnd0\expndtw0\kerning0
+39:31\cf0 \expnd0\expndtw0\kerning0
+it's going to keep that thing in heap.\
+\cf2 \expnd0\expndtw0\kerning0
+39:33\cf0 \expnd0\expndtw0\kerning0
+As soon as there are no strong pointers left,\
+\cf2 \expnd0\expndtw0\kerning0
+39:35\cf0 \expnd0\expndtw0\kerning0
+it will free the memory out of the heap, instantly.\
+\cf2 \expnd0\expndtw0\kerning0
+39:37\cf0 \expnd0\expndtw0\kerning0
+Not garbage collected later.\
+\cf2 \expnd0\expndtw0\kerning0
+39:39\cf0 \expnd0\expndtw0\kerning0
+But actually instantly, reclaim that memory.\
+\cf2 \expnd0\expndtw0\kerning0
+39:42\cf0 \expnd0\expndtw0\kerning0
+Okay? So this is probably new to you, you're probably used\
+\cf2 \expnd0\expndtw0\kerning0
+39:45\cf0 \expnd0\expndtw0\kerning0
+to like garbage collection in Java, for example,\
+\cf2 \expnd0\expndtw0\kerning0
+39:48\cf0 \expnd0\expndtw0\kerning0
+or explicit memory management in other languages.\
+\cf2 \expnd0\expndtw0\kerning0
+39:52\cf0 \expnd0\expndtw0\kerning0
+This is called automatic reference counting\
+\cf2 \expnd0\expndtw0\kerning0
+39:54\cf0 \expnd0\expndtw0\kerning0
+and it's awesome.\
+\cf2 \expnd0\expndtw0\kerning0
+39:55\cf0 \expnd0\expndtw0\kerning0
+It's really very predictable, this is much better\
+\cf2 \expnd0\expndtw0\kerning0
+39:57\cf0 \expnd0\expndtw0\kerning0
+than garbage collection, because, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+39:58\cf0 \expnd0\expndtw0\kerning0
+the garbage collector can come along later and do,\
+\cf2 \expnd0\expndtw0\kerning0
+40:01\cf0 \expnd0\expndtw0\kerning0
+wreak havoc on the performance of your application as it goes\
+\cf2 \expnd0\expndtw0\kerning0
+40:04\cf0 \expnd0\expndtw0\kerning0
+and collects things from the heap.\
+\cf2 \expnd0\expndtw0\kerning0
+40:06\cf0 \expnd0\expndtw0\kerning0
+This is very predictable, you know exactly\
+\cf2 \expnd0\expndtw0\kerning0
+40:07\cf0 \expnd0\expndtw0\kerning0
+when things are going to be released,\
+\cf2 \expnd0\expndtw0\kerning0
+40:08\cf0 \expnd0\expndtw0\kerning0
+it's when there's no strong pointers left to it.\
+\cf2 \expnd0\expndtw0\kerning0
+40:11\cf0 \expnd0\expndtw0\kerning0
+What would it mean if this was weak?\
+\cf2 \expnd0\expndtw0\kerning0
+40:12\cf0 \expnd0\expndtw0\kerning0
+Okay, if you have a weak pointer, that tells objective-C,\
+\cf2 \expnd0\expndtw0\kerning0
+40:15\cf0 \expnd0\expndtw0\kerning0
+okay, I have a pointer to this thing in the heap and keep it\
+\cf2 \expnd0\expndtw0\kerning0
+40:18\cf0 \expnd0\expndtw0\kerning0
+in memory as long as someone else has a strong pointer to it.\
+\cf2 \expnd0\expndtw0\kerning0
+40:22\cf0 \expnd0\expndtw0\kerning0
+But as soon as no one else has a strong pointer to that thing,\
+\cf2 \expnd0\expndtw0\kerning0
+40:24\cf0 \expnd0\expndtw0\kerning0
+it gets freed from memory and this pointer,\
+\cf2 \expnd0\expndtw0\kerning0
+40:27\cf0 \expnd0\expndtw0\kerning0
+if it was weak, gets set to nil.\
+\cf2 \expnd0\expndtw0\kerning0
+40:30\cf0 \expnd0\expndtw0\kerning0
+Nil means this pointer doesn't point to anything, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+40:33\cf0 \expnd0\expndtw0\kerning0
+Nil is the same as zero.\
+\cf2 \expnd0\expndtw0\kerning0
+40:36\cf0 \expnd0\expndtw0\kerning0
+Okay? In other languages, you're probably afraid of nil pointers.\
+\cf2 \expnd0\expndtw0\kerning0
+40:40\cf0 \expnd0\expndtw0\kerning0
+Okay? Because you do reference a nil pointer,\
+\cf2 \expnd0\expndtw0\kerning0
+40:43\cf0 \expnd0\expndtw0\kerning0
+it crashes your program, right?\
+\cf2 \expnd0\expndtw0\kerning0
+40:45\cf0 \expnd0\expndtw0\kerning0
+In objective-C, you can send messages to nil pointers even\
+\cf2 \expnd0\expndtw0\kerning0
+40:49\cf0 \expnd0\expndtw0\kerning0
+and it will not crash your program.\
+\cf2 \expnd0\expndtw0\kerning0
+40:50\cf0 \expnd0\expndtw0\kerning0
+In fact, if you send a message to a nil program,\
+\cf2 \expnd0\expndtw0\kerning0
+40:53\cf0 \expnd0\expndtw0\kerning0
+to a nil pointer, it will not execute any code, obviously,\
+\cf2 \expnd0\expndtw0\kerning0
+40:58\cf0 \expnd0\expndtw0\kerning0
+because there's no instance there.\
+\cf2 \expnd0\expndtw0\kerning0
+41:00\cf0 \expnd0\expndtw0\kerning0
+And it will return zero from,\
+\cf2 \expnd0\expndtw0\kerning0
+41:02\cf0 \expnd0\expndtw0\kerning0
+if that message had a return value, it'll return zero.\
+\cf2 \expnd0\expndtw0\kerning0
+41:05\cf0 \expnd0\expndtw0\kerning0
+So you have to be a little careful of messages\
+\cf2 \expnd0\expndtw0\kerning0
+41:07\cf0 \expnd0\expndtw0\kerning0
+that return structs, okay,\
+\cf2 \expnd0\expndtw0\kerning0
+41:09\cf0 \expnd0\expndtw0\kerning0
+but as long as it returns a primitive type or a pointer,\
+\cf2 \expnd0\expndtw0\kerning0
+41:12\cf0 \expnd0\expndtw0\kerning0
+it'll just return zero.\
+\cf2 \expnd0\expndtw0\kerning0
+41:13\cf0 \expnd0\expndtw0\kerning0
+So, this is going to take getting used to.\
+\cf2 \expnd0\expndtw0\kerning0
+41:16\cf0 \expnd0\expndtw0\kerning0
+The fact that we are going to program knowing\
+\cf2 \expnd0\expndtw0\kerning0
+41:18\cf0 \expnd0\expndtw0\kerning0
+that we can send messages to nil,\
+\cf2 \expnd0\expndtw0\kerning0
+41:20\cf0 \expnd0\expndtw0\kerning0
+to pointers that are nil and that that's good.\
+\cf2 \expnd0\expndtw0\kerning0
+41:23\cf0 \expnd0\expndtw0\kerning0
+We'll actually make our code work nicely and we'll use\
+\cf2 \expnd0\expndtw0\kerning0
+41:26\cf0 \expnd0\expndtw0\kerning0
+that to our advantage.\
+\cf2 \expnd0\expndtw0\kerning0
+41:27\cf0 \expnd0\expndtw0\kerning0
+And that is definitely going to be a change for you who are used\
+\cf2 \expnd0\expndtw0\kerning0
+41:30\cf0 \expnd0\expndtw0\kerning0
+to if pointers not nil,\
+\cf2 \expnd0\expndtw0\kerning0
+41:32\cf0 \expnd0\expndtw0\kerning0
+then send message all the time, right?\
+\cf2 \expnd0\expndtw0\kerning0
+41:34\cf0 \expnd0\expndtw0\kerning0
+Protecting against crashes, you don't do that in objective-C,\
+\cf2 \expnd0\expndtw0\kerning0
+41:37\cf0 \expnd0\expndtw0\kerning0
+you just don't code it that way.\
+\cf2 \expnd0\expndtw0\kerning0
+41:39\cf0 \expnd0\expndtw0\kerning0
+Okay? So, this pointer could have the value nil, n-i-l,\
+\cf2 \expnd0\expndtw0\kerning0
+41:44\cf0 \expnd0\expndtw0\kerning0
+which means it doesn't point to anything.\
+\cf2 \expnd0\expndtw0\kerning0
+41:46\cf0 \expnd0\expndtw0\kerning0
+Alright? So if you have a strong pointer and it points\
+\cf2 \expnd0\expndtw0\kerning0
+41:48\cf0 \expnd0\expndtw0\kerning0
+to something and then you set it to nil,\
+\cf2 \expnd0\expndtw0\kerning0
+41:50\cf0 \expnd0\expndtw0\kerning0
+now that strong pointer doesn't point to that thing,\
+\cf2 \expnd0\expndtw0\kerning0
+41:52\cf0 \expnd0\expndtw0\kerning0
+as long as no one else points to it, you can clean\
+\cf2 \expnd0\expndtw0\kerning0
+41:54\cf0 \expnd0\expndtw0\kerning0
+up that memory, objective-C will clean the memory up for you.\
+\cf2 \expnd0\expndtw0\kerning0
+41:57\cf0 \expnd0\expndtw0\kerning0
+Or if you have a pointer that points to something in the heap,\
+\cf2 \expnd0\expndtw0\kerning0
+41:59\cf0 \expnd0\expndtw0\kerning0
+then you make it point to something else in the heap,\
+\cf2 \expnd0\expndtw0\kerning0
+42:01\cf0 \expnd0\expndtw0\kerning0
+then you no longer have a strong pointer to that other thing\
+\cf2 \expnd0\expndtw0\kerning0
+42:04\cf0 \expnd0\expndtw0\kerning0
+in the heap and as long as no one does, it'll get cleaned up.\
+\cf2 \expnd0\expndtw0\kerning0
+42:07\cf0 \expnd0\expndtw0\kerning0
+Okay? And remember weak not only cleans it up,\
+\cf2 \expnd0\expndtw0\kerning0
+42:10\cf0 \expnd0\expndtw0\kerning0
+but it sets your pointer to nil,\
+\cf2 \expnd0\expndtw0\kerning0
+42:12\cf0 \expnd0\expndtw0\kerning0
+because you only wanted a weak pointer, you only wanted it\
+\cf2 \expnd0\expndtw0\kerning0
+42:14\cf0 \expnd0\expndtw0\kerning0
+to point to that thing as long as someone else does.\
+\cf2 \expnd0\expndtw0\kerning0
+42:16\cf0 \expnd0\expndtw0\kerning0
+Okay? So that's the strong versus weak.\
+\cf2 \expnd0\expndtw0\kerning0
+42:19\cf0 \expnd0\expndtw0\kerning0
+The other thing we're going to put\
+\cf2 \expnd0\expndtw0\kerning0
+42:20\cf0 \expnd0\expndtw0\kerning0
+in this little parentheses is nonatomic, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+42:24\cf0 \expnd0\expndtw0\kerning0
+Nonatomic means calling this setter and getter that go along\
+\cf2 \expnd0\expndtw0\kerning0
+42:28\cf0 \expnd0\expndtw0\kerning0
+with this property is not thread safe.\
+\cf2 \expnd0\expndtw0\kerning0
+42:31\cf0 \expnd0\expndtw0\kerning0
+Okay, so you can't have two threads trying\
+\cf2 \expnd0\expndtw0\kerning0
+42:33\cf0 \expnd0\expndtw0\kerning0
+to set this property at the same time.\
+\cf2 \expnd0\expndtw0\kerning0
+42:36\cf0 \expnd0\expndtw0\kerning0
+Why do we say nonatomic here, why do we want this\
+\cf2 \expnd0\expndtw0\kerning0
+42:38\cf0 \expnd0\expndtw0\kerning0
+to not be thread safe?\
+\cf2 \expnd0\expndtw0\kerning0
+42:39\cf0 \expnd0\expndtw0\kerning0
+Because the way we do multithreading in iOS is not\
+\cf2 \expnd0\expndtw0\kerning0
+42:43\cf0 \expnd0\expndtw0\kerning0
+by having a single object that multiple threads are setting on,\
+\cf2 \expnd0\expndtw0\kerning0
+42:46\cf0 \expnd0\expndtw0\kerning0
+we usually have a separate set of objects that are running\
+\cf2 \expnd0\expndtw0\kerning0
+42:48\cf0 \expnd0\expndtw0\kerning0
+in another thread, like your model, and then other,\
+\cf2 \expnd0\expndtw0\kerning0
+42:52\cf0 \expnd0\expndtw0\kerning0
+than your UI stuff is running in the UI thread\
+\cf2 \expnd0\expndtw0\kerning0
+42:54\cf0 \expnd0\expndtw0\kerning0
+and they're talking thread to thread.\
+\cf2 \expnd0\expndtw0\kerning0
+42:56\cf0 \expnd0\expndtw0\kerning0
+Okay? So we don't need this and not only that, what's going\
+\cf2 \expnd0\expndtw0\kerning0
+43:00\cf0 \expnd0\expndtw0\kerning0
+to happen here when we do this\
+\cf2 \expnd0\expndtw0\kerning0
+43:02\cf0 \expnd0\expndtw0\kerning0
+at sign property is objective-C is going to create that getter\
+\cf2 \expnd0\expndtw0\kerning0
+43:05\cf0 \expnd0\expndtw0\kerning0
+and setter methods that I told you\
+\cf2 \expnd0\expndtw0\kerning0
+43:06\cf0 \expnd0\expndtw0\kerning0
+about to set these contents automatically for us,\
+\cf2 \expnd0\expndtw0\kerning0
+43:09\cf0 \expnd0\expndtw0\kerning0
+and we want them to be simple, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+43:12\cf0 \expnd0\expndtw0\kerning0
+This is what they're going to look like.\
+\cf2 \expnd0\expndtw0\kerning0
+43:14\cf0 \expnd0\expndtw0\kerning0
+We want them to be simple.\
+\cf2 \expnd0\expndtw0\kerning0
+43:16\cf0 \expnd0\expndtw0\kerning0
+If we don't say nonatomic, there's going to be all kinds\
+\cf2 \expnd0\expndtw0\kerning0
+43:18\cf0 \expnd0\expndtw0\kerning0
+of locking code in there, right?\
+\cf2 \expnd0\expndtw0\kerning0
+43:20\cf0 \expnd0\expndtw0\kerning0
+If you have multiple threads and you're allowing multiple threads\
+\cf2 \expnd0\expndtw0\kerning0
+43:23\cf0 \expnd0\expndtw0\kerning0
+to access the setter and getter here,\
+\cf2 \expnd0\expndtw0\kerning0
+43:25\cf0 \expnd0\expndtw0\kerning0
+then you need locking code, and we don't want locking code,\
+\cf2 \expnd0\expndtw0\kerning0
+43:28\cf0 \expnd0\expndtw0\kerning0
+especially if we're going to implement the setter\
+\cf2 \expnd0\expndtw0\kerning0
+43:30\cf0 \expnd0\expndtw0\kerning0
+and getter ourselves, which we're going to, sometimes.\
+\cf2 \expnd0\expndtw0\kerning0
+43:34\cf0 \expnd0\expndtw0\kerning0
+Okay? But the default here is\
+\cf2 \expnd0\expndtw0\kerning0
+43:35\cf0 \expnd0\expndtw0\kerning0
+that we don't implement this setter and getter,\
+\cf2 \expnd0\expndtw0\kerning0
+43:38\cf0 \expnd0\expndtw0\kerning0
+it's automatically in there forest.\
+\cf2 \expnd0\expndtw0\kerning0
+43:40\cf0 \expnd0\expndtw0\kerning0
+So you can see there's three parts to this.\
+\cf2 \expnd0\expndtw0\kerning0
+43:42\cf0 \expnd0\expndtw0\kerning0
+There's the at sign synthesize, you see that?\
+\cf2 \expnd0\expndtw0\kerning0
+43:44\cf0 \expnd0\expndtw0\kerning0
+That's basically just saying underbar contents is the name\
+\cf2 \expnd0\expndtw0\kerning0
+43:48\cf0 \expnd0\expndtw0\kerning0
+of the instance variable\
+\cf2 \expnd0\expndtw0\kerning0
+43:50\cf0 \expnd0\expndtw0\kerning0
+in which the property contents is going to be stored.\
+\cf2 \expnd0\expndtw0\kerning0
+43:53\cf0 \expnd0\expndtw0\kerning0
+Now we could say at sign synthesize contents equals foo\
+\cf2 \expnd0\expndtw0\kerning0
+43:57\cf0 \expnd0\expndtw0\kerning0
+[phonetic], and then contents property would be stored\
+\cf2 \expnd0\expndtw0\kerning0
+43:59\cf0 \expnd0\expndtw0\kerning0
+in an instance variable called foo.\
+\cf2 \expnd0\expndtw0\kerning0
+44:00\cf0 \expnd0\expndtw0\kerning0
+But that would be very confusing,\
+\cf2 \expnd0\expndtw0\kerning0
+44:02\cf0 \expnd0\expndtw0\kerning0
+so we always use underbar name of the property.\
+\cf2 \expnd0\expndtw0\kerning0
+44:05\cf0 \expnd0\expndtw0\kerning0
+Okay? And so that's part one,\
+\cf2 \expnd0\expndtw0\kerning0
+44:07\cf0 \expnd0\expndtw0\kerning0
+just basically allocating an instance variable\
+\cf2 \expnd0\expndtw0\kerning0
+44:09\cf0 \expnd0\expndtw0\kerning0
+to store this contents property.\
+\cf2 \expnd0\expndtw0\kerning0
+44:12\cf0 \expnd0\expndtw0\kerning0
+Then there's the getter, that's NSString contents,\
+\cf2 \expnd0\expndtw0\kerning0
+44:15\cf0 \expnd0\expndtw0\kerning0
+return contents, so the dash, parentheses,\
+\cf2 \expnd0\expndtw0\kerning0
+44:18\cf0 \expnd0\expndtw0\kerning0
+NSString contents is a method declaration in objective-C,\
+\cf2 \expnd0\expndtw0\kerning0
+44:23\cf0 \expnd0\expndtw0\kerning0
+the dash means this is a method,\
+\cf2 \expnd0\expndtw0\kerning0
+44:25\cf0 \expnd0\expndtw0\kerning0
+parentheses NSString star means this is a method\
+\cf2 \expnd0\expndtw0\kerning0
+44:27\cf0 \expnd0\expndtw0\kerning0
+that returns a pointer to a string,\
+\cf2 \expnd0\expndtw0\kerning0
+44:30\cf0 \expnd0\expndtw0\kerning0
+and contents is the name of the method.\
+\cf2 \expnd0\expndtw0\kerning0
+44:33\cf0 \expnd0\expndtw0\kerning0
+Okay? So the name of the method of the getter is the same\
+\cf2 \expnd0\expndtw0\kerning0
+44:35\cf0 \expnd0\expndtw0\kerning0
+as the name of the property.\
+\cf2 \expnd0\expndtw0\kerning0
+44:37\cf0 \expnd0\expndtw0\kerning0
+Then, the implementation is just return\
+\cf2 \expnd0\expndtw0\kerning0
+44:39\cf0 \expnd0\expndtw0\kerning0
+that instance variable that we synthesized.\
+\cf2 \expnd0\expndtw0\kerning0
+44:43\cf0 \expnd0\expndtw0\kerning0
+Okay? And similarly, the next method is a method\
+\cf2 \expnd0\expndtw0\kerning0
+44:47\cf0 \expnd0\expndtw0\kerning0
+in objective-C for setting it.\
+\cf2 \expnd0\expndtw0\kerning0
+44:49\cf0 \expnd0\expndtw0\kerning0
+And, again, dash [inaudible] method.\
+\cf2 \expnd0\expndtw0\kerning0
+44:51\cf0 \expnd0\expndtw0\kerning0
+Parentheses void means this method does not return anything.\
+\cf2 \expnd0\expndtw0\kerning0
+44:55\cf0 \expnd0\expndtw0\kerning0
+Okay? That's what parentheses void means.\
+\cf2 \expnd0\expndtw0\kerning0
+44:57\cf0 \expnd0\expndtw0\kerning0
+Then set contents colon, that's the name\
+\cf2 \expnd0\expndtw0\kerning0
+44:59\cf0 \expnd0\expndtw0\kerning0
+of this method, set contents colon.\
+\cf2 \expnd0\expndtw0\kerning0
+45:03\cf0 \expnd0\expndtw0\kerning0
+Parentheses NSString star is the argument to this method.\
+\cf2 \expnd0\expndtw0\kerning0
+45:07\cf0 \expnd0\expndtw0\kerning0
+Contents is just the name of the argument, the local name\
+\cf2 \expnd0\expndtw0\kerning0
+45:10\cf0 \expnd0\expndtw0\kerning0
+of the variable in the local contents, context,\
+\cf2 \expnd0\expndtw0\kerning0
+45:14\cf0 \expnd0\expndtw0\kerning0
+and the implementation is just underbar contents,\
+\cf2 \expnd0\expndtw0\kerning0
+45:17\cf0 \expnd0\expndtw0\kerning0
+our instance variable equals that argument.\
+\cf2 \expnd0\expndtw0\kerning0
+45:20\cf0 \expnd0\expndtw0\kerning0
+Okay? So, before I move on,\
+\cf2 \expnd0\expndtw0\kerning0
+45:22\cf0 \expnd0\expndtw0\kerning0
+does everyone understand how these two methods are allowing\
+\cf2 \expnd0\expndtw0\kerning0
+45:27\cf0 \expnd0\expndtw0\kerning0
+you to set and get an NSString storage space inside your card?\
+\cf2 \expnd0\expndtw0\kerning0
+45:33\cf0 \expnd0\expndtw0\kerning0
+Everyone understand that?\
+\cf2 \expnd0\expndtw0\kerning0
+45:35\cf0 \expnd0\expndtw0\kerning0
+Question? [Inaudible background question] Okay,\
+\cf2 \expnd0\expndtw0\kerning0
+45:38\cf0 \expnd0\expndtw0\kerning0
+so the synthesize line, again, is just specifying the name\
+\cf2 \expnd0\expndtw0\kerning0
+45:43\cf0 \expnd0\expndtw0\kerning0
+of the instance variable that we're going to use\
+\cf2 \expnd0\expndtw0\kerning0
+45:45\cf0 \expnd0\expndtw0\kerning0
+to store this stuff in, underbar contents.\
+\cf2 \expnd0\expndtw0\kerning0
+45:47\cf0 \expnd0\expndtw0\kerning0
+It's kind of weird, you could maybe, it might be better saying\
+\cf2 \expnd0\expndtw0\kerning0
+45:50\cf0 \expnd0\expndtw0\kerning0
+at sign synthesize contents to use instance variable\
+\cf2 \expnd0\expndtw0\kerning0
+45:54\cf0 \expnd0\expndtw0\kerning0
+with name, underbar contents.\
+\cf2 \expnd0\expndtw0\kerning0
+45:56\cf0 \expnd0\expndtw0\kerning0
+That equals, I know, is a little weird.\
+\cf2 \expnd0\expndtw0\kerning0
+45:58\cf0 \expnd0\expndtw0\kerning0
+It sounds like it's assigning something, but it's just,\
+\cf2 \expnd0\expndtw0\kerning0
+46:00\cf0 \expnd0\expndtw0\kerning0
+that's what, think about equals as, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+46:03\cf0 \expnd0\expndtw0\kerning0
+we'll use the instance variable\
+\cf2 \expnd0\expndtw0\kerning0
+46:04\cf0 \expnd0\expndtw0\kerning0
+with the name, underbar contents.\
+\cf2 \expnd0\expndtw0\kerning0
+46:06\cf0 \expnd0\expndtw0\kerning0
+So that's what the synthesize is doing.\
+\cf2 \expnd0\expndtw0\kerning0
+46:08\cf0 \expnd0\expndtw0\kerning0
+If you don't put the synthesize, it's not going\
+\cf2 \expnd0\expndtw0\kerning0
+46:10\cf0 \expnd0\expndtw0\kerning0
+to create the space in your card instance, and it won't,\
+\cf2 \expnd0\expndtw0\kerning0
+46:13\cf0 \expnd0\expndtw0\kerning0
+there won't be any name for it so you can't refer to it\
+\cf2 \expnd0\expndtw0\kerning0
+46:15\cf0 \expnd0\expndtw0\kerning0
+in your getter and setter, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+46:17\cf0 \expnd0\expndtw0\kerning0
+Everyone understand this?\
+\cf2 \expnd0\expndtw0\kerning0
+46:19\cf0 \expnd0\expndtw0\kerning0
+Any other questions?\
+\cf2 \expnd0\expndtw0\kerning0
+46:21\cf0 \expnd0\expndtw0\kerning0
+Okay, now, the thing about it is, when you type the\
+\cf2 \expnd0\expndtw0\kerning0
+46:23\cf0 \expnd0\expndtw0\kerning0
+at sign property on the left, this gets added to your\
+\cf2 \expnd0\expndtw0\kerning0
+46:27\cf0 \expnd0\expndtw0\kerning0
+at sign implementation; however, you will not see it there.\
+\cf2 \expnd0\expndtw0\kerning0
+46:31\cf0 \expnd0\expndtw0\kerning0
+[Pause] Okay?\
+\cf2 \expnd0\expndtw0\kerning0
+46:32\cf0 \expnd0\expndtw0\kerning0
+So it's there, but you don't see it.\
+\cf2 \expnd0\expndtw0\kerning0
+46:34\cf0 \expnd0\expndtw0\kerning0
+Okay, objective-C is, made it for you, but it doesn't show it\
+\cf2 \expnd0\expndtw0\kerning0
+46:38\cf0 \expnd0\expndtw0\kerning0
+to you, but it's there, okay, that setter method\
+\cf2 \expnd0\expndtw0\kerning0
+46:41\cf0 \expnd0\expndtw0\kerning0
+and that setter-getter method are there.\
+\cf2 \expnd0\expndtw0\kerning0
+46:44\cf0 \expnd0\expndtw0\kerning0
+Okay? They exist.\
+\cf2 \expnd0\expndtw0\kerning0
+46:45\cf0 \expnd0\expndtw0\kerning0
+And not only that, they're public, because you put\
+\cf2 \expnd0\expndtw0\kerning0
+46:47\cf0 \expnd0\expndtw0\kerning0
+that at sign property declaration in your header file.\
+\cf2 \expnd0\expndtw0\kerning0
+46:51\cf0 \expnd0\expndtw0\kerning0
+Everyone got that?\
+\cf2 \expnd0\expndtw0\kerning0
+46:53\cf0 \expnd0\expndtw0\kerning0
+So let's look at another couple properties just\
+\cf2 \expnd0\expndtw0\kerning0
+46:55\cf0 \expnd0\expndtw0\kerning0
+to see the syntax a little more.\
+\cf2 \expnd0\expndtw0\kerning0
+46:56\cf0 \expnd0\expndtw0\kerning0
+So here's two properties that are bullions [phonetic].\
+\cf2 \expnd0\expndtw0\kerning0
+46:59\cf0 \expnd0\expndtw0\kerning0
+Okay? There's no bullion primitive in C,\
+\cf2 \expnd0\expndtw0\kerning0
+47:02\cf0 \expnd0\expndtw0\kerning0
+so objective-C has to find, typedef all caps BULL,\
+\cf2 \expnd0\expndtw0\kerning0
+47:06\cf0 \expnd0\expndtw0\kerning0
+probably a short or something or an int or a char,\
+\cf2 \expnd0\expndtw0\kerning0
+47:09\cf0 \expnd0\expndtw0\kerning0
+I don't know what, but you can think of it as a primitive type,\
+\cf2 \expnd0\expndtw0\kerning0
+47:12\cf0 \expnd0\expndtw0\kerning0
+it's a boolean, it's value can either be yes,\
+\cf2 \expnd0\expndtw0\kerning0
+47:15\cf0 \expnd0\expndtw0\kerning0
+which is some non-zero value, or no which is zero.\
+\cf2 \expnd0\expndtw0\kerning0
+47:18\cf0 \expnd0\expndtw0\kerning0
+And these properties don't need the strong or weak.\
+\cf2 \expnd0\expndtw0\kerning0
+47:21\cf0 \expnd0\expndtw0\kerning0
+Do you understand why that is?\
+\cf2 \expnd0\expndtw0\kerning0
+47:24\cf0 \expnd0\expndtw0\kerning0
+Because they're primitive types,\
+\cf2 \expnd0\expndtw0\kerning0
+47:25\cf0 \expnd0\expndtw0\kerning0
+they're not stored in the heap, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+47:27\cf0 \expnd0\expndtw0\kerning0
+They're just a int or a float, so there's no memory to manage\
+\cf2 \expnd0\expndtw0\kerning0
+47:30\cf0 \expnd0\expndtw0\kerning0
+so you don't need to know about strong and weak pointers,\
+\cf2 \expnd0\expndtw0\kerning0
+47:32\cf0 \expnd0\expndtw0\kerning0
+there's no pointers involved here,\
+\cf2 \expnd0\expndtw0\kerning0
+47:34\cf0 \expnd0\expndtw0\kerning0
+this is just a BULL, a bullion.\
+\cf2 \expnd0\expndtw0\kerning0
+47:35\cf0 \expnd0\expndtw0\kerning0
+So there's no strong or weak, but we still have the nonatomic,\
+\cf2 \expnd0\expndtw0\kerning0
+47:38\cf0 \expnd0\expndtw0\kerning0
+because we still want the setter and the getter to be simple,\
+\cf2 \expnd0\expndtw0\kerning0
+47:41\cf0 \expnd0\expndtw0\kerning0
+not having any locking code or any of that business.\
+\cf2 \expnd0\expndtw0\kerning0
+47:42\cf0 \expnd0\expndtw0\kerning0
+So we're always going to have nonatomic\
+\cf2 \expnd0\expndtw0\kerning0
+47:44\cf0 \expnd0\expndtw0\kerning0
+on every property in this class.\
+\cf2 \expnd0\expndtw0\kerning0
+47:46\cf0 \expnd0\expndtw0\kerning0
+We will not have a single property in this entire class\
+\cf2 \expnd0\expndtw0\kerning0
+47:48\cf0 \expnd0\expndtw0\kerning0
+that is not nonatomic.\
+\cf2 \expnd0\expndtw0\kerning0
+47:49\cf0 \expnd0\expndtw0\kerning0
+So just put it in there, I wish it were the default.\
+\cf2 \expnd0\expndtw0\kerning0
+47:51\cf0 \expnd0\expndtw0\kerning0
+Okay? So that's what we're going to do.\
+\cf2 \expnd0\expndtw0\kerning0
+47:54\cf0 \expnd0\expndtw0\kerning0
+You can see we've synthesized them both\
+\cf2 \expnd0\expndtw0\kerning0
+47:57\cf0 \expnd0\expndtw0\kerning0
+and we've got the setter and the getter for them both,\
+\cf2 \expnd0\expndtw0\kerning0
+47:59\cf0 \expnd0\expndtw0\kerning0
+and this is all being done for us by objective-C.\
+\cf2 \expnd0\expndtw0\kerning0
+48:02\cf0 \expnd0\expndtw0\kerning0
+Now, one thing that's kind of cool is we may not like the name\
+\cf2 \expnd0\expndtw0\kerning0
+48:06\cf0 \expnd0\expndtw0\kerning0
+of this getter, because we want our code to read something\
+\cf2 \expnd0\expndtw0\kerning0
+48:08\cf0 \expnd0\expndtw0\kerning0
+like if card is chosen, then do something.\
+\cf2 \expnd0\expndtw0\kerning0
+48:12\cf0 \expnd0\expndtw0\kerning0
+If card is matched, then do something.\
+\cf2 \expnd0\expndtw0\kerning0
+48:14\cf0 \expnd0\expndtw0\kerning0
+So we really want the getter called is chosen,\
+\cf2 \expnd0\expndtw0\kerning0
+48:17\cf0 \expnd0\expndtw0\kerning0
+not just chosen.\
+\cf2 \expnd0\expndtw0\kerning0
+48:18\cf0 \expnd0\expndtw0\kerning0
+You know, if card chosen, not as nice as if card is chosen.\
+\cf2 \expnd0\expndtw0\kerning0
+48:22\cf0 \expnd0\expndtw0\kerning0
+So it's actually possible to rename the getter\
+\cf2 \expnd0\expndtw0\kerning0
+48:25\cf0 \expnd0\expndtw0\kerning0
+by saying getter equals the new name you want.\
+\cf2 \expnd0\expndtw0\kerning0
+48:29\cf0 \expnd0\expndtw0\kerning0
+Okay? And that's essentially renamed it, same thing,\
+\cf2 \expnd0\expndtw0\kerning0
+48:31\cf0 \expnd0\expndtw0\kerning0
+we'll do the same thing with this one.\
+\cf2 \expnd0\expndtw0\kerning0
+48:32\cf0 \expnd0\expndtw0\kerning0
+Getter equals is matched,\
+\cf2 \expnd0\expndtw0\kerning0
+48:34\cf0 \expnd0\expndtw0\kerning0
+now that getter is called is matched.\
+\cf2 \expnd0\expndtw0\kerning0
+48:36\cf0 \expnd0\expndtw0\kerning0
+And I bring this up because you're going\
+\cf2 \expnd0\expndtw0\kerning0
+48:38\cf0 \expnd0\expndtw0\kerning0
+to see how iOS does this with bullion properties,\
+\cf2 \expnd0\expndtw0\kerning0
+48:40\cf0 \expnd0\expndtw0\kerning0
+it tends to rename them to is this or has this,\
+\cf2 \expnd0\expndtw0\kerning0
+48:43\cf0 \expnd0\expndtw0\kerning0
+depending on what the verb there is.\
+\cf2 \expnd0\expndtw0\kerning0
+48:46\cf0 \expnd0\expndtw0\kerning0
+Okay? And again, objective-C is writing all this code on,\
+\cf2 \expnd0\expndtw0\kerning0
+48:50\cf0 \expnd0\expndtw0\kerning0
+in the implementation, but you don't see it.\
+\cf2 \expnd0\expndtw0\kerning0
+48:53\cf0 \expnd0\expndtw0\kerning0
+But it's there.\
+\cf2 \expnd0\expndtw0\kerning0
+48:55\cf0 \expnd0\expndtw0\kerning0
+Okay? Now, [pause] we're going to talk\
+\cf2 \expnd0\expndtw0\kerning0
+48:58\cf0 \expnd0\expndtw0\kerning0
+about why properties are good and why it's better\
+\cf2 \expnd0\expndtw0\kerning0
+49:00\cf0 \expnd0\expndtw0\kerning0
+than just accessing instance variables directly,\
+\cf2 \expnd0\expndtw0\kerning0
+49:04\cf0 \expnd0\expndtw0\kerning0
+[pause] in later lectures, but the bottom-line is it's good\
+\cf2 \expnd0\expndtw0\kerning0
+49:07\cf0 \expnd0\expndtw0\kerning0
+for doing things like balance checking,\
+\cf2 \expnd0\expndtw0\kerning0
+49:09\cf0 \expnd0\expndtw0\kerning0
+it's good for doing things like when you set a property\
+\cf2 \expnd0\expndtw0\kerning0
+49:11\cf0 \expnd0\expndtw0\kerning0
+and you want to updated the UI.\
+\cf2 \expnd0\expndtw0\kerning0
+49:13\cf0 \expnd0\expndtw0\kerning0
+It's doing good for things for initializing pointers.\
+\cf2 \expnd0\expndtw0\kerning0
+49:16\cf0 \expnd0\expndtw0\kerning0
+Like that end string star contents property is going\
+\cf2 \expnd0\expndtw0\kerning0
+49:19\cf0 \expnd0\expndtw0\kerning0
+to start off nil.\
+\cf2 \expnd0\expndtw0\kerning0
+49:21\cf0 \expnd0\expndtw0\kerning0
+All properties, in objective-C, all of them, start off zero.\
+\cf2 \expnd0\expndtw0\kerning0
+49:25\cf0 \expnd0\expndtw0\kerning0
+So for pointer, that's nil.\
+\cf2 \expnd0\expndtw0\kerning0
+49:27\cf0 \expnd0\expndtw0\kerning0
+Okay? So that contents property, when we create a new card,\
+\cf2 \expnd0\expndtw0\kerning0
+49:30\cf0 \expnd0\expndtw0\kerning0
+it's going to not point to any contents.\
+\cf2 \expnd0\expndtw0\kerning0
+49:32\cf0 \expnd0\expndtw0\kerning0
+That cards going to be blank, okay, it's not going\
+\cf2 \expnd0\expndtw0\kerning0
+49:34\cf0 \expnd0\expndtw0\kerning0
+to have anything on it.\
+\cf2 \expnd0\expndtw0\kerning0
+49:35\cf0 \expnd0\expndtw0\kerning0
+So, it's nice to use the setter and getter,\
+\cf2 \expnd0\expndtw0\kerning0
+49:38\cf0 \expnd0\expndtw0\kerning0
+we implement our own setter and getter that will check to see\
+\cf2 \expnd0\expndtw0\kerning0
+49:41\cf0 \expnd0\expndtw0\kerning0
+if it's nil, and if it's not, and sometimes,\
+\cf2 \expnd0\expndtw0\kerning0
+49:43\cf0 \expnd0\expndtw0\kerning0
+not with contents, but with some properties, if it's nil,\
+\cf2 \expnd0\expndtw0\kerning0
+49:46\cf0 \expnd0\expndtw0\kerning0
+we'll create something in memory.\
+\cf2 \expnd0\expndtw0\kerning0
+49:49\cf0 \expnd0\expndtw0\kerning0
+Okay? So that's another reason you use it.\
+\cf2 \expnd0\expndtw0\kerning0
+49:50\cf0 \expnd0\expndtw0\kerning0
+So you'll see all these reasons why we want properties\
+\cf2 \expnd0\expndtw0\kerning0
+49:53\cf0 \expnd0\expndtw0\kerning0
+in the next lecture basically.\
+\cf2 \expnd0\expndtw0\kerning0
+49:55\cf0 \expnd0\expndtw0\kerning0
+Alright, so now, let's look at a method.\
+\cf2 \expnd0\expndtw0\kerning0
+49:59\cf0 \expnd0\expndtw0\kerning0
+Okay? Just a regular, old method.\
+\cf2 \expnd0\expndtw0\kerning0
+50:01\cf0 \expnd0\expndtw0\kerning0
+You've seen some methods, the setter and getter methods,\
+\cf2 \expnd0\expndtw0\kerning0
+50:03\cf0 \expnd0\expndtw0\kerning0
+but what if we wanted to find our own method,\
+\cf2 \expnd0\expndtw0\kerning0
+50:05\cf0 \expnd0\expndtw0\kerning0
+our own public method, so I'm going\
+\cf2 \expnd0\expndtw0\kerning0
+50:07\cf0 \expnd0\expndtw0\kerning0
+to define this method called match.\
+\cf2 \expnd0\expndtw0\kerning0
+50:09\cf0 \expnd0\expndtw0\kerning0
+Remember that I'm building a model here\
+\cf2 \expnd0\expndtw0\kerning0
+50:11\cf0 \expnd0\expndtw0\kerning0
+for a card matching game, where I'm going to put all these cards\
+\cf2 \expnd0\expndtw0\kerning0
+50:13\cf0 \expnd0\expndtw0\kerning0
+on the screen and the user is going to try and match them.\
+\cf2 \expnd0\expndtw0\kerning0
+50:16\cf0 \expnd0\expndtw0\kerning0
+Pick ones that match, alright?\
+\cf2 \expnd0\expndtw0\kerning0
+50:18\cf0 \expnd0\expndtw0\kerning0
+So I need a match method.\
+\cf2 \expnd0\expndtw0\kerning0
+50:19\cf0 \expnd0\expndtw0\kerning0
+A method that tells me whether two cards match.\
+\cf2 \expnd0\expndtw0\kerning0
+50:23\cf0 \expnd0\expndtw0\kerning0
+Okay? So, I'm trying to make this simple,\
+\cf2 \expnd0\expndtw0\kerning0
+50:26\cf0 \expnd0\expndtw0\kerning0
+so I've made a simple match method\
+\cf2 \expnd0\expndtw0\kerning0
+50:27\cf0 \expnd0\expndtw0\kerning0
+that has the following semantics.\
+\cf2 \expnd0\expndtw0\kerning0
+50:29\cf0 \expnd0\expndtw0\kerning0
+It takes another card as the argument,\
+\cf2 \expnd0\expndtw0\kerning0
+50:31\cf0 \expnd0\expndtw0\kerning0
+and it returns it an integer.\
+\cf2 \expnd0\expndtw0\kerning0
+50:33\cf0 \expnd0\expndtw0\kerning0
+That integer is zero if the cards don't match, otherwise,\
+\cf2 \expnd0\expndtw0\kerning0
+50:37\cf0 \expnd0\expndtw0\kerning0
+it's an integer that is higher, the better a match it is.\
+\cf2 \expnd0\expndtw0\kerning0
+50:42\cf0 \expnd0\expndtw0\kerning0
+Okay? So like a really good match might be a thousand,\
+\cf2 \expnd0\expndtw0\kerning0
+50:45\cf0 \expnd0\expndtw0\kerning0
+but a not so good match might only be a hundred, and,\
+\cf2 \expnd0\expndtw0\kerning0
+50:47\cf0 \expnd0\expndtw0\kerning0
+or, or it could be one.\
+\cf2 \expnd0\expndtw0\kerning0
+50:49\cf0 \expnd0\expndtw0\kerning0
+Now, the semantics of what that number is, totally depends\
+\cf2 \expnd0\expndtw0\kerning0
+50:52\cf0 \expnd0\expndtw0\kerning0
+on the cards, because we're only going to match cards\
+\cf2 \expnd0\expndtw0\kerning0
+50:54\cf0 \expnd0\expndtw0\kerning0
+against other cards, alright?\
+\cf2 \expnd0\expndtw0\kerning0
+50:56\cf0 \expnd0\expndtw0\kerning0
+And we're going to find out how good a match they are\
+\cf2 \expnd0\expndtw0\kerning0
+50:58\cf0 \expnd0\expndtw0\kerning0
+by how that, whatever that card class is, and we're going\
+\cf2 \expnd0\expndtw0\kerning0
+51:01\cf0 \expnd0\expndtw0\kerning0
+to make a subclass of this class, called playing card,\
+\cf2 \expnd0\expndtw0\kerning0
+51:05\cf0 \expnd0\expndtw0\kerning0
+that's going to give more points for matching the rank, okay,\
+\cf2 \expnd0\expndtw0\kerning0
+51:09\cf0 \expnd0\expndtw0\kerning0
+than it is for matching the suit.\
+\cf2 \expnd0\expndtw0\kerning0
+51:11\cf0 \expnd0\expndtw0\kerning0
+Okay? But that's up to subclasses of cards\
+\cf2 \expnd0\expndtw0\kerning0
+51:14\cf0 \expnd0\expndtw0\kerning0
+to determine what the point system is, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+51:16\cf0 \expnd0\expndtw0\kerning0
+So, for our implementation of match, okay,\
+\cf2 \expnd0\expndtw0\kerning0
+51:20\cf0 \expnd0\expndtw0\kerning0
+we're going to do a really simple implementation, so,\
+\cf2 \expnd0\expndtw0\kerning0
+51:23\cf0 \expnd0\expndtw0\kerning0
+first let's assume that they don't match.\
+\cf2 \expnd0\expndtw0\kerning0
+51:25\cf0 \expnd0\expndtw0\kerning0
+Okay, so I just made this local variable int score equals zero,\
+\cf2 \expnd0\expndtw0\kerning0
+51:28\cf0 \expnd0\expndtw0\kerning0
+you can see that you can assign a variable,\
+\cf2 \expnd0\expndtw0\kerning0
+51:30\cf0 \expnd0\expndtw0\kerning0
+actually all local variables also start out zero,\
+\cf2 \expnd0\expndtw0\kerning0
+51:33\cf0 \expnd0\expndtw0\kerning0
+so I don't even really need that equals zero,\
+\cf2 \expnd0\expndtw0\kerning0
+51:35\cf0 \expnd0\expndtw0\kerning0
+but I'm a big believer in putting that in\
+\cf2 \expnd0\expndtw0\kerning0
+51:37\cf0 \expnd0\expndtw0\kerning0
+if that's really, you know, what you intend,\
+\cf2 \expnd0\expndtw0\kerning0
+51:39\cf0 \expnd0\expndtw0\kerning0
+and in this case I intend the score to be actually zero.\
+\cf2 \expnd0\expndtw0\kerning0
+51:42\cf0 \expnd0\expndtw0\kerning0
+The score of this match until I go and see\
+\cf2 \expnd0\expndtw0\kerning0
+51:44\cf0 \expnd0\expndtw0\kerning0
+if these cards match, right?\
+\cf2 \expnd0\expndtw0\kerning0
+51:46\cf0 \expnd0\expndtw0\kerning0
+So it's just a kind of programming style thing here.\
+\cf2 \expnd0\expndtw0\kerning0
+51:48\cf0 \expnd0\expndtw0\kerning0
+So, how I'm going to tell, how am I going to tell\
+\cf2 \expnd0\expndtw0\kerning0
+51:51\cf0 \expnd0\expndtw0\kerning0
+if this card that's been passed in match, matches the card\
+\cf2 \expnd0\expndtw0\kerning0
+51:55\cf0 \expnd0\expndtw0\kerning0
+that it's being sent to?\
+\cf2 \expnd0\expndtw0\kerning0
+51:56\cf0 \expnd0\expndtw0\kerning0
+And the answer is I'm going to send some messages, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+52:02\cf0 \expnd0\expndtw0\kerning0
+You see the open square brackets notation there,\
+\cf2 \expnd0\expndtw0\kerning0
+52:04\cf0 \expnd0\expndtw0\kerning0
+that's the first time you're seeing me send a message\
+\cf2 \expnd0\expndtw0\kerning0
+52:08\cf0 \expnd0\expndtw0\kerning0
+in objective-C, and I'm also sending two other messages\
+\cf2 \expnd0\expndtw0\kerning0
+52:12\cf0 \expnd0\expndtw0\kerning0
+in this one line.\
+\cf2 \expnd0\expndtw0\kerning0
+52:13\cf0 \expnd0\expndtw0\kerning0
+Card.contents and self.contents, you see both of those,\
+\cf2 \expnd0\expndtw0\kerning0
+52:18\cf0 \expnd0\expndtw0\kerning0
+those are message sends, as well.\
+\cf2 \expnd0\expndtw0\kerning0
+52:20\cf0 \expnd0\expndtw0\kerning0
+So there's two different syntaxes here\
+\cf2 \expnd0\expndtw0\kerning0
+52:21\cf0 \expnd0\expndtw0\kerning0
+for sending a message.\
+\cf2 \expnd0\expndtw0\kerning0
+52:23\cf0 \expnd0\expndtw0\kerning0
+One is open square brackets, okay, and we'll talk\
+\cf2 \expnd0\expndtw0\kerning0
+52:26\cf0 \expnd0\expndtw0\kerning0
+about that one in a second.\
+\cf2 \expnd0\expndtw0\kerning0
+52:27\cf0 \expnd0\expndtw0\kerning0
+And another one is dot notation, card.contents.\
+\cf2 \expnd0\expndtw0\kerning0
+52:31\cf0 \expnd0\expndtw0\kerning0
+When do we use them?\
+\cf2 \expnd0\expndtw0\kerning0
+52:32\cf0 \expnd0\expndtw0\kerning0
+We only use the dot notation for properties.\
+\cf2 \expnd0\expndtw0\kerning0
+52:37\cf0 \expnd0\expndtw0\kerning0
+That's how we call the setter and getter\
+\cf2 \expnd0\expndtw0\kerning0
+52:39\cf0 \expnd0\expndtw0\kerning0
+of properties, using dot notation.\
+\cf2 \expnd0\expndtw0\kerning0
+52:41\cf0 \expnd0\expndtw0\kerning0
+Okay? Now, here we're calling the getter,\
+\cf2 \expnd0\expndtw0\kerning0
+52:44\cf0 \expnd0\expndtw0\kerning0
+card.contents is calling the getter\
+\cf2 \expnd0\expndtw0\kerning0
+52:47\cf0 \expnd0\expndtw0\kerning0
+of the contents property on the card instance.\
+\cf2 \expnd0\expndtw0\kerning0
+52:52\cf0 \expnd0\expndtw0\kerning0
+Okay? How do we call the setter?\
+\cf2 \expnd0\expndtw0\kerning0
+52:54\cf0 \expnd0\expndtw0\kerning0
+Exactly the same.\
+\cf2 \expnd0\expndtw0\kerning0
+52:55\cf0 \expnd0\expndtw0\kerning0
+Card.contents, but we put it\
+\cf2 \expnd0\expndtw0\kerning0
+52:57\cf0 \expnd0\expndtw0\kerning0
+on the left-hand side of the equals.\
+\cf2 \expnd0\expndtw0\kerning0
+52:59\cf0 \expnd0\expndtw0\kerning0
+Card.contents equals, now we're calling the setter for contents.\
+\cf2 \expnd0\expndtw0\kerning0
+53:04\cf0 \expnd0\expndtw0\kerning0
+You see? So here we're calling the getter.\
+\cf2 \expnd0\expndtw0\kerning0
+53:05\cf0 \expnd0\expndtw0\kerning0
+We're also calling the getter\
+\cf2 \expnd0\expndtw0\kerning0
+53:07\cf0 \expnd0\expndtw0\kerning0
+for contents on self, on our self.\
+\cf2 \expnd0\expndtw0\kerning0
+53:09\cf0 \expnd0\expndtw0\kerning0
+So, in other language this might be called this, right,\
+\cf2 \expnd0\expndtw0\kerning0
+53:12\cf0 \expnd0\expndtw0\kerning0
+but you know what self is, right, self is this instance\
+\cf2 \expnd0\expndtw0\kerning0
+53:14\cf0 \expnd0\expndtw0\kerning0
+that this code is operating on.\
+\cf2 \expnd0\expndtw0\kerning0
+53:17\cf0 \expnd0\expndtw0\kerning0
+So, we are going to compare these two strings, card.contents\
+\cf2 \expnd0\expndtw0\kerning0
+53:21\cf0 \expnd0\expndtw0\kerning0
+and self.contents to see if they are equal and we are going to do\
+\cf2 \expnd0\expndtw0\kerning0
+53:25\cf0 \expnd0\expndtw0\kerning0
+that with the NSString method is equal to string colon.\
+\cf2 \expnd0\expndtw0\kerning0
+53:30\cf0 \expnd0\expndtw0\kerning0
+So [inaudible] equal to string colon can only be sent\
+\cf2 \expnd0\expndtw0\kerning0
+53:33\cf0 \expnd0\expndtw0\kerning0
+to a string [pause], so is equal to string can only be sent\
+\cf2 \expnd0\expndtw0\kerning0
+53:37\cf0 \expnd0\expndtw0\kerning0
+to a string and card.contents is a getter method\
+\cf2 \expnd0\expndtw0\kerning0
+53:41\cf0 \expnd0\expndtw0\kerning0
+that returns a NSString, so we're good to go, right?\
+\cf2 \expnd0\expndtw0\kerning0
+53:43\cf0 \expnd0\expndtw0\kerning0
+We're sending is equal string to a string, and the NS equal\
+\cf2 \expnd0\expndtw0\kerning0
+53:47\cf0 \expnd0\expndtw0\kerning0
+to string takes as an argument, an NSString and, again,\
+\cf2 \expnd0\expndtw0\kerning0
+53:51\cf0 \expnd0\expndtw0\kerning0
+self.contents is a getter method that returns NSString;\
+\cf2 \expnd0\expndtw0\kerning0
+53:54\cf0 \expnd0\expndtw0\kerning0
+therefore, we have satisfied all the requirements of this equal\
+\cf2 \expnd0\expndtw0\kerning0
+53:57\cf0 \expnd0\expndtw0\kerning0
+to string and we put square brackets around it,\
+\cf2 \expnd0\expndtw0\kerning0
+54:00\cf0 \expnd0\expndtw0\kerning0
+and it's going to return a bullion is equal\
+\cf2 \expnd0\expndtw0\kerning0
+54:02\cf0 \expnd0\expndtw0\kerning0
+to string is defined to return a bullion whether the contents\
+\cf2 \expnd0\expndtw0\kerning0
+54:06\cf0 \expnd0\expndtw0\kerning0
+of those two strings are the same.\
+\cf2 \expnd0\expndtw0\kerning0
+54:07\cf0 \expnd0\expndtw0\kerning0
+Notice we did not say equals equals.\
+\cf2 \expnd0\expndtw0\kerning0
+54:10\cf0 \expnd0\expndtw0\kerning0
+Okay, we did not say card.contents equals\
+\cf2 \expnd0\expndtw0\kerning0
+54:12\cf0 \expnd0\expndtw0\kerning0
+equals self.contents.\
+\cf2 \expnd0\expndtw0\kerning0
+54:14\cf0 \expnd0\expndtw0\kerning0
+Because we'd just be impairing the pointers then,\
+\cf2 \expnd0\expndtw0\kerning0
+54:16\cf0 \expnd0\expndtw0\kerning0
+not what the pointers point to, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+54:20\cf0 \expnd0\expndtw0\kerning0
+Everyone understand why we didn't use equals equals to see\
+\cf2 \expnd0\expndtw0\kerning0
+54:22\cf0 \expnd0\expndtw0\kerning0
+if those two strings are the same?\
+\cf2 \expnd0\expndtw0\kerning0
+54:23\cf0 \expnd0\expndtw0\kerning0
+So if those strings are the same,\
+\cf2 \expnd0\expndtw0\kerning0
+54:25\cf0 \expnd0\expndtw0\kerning0
+I'm going to give one point, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+54:27\cf0 \expnd0\expndtw0\kerning0
+So this is either the dirt simple implementation of match,\
+\cf2 \expnd0\expndtw0\kerning0
+54:32\cf0 \expnd0\expndtw0\kerning0
+which is if the cards are exactly the same,\
+\cf2 \expnd0\expndtw0\kerning0
+54:34\cf0 \expnd0\expndtw0\kerning0
+their contents are exactly the same,\
+\cf2 \expnd0\expndtw0\kerning0
+54:35\cf0 \expnd0\expndtw0\kerning0
+I'll get one point, otherwise I get zero.\
+\cf2 \expnd0\expndtw0\kerning0
+54:37\cf0 \expnd0\expndtw0\kerning0
+Okay? Now we're going to do much better implementation in match\
+\cf2 \expnd0\expndtw0\kerning0
+54:40\cf0 \expnd0\expndtw0\kerning0
+when we do playing card,\
+\cf2 \expnd0\expndtw0\kerning0
+54:42\cf0 \expnd0\expndtw0\kerning0
+but this is our kind of dirt simple one.\
+\cf2 \expnd0\expndtw0\kerning0
+54:44\cf0 \expnd0\expndtw0\kerning0
+Now, to give you just a little more about objective-C,\
+\cf2 \expnd0\expndtw0\kerning0
+54:48\cf0 \expnd0\expndtw0\kerning0
+what if we changed this method, oh, so, yeah,\
+\cf2 \expnd0\expndtw0\kerning0
+54:50\cf0 \expnd0\expndtw0\kerning0
+here's a little bit about who's the sender\
+\cf2 \expnd0\expndtw0\kerning0
+54:53\cf0 \expnd0\expndtw0\kerning0
+and who's the receiver here.\
+\cf2 \expnd0\expndtw0\kerning0
+54:55\cf0 \expnd0\expndtw0\kerning0
+You can look at this in the slides later.\
+\cf2 \expnd0\expndtw0\kerning0
+54:57\cf0 \expnd0\expndtw0\kerning0
+Okay? But I'm going to make this a little more complicated.\
+\cf2 \expnd0\expndtw0\kerning0
+55:00\cf0 \expnd0\expndtw0\kerning0
+I'm going to make the argument to match be an array of cards.\
+\cf2 \expnd0\expndtw0\kerning0
+55:04\cf0 \expnd0\expndtw0\kerning0
+Okay? So now I'm matching this card that I'm sending this to,\
+\cf2 \expnd0\expndtw0\kerning0
+55:07\cf0 \expnd0\expndtw0\kerning0
+to a whole bunch of other cards.\
+\cf2 \expnd0\expndtw0\kerning0
+55:09\cf0 \expnd0\expndtw0\kerning0
+So now I'm going to need some new algorithm to match, right?\
+\cf2 \expnd0\expndtw0\kerning0
+55:14\cf0 \expnd0\expndtw0\kerning0
+So, again, a playing card match,\
+\cf2 \expnd0\expndtw0\kerning0
+55:16\cf0 \expnd0\expndtw0\kerning0
+if let's say you had matching three cards,\
+\cf2 \expnd0\expndtw0\kerning0
+55:18\cf0 \expnd0\expndtw0\kerning0
+you might give a lot of points\
+\cf2 \expnd0\expndtw0\kerning0
+55:19\cf0 \expnd0\expndtw0\kerning0
+if all three cards are the same rank, they're all jacks,\
+\cf2 \expnd0\expndtw0\kerning0
+55:22\cf0 \expnd0\expndtw0\kerning0
+you get a lot of points.\
+\cf2 \expnd0\expndtw0\kerning0
+55:23\cf0 \expnd0\expndtw0\kerning0
+If only two of them are jacks\
+\cf2 \expnd0\expndtw0\kerning0
+55:25\cf0 \expnd0\expndtw0\kerning0
+and the other one is something else,\
+\cf2 \expnd0\expndtw0\kerning0
+55:26\cf0 \expnd0\expndtw0\kerning0
+well you don't get very many points at all.\
+\cf2 \expnd0\expndtw0\kerning0
+55:28\cf0 \expnd0\expndtw0\kerning0
+If they're all through the same suit,\
+\cf2 \expnd0\expndtw0\kerning0
+55:29\cf0 \expnd0\expndtw0\kerning0
+you kind of get a medium amount of points, you see what I mean?\
+\cf2 \expnd0\expndtw0\kerning0
+55:32\cf0 \expnd0\expndtw0\kerning0
+So, here I'm changing match to take an array\
+\cf2 \expnd0\expndtw0\kerning0
+55:34\cf0 \expnd0\expndtw0\kerning0
+as the argument instead of just a single card.\
+\cf2 \expnd0\expndtw0\kerning0
+55:37\cf0 \expnd0\expndtw0\kerning0
+And how would I change my implementation\
+\cf2 \expnd0\expndtw0\kerning0
+55:39\cf0 \expnd0\expndtw0\kerning0
+to deal with that?\
+\cf2 \expnd0\expndtw0\kerning0
+55:41\cf0 \expnd0\expndtw0\kerning0
+Well, I'm just going to put a four-loop around my if\
+\cf2 \expnd0\expndtw0\kerning0
+55:44\cf0 \expnd0\expndtw0\kerning0
+and iterate through all the cards\
+\cf2 \expnd0\expndtw0\kerning0
+55:46\cf0 \expnd0\expndtw0\kerning0
+and so this implementation, hopefully those of you\
+\cf2 \expnd0\expndtw0\kerning0
+55:49\cf0 \expnd0\expndtw0\kerning0
+who are quick thinkers, you can know what this does,\
+\cf2 \expnd0\expndtw0\kerning0
+55:52\cf0 \expnd0\expndtw0\kerning0
+this gives you one point\
+\cf2 \expnd0\expndtw0\kerning0
+55:53\cf0 \expnd0\expndtw0\kerning0
+if the card that's receiving this matches any\
+\cf2 \expnd0\expndtw0\kerning0
+55:57\cf0 \expnd0\expndtw0\kerning0
+of the cards in the array.\
+\cf2 \expnd0\expndtw0\kerning0
+55:58\cf0 \expnd0\expndtw0\kerning0
+Any, not all, any.\
+\cf2 \expnd0\expndtw0\kerning0
+56:01\cf0 \expnd0\expndtw0\kerning0
+Okay? Now you can imagine a lot better algorithms here.\
+\cf2 \expnd0\expndtw0\kerning0
+56:03\cf0 \expnd0\expndtw0\kerning0
+Maybe you get one point for every card you match\
+\cf2 \expnd0\expndtw0\kerning0
+56:06\cf0 \expnd0\expndtw0\kerning0
+in the array or you get two points for one match\
+\cf2 \expnd0\expndtw0\kerning0
+56:08\cf0 \expnd0\expndtw0\kerning0
+and four points for two and eight points for three,\
+\cf2 \expnd0\expndtw0\kerning0
+56:10\cf0 \expnd0\expndtw0\kerning0
+you know, some sort of binary thing, exponential point,\
+\cf2 \expnd0\expndtw0\kerning0
+56:14\cf0 \expnd0\expndtw0\kerning0
+whatever, this is first day of lecture, we're just going\
+\cf2 \expnd0\expndtw0\kerning0
+56:16\cf0 \expnd0\expndtw0\kerning0
+to give one point if it matches any, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+56:18\cf0 \expnd0\expndtw0\kerning0
+But mostly what I wanted to show you here is what it looks\
+\cf2 \expnd0\expndtw0\kerning0
+56:21\cf0 \expnd0\expndtw0\kerning0
+like to have an array\
+\cf2 \expnd0\expndtw0\kerning0
+56:23\cf0 \expnd0\expndtw0\kerning0
+as the argument instead of a single card.\
+\cf2 \expnd0\expndtw0\kerning0
+56:25\cf0 \expnd0\expndtw0\kerning0
+So that you understand that the argument, what the argument\
+\cf2 \expnd0\expndtw0\kerning0
+56:27\cf0 \expnd0\expndtw0\kerning0
+to the method is and also\
+\cf2 \expnd0\expndtw0\kerning0
+56:29\cf0 \expnd0\expndtw0\kerning0
+so I can show you the four-loop there.\
+\cf2 \expnd0\expndtw0\kerning0
+56:31\cf0 \expnd0\expndtw0\kerning0
+You see that four n [phonetic],\
+\cf2 \expnd0\expndtw0\kerning0
+56:33\cf0 \expnd0\expndtw0\kerning0
+a lot of languages have that these days.\
+\cf2 \expnd0\expndtw0\kerning0
+56:35\cf0 \expnd0\expndtw0\kerning0
+That just basically means it's a four-loop where it's going to go\
+\cf2 \expnd0\expndtw0\kerning0
+56:38\cf0 \expnd0\expndtw0\kerning0
+through every object in that NS array and assign it to card,\
+\cf2 \expnd0\expndtw0\kerning0
+56:42\cf0 \expnd0\expndtw0\kerning0
+card is the iteration variable, and execute that if once\
+\cf2 \expnd0\expndtw0\kerning0
+56:46\cf0 \expnd0\expndtw0\kerning0
+for each of the cards in the array.\
+\cf2 \expnd0\expndtw0\kerning0
+56:47\cf0 \expnd0\expndtw0\kerning0
+Everyone understand that?\
+\cf2 \expnd0\expndtw0\kerning0
+56:50\cf0 \expnd0\expndtw0\kerning0
+If you have a question about that, ask?\
+\cf2 \expnd0\expndtw0\kerning0
+56:56\cf0 \expnd0\expndtw0\kerning0
+No? Yeah? [Inaudible background comment] Oh, okay.\
+\cf2 \expnd0\expndtw0\kerning0
+56:59\cf0 \expnd0\expndtw0\kerning0
+That's a great question.\
+\cf2 \expnd0\expndtw0\kerning0
+57:00\cf0 \expnd0\expndtw0\kerning0
+So the question is if I just have that four-line,\
+\cf2 \expnd0\expndtw0\kerning0
+57:02\cf0 \expnd0\expndtw0\kerning0
+but I said four card card,\
+\cf2 \expnd0\expndtw0\kerning0
+57:04\cf0 \expnd0\expndtw0\kerning0
+not four card star card, in other cards, okay?\
+\cf2 \expnd0\expndtw0\kerning0
+57:09\cf0 \expnd0\expndtw0\kerning0
+We'd get a syntax error.\
+\cf2 \expnd0\expndtw0\kerning0
+57:11\cf0 \expnd0\expndtw0\kerning0
+Why? Because all objects are always pointed\
+\cf2 \expnd0\expndtw0\kerning0
+57:13\cf0 \expnd0\expndtw0\kerning0
+to so we always have that star.\
+\cf2 \expnd0\expndtw0\kerning0
+57:15\cf0 \expnd0\expndtw0\kerning0
+Okay? Always.\
+\cf2 \expnd0\expndtw0\kerning0
+57:17\cf0 \expnd0\expndtw0\kerning0
+Alright? You can't have a card not being a pointer to it,\
+\cf2 \expnd0\expndtw0\kerning0
+57:21\cf0 \expnd0\expndtw0\kerning0
+so the, you know, objective-C would give you a syntax error\
+\cf2 \expnd0\expndtw0\kerning0
+57:25\cf0 \expnd0\expndtw0\kerning0
+there, it's impossible to not have that star.\
+\cf2 \expnd0\expndtw0\kerning0
+57:27\cf0 \expnd0\expndtw0\kerning0
+Whenever you have the name of the class,\
+\cf2 \expnd0\expndtw0\kerning0
+57:29\cf0 \expnd0\expndtw0\kerning0
+it's always going to have that star.\
+\cf2 \expnd0\expndtw0\kerning0
+57:34\cf0 \expnd0\expndtw0\kerning0
+Question? [Inaudible background comment] Yes.\
+\cf2 \expnd0\expndtw0\kerning0
+57:36\cf0 \expnd0\expndtw0\kerning0
+The question is, another great one,\
+\cf2 \expnd0\expndtw0\kerning0
+57:37\cf0 \expnd0\expndtw0\kerning0
+can I use the square brackets to call the setter\
+\cf2 \expnd0\expndtw0\kerning0
+57:40\cf0 \expnd0\expndtw0\kerning0
+and getter instead of using that dot notation?\
+\cf2 \expnd0\expndtw0\kerning0
+57:42\cf0 \expnd0\expndtw0\kerning0
+And that's a really insightful question\
+\cf2 \expnd0\expndtw0\kerning0
+57:44\cf0 \expnd0\expndtw0\kerning0
+and the answer is absolutely you can, it's perfectly legal,\
+\cf2 \expnd0\expndtw0\kerning0
+57:47\cf0 \expnd0\expndtw0\kerning0
+because that setter and getter are completely normal methods.\
+\cf2 \expnd0\expndtw0\kerning0
+57:50\cf0 \expnd0\expndtw0\kerning0
+There's nothing special about them whatsoever.\
+\cf2 \expnd0\expndtw0\kerning0
+57:52\cf0 \expnd0\expndtw0\kerning0
+Okay? That dot notation is a nicety, syntactic sugar only.\
+\cf2 \expnd0\expndtw0\kerning0
+57:57\cf0 \expnd0\expndtw0\kerning0
+The question is should you use square brackets for setter\
+\cf2 \expnd0\expndtw0\kerning0
+57:59\cf0 \expnd0\expndtw0\kerning0
+and getter, and I think it's a matter of style.\
+\cf2 \expnd0\expndtw0\kerning0
+58:02\cf0 \expnd0\expndtw0\kerning0
+You would definitely would want to be 100 percent consistent,\
+\cf2 \expnd0\expndtw0\kerning0
+58:05\cf0 \expnd0\expndtw0\kerning0
+you would never want to mix them.\
+\cf2 \expnd0\expndtw0\kerning0
+58:06\cf0 \expnd0\expndtw0\kerning0
+And I think most people,\
+\cf2 \expnd0\expndtw0\kerning0
+58:08\cf0 \expnd0\expndtw0\kerning0
+most people would say use the dot notation.\
+\cf2 \expnd0\expndtw0\kerning0
+58:10\cf0 \expnd0\expndtw0\kerning0
+It makes it clearer, it's a little simpler, nicer,\
+\cf2 \expnd0\expndtw0\kerning0
+58:13\cf0 \expnd0\expndtw0\kerning0
+but, you know, you could.\
+\cf2 \expnd0\expndtw0\kerning0
+58:15\cf0 \expnd0\expndtw0\kerning0
+In this class, please use the dot notation just\
+\cf2 \expnd0\expndtw0\kerning0
+58:17\cf0 \expnd0\expndtw0\kerning0
+so I know you know how to use dot notation.\
+\cf2 \expnd0\expndtw0\kerning0
+58:19\cf0 \expnd0\expndtw0\kerning0
+Question? [Inaudible background comment] Okay,\
+\cf2 \expnd0\expndtw0\kerning0
+58:21\cf0 \expnd0\expndtw0\kerning0
+awesome question again.\
+\cf2 \expnd0\expndtw0\kerning0
+58:26\cf0 \expnd0\expndtw0\kerning0
+Gosh, you guys are so good.\
+\cf2 \expnd0\expndtw0\kerning0
+58:27\cf0 \expnd0\expndtw0\kerning0
+Can I use dot notation for a method that takes no arguments,\
+\cf2 \expnd0\expndtw0\kerning0
+58:32\cf0 \expnd0\expndtw0\kerning0
+but is not a getter or a setter?\
+\cf2 \expnd0\expndtw0\kerning0
+58:34\cf0 \expnd0\expndtw0\kerning0
+And the answer is objective-C will warn you about that,\
+\cf2 \expnd0\expndtw0\kerning0
+58:37\cf0 \expnd0\expndtw0\kerning0
+not give you an error, but warn you,\
+\cf2 \expnd0\expndtw0\kerning0
+58:39\cf0 \expnd0\expndtw0\kerning0
+and you should never do that in this class.\
+\cf2 \expnd0\expndtw0\kerning0
+58:41\cf0 \expnd0\expndtw0\kerning0
+Okay? That is really not that good form,\
+\cf2 \expnd0\expndtw0\kerning0
+58:44\cf0 \expnd0\expndtw0\kerning0
+whereas his question was kind of like you can argue,\
+\cf2 \expnd0\expndtw0\kerning0
+58:46\cf0 \expnd0\expndtw0\kerning0
+that one, don't do it.\
+\cf2 \expnd0\expndtw0\kerning0
+58:47\cf0 \expnd0\expndtw0\kerning0
+Okay? So. Use dot notations only for setters and getters.\
+\cf2 \expnd0\expndtw0\kerning0
+58:52\cf0 \expnd0\expndtw0\kerning0
+Other questions?\
+\cf2 \expnd0\expndtw0\kerning0
+58:53\cf0 \expnd0\expndtw0\kerning0
+Yeah?\
+\cf2 \expnd0\expndtw0\kerning0
+58:54\cf0 \expnd0\expndtw0\kerning0
+>> How do you use a setter with dot notations?\
+\cf2 \expnd0\expndtw0\kerning0
+58:59\cf0 \expnd0\expndtw0\kerning0
+>> So, yeah, question is how do you use a setter\
+\cf2 \expnd0\expndtw0\kerning0
+59:01\cf0 \expnd0\expndtw0\kerning0
+with dot notation?\
+\cf2 \expnd0\expndtw0\kerning0
+59:02\cf0 \expnd0\expndtw0\kerning0
+And it's exactly the same as a getter,\
+\cf2 \expnd0\expndtw0\kerning0
+59:04\cf0 \expnd0\expndtw0\kerning0
+it's just that you're using it\
+\cf2 \expnd0\expndtw0\kerning0
+59:05\cf0 \expnd0\expndtw0\kerning0
+on the left-hand side of an equals.\
+\cf2 \expnd0\expndtw0\kerning0
+59:07\cf0 \expnd0\expndtw0\kerning0
+So card.contents equals, you know, A of clubs,\
+\cf2 \expnd0\expndtw0\kerning0
+59:12\cf0 \expnd0\expndtw0\kerning0
+that would call the setter of contents, whereas, you know,\
+\cf2 \expnd0\expndtw0\kerning0
+59:15\cf0 \expnd0\expndtw0\kerning0
+this is calling the getter, because it's not\
+\cf2 \expnd0\expndtw0\kerning0
+59:17\cf0 \expnd0\expndtw0\kerning0
+on the left-hand side of the equal.\
+\cf2 \expnd0\expndtw0\kerning0
+59:20\cf0 \expnd0\expndtw0\kerning0
+Okay? Excellent!\
+\cf2 \expnd0\expndtw0\kerning0
+59:22\cf0 \expnd0\expndtw0\kerning0
+That's all I had today, so on Wednesday, we will do deck\
+\cf2 \expnd0\expndtw0\kerning0
+59:26\cf0 \expnd0\expndtw0\kerning0
+and playing card and playing card and I'm going to dive right\
+\cf2 \expnd0\expndtw0\kerning0
+59:30\cf0 \expnd0\expndtw0\kerning0
+into a big old demo of XCode 5\
+\cf2 \expnd0\expndtw0\kerning0
+59:33\cf0 \expnd0\expndtw0\kerning0
+and show you how all this stuff is actually done,\
+\cf2 \expnd0\expndtw0\kerning0
+59:35\cf0 \expnd0\expndtw0\kerning0
+and then next week we'll do, yet more objective-C.\
+\cf2 \expnd0\expndtw0\kerning0
+59:38\cf0 \expnd0\expndtw0\kerning0
+Thank you very much!\
+\cf2 \expnd0\expndtw0\kerning0
+59:40\cf0 \expnd0\expndtw0\kerning0
+>> For more, please visit us at stanford.edu.}
